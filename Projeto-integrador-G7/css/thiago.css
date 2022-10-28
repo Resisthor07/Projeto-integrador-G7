@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+
+.text__normal{
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    color: #ff1617;
+    font-weight: bold;
+}
+
+.text__position{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    flex-direction: row;
+
+}
+.text__price{
+    font-size: 40px;
+    /*-webkit-text-stroke: 1px #FF7272;
+    -text-stroke: 1px #ff7272;*/
+
+}
