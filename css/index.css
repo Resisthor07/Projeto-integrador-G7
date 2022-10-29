@@ -62,6 +62,7 @@
     width: 381.63px;
     height: 56px;   
 }
+
 .header__sandwich
 {
     width: 56px;
@@ -70,11 +71,11 @@
     align-items: center;
     justify-content: center;
 }
-.header__botao
+.header__botao_s
 {
     visibility: hidden;
 }
-.header__botao:active
+.header__botao_s:active
 {
     visibility: visible;
     width: 56px;
@@ -101,7 +102,6 @@
 }
 .header__submit_busca
 {
-    cursor: pointer;
     visibility: hidden;
 }
 .header__input_busca
@@ -123,6 +123,31 @@
     left: 15%;
 }
 
+.header__carrinho
+{
+    width: 48.63px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__botao_c
+{
+    visibility: hidden;
+}
+
+.header__wishlist
+{
+    width: 46px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__botao_w
+{
+    visibility: hidden;
+}
 
 
 
@@ -137,6 +162,18 @@
     visibility: visible;
     width: 22.61px;
     height: 28.05px;
+}
+.header__image_3
+{
+    visibility: visible;
+    width: 48.63px;
+    height: 42px;
+}
+.header__image_4
+{
+    visibility: visible;
+    width: 46px;
+    height: 43px;
 }
 
 
