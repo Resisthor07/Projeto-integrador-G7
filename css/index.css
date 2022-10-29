@@ -58,20 +58,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 54px;
     width: 381.63px;
-    height: 56px;
-    
+    height: 56px;   
 }
-.header__botao_sandwich
+.header__sandwich
 {
-    visibility: hidden;
     width: 56px;
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header__botao_sandwich:active  
+.header__botao
+{
+    visibility: hidden;
+}
+.header__botao:active
 {
     visibility: visible;
     width: 56px;
@@ -80,11 +83,60 @@
     border-radius: 20px 20px 0px 0px;
     border: none;
 }
+
+
+.header__busca
+{
+    border: 2px solid #FF7272;
+    border-radius: 30px;
+    width: 69px;
+    height: 45px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: width 300ms ease-in-out;
+}
+.header__submit_busca
+{
+    cursor: pointer;
+    visibility: hidden;
+}
+.header__input_busca
+{
+    border: 0;
+    outline: 0;
+    position: absolute;
+    opacity: 0;
+}
+.header__busca:focus-within
+{
+    width: 261px;
+    justify-content: flex-start;
+}
+.header__input_busca:focus-within
+{
+    opacity: 1;
+    width: 200px;
+    left: 15%;
+}
+
+
+
+
 .header__image_1
 {
     visibility: visible;
     width: 56px;
     height: 56px;
+}
+.header__image_2
+{
+    visibility: visible;
+    width: 22.61px;
+    height: 28.05px;
 }
 
 
