@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dongle:wght@400;700&display=swap');
+
+.text__normal{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff1617;
+    }
+.text__price-size{
+    font-size: 40px;
+    }
+.text__position{
+    text-align: justify;
+
+}
