@@ -24,15 +24,30 @@
     left: 23px;
     top: 135px;
 }
-.header__menu-topo--sandwich
+.header__botao_sandwich
 {
-    background-image: url(../img/menu-sandwich.png);
     visibility: hidden;
     width: 56px;
     height: 56px;
     left: 23px;
     top: 135px;
-    
+    display: flex;
+    justify-content: center;
 }
+.header__botao_sandwich:active  
+{
+    visibility: visible;
+    width: 56px;
+    height: 56px;
+    background-color: blueviolet;
+    border-radius: 25px 25px 0px 0px;
+}
+.header__image_1
+{
+    visibility: visible;
+    width: 56px;
+    height: 56px;
+}
+
 
 /*Fim da seção Rafael*/
