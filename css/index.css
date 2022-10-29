@@ -67,6 +67,7 @@
 {
     width: 56px;
     height: 56px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,58 +76,29 @@
 {
     visibility: hidden;
 }
-.header__botao_s:active
-{
-    visibility: visible;
-    width: 56px;
-    height: 63px;
-    background-color: #ff7272;
-    border-radius: 20px 20px 0px 0px;
-    border: none;
-}
-
 
 .header__busca
 {
-    border: 2px solid #FF7272;
-    border-radius: 30px;
     width: 69px;
     height: 45px;
+    border-radius: 30px;
+    border: 2px solid #FF7272;
+   
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    position: relative;
-    transition: width 300ms ease-in-out;
 }
-.header__submit_busca
+.header__botao_b
 {
     visibility: hidden;
-}
-.header__input_busca
-{
-    border: 0;
-    outline: 0;
-    position: absolute;
-    opacity: 0;
-}
-.header__busca:focus-within
-{
-    width: 261px;
-    justify-content: flex-start;
-}
-.header__input_busca:focus-within
-{
-    opacity: 1;
-    width: 200px;
-    left: 15%;
 }
 
 .header__carrinho
 {
     width: 48.63px;
     height: 42px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,6 +112,7 @@
 {
     width: 46px;
     height: 43px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
