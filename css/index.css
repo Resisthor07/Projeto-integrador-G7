@@ -1,17 +1,40 @@
 /*Seção de codigo Samir*/
-.background {
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/pagina-detalhes/Layout.png);
+    background-repeat: no-repeat;
 }
 
 .logo__alinhamento {
     display: flex;
-    justify-content: center;
-    background-color: aqua;
+    flex-direction: column;
+    /* background-color: aqua;*/
+    text-align: center;
 }
 
-.logo__imagem {
-    width: 81px;
 
+.logo__imagem {
+    align-self: center;
+    width: 81px;
+}
+
+.logo__texto {
+    color: white;
+    font-family: 'Dongle', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    -webkit-text-stroke: 1px #FF7272;
+}
+
+.logo__texto--da {
+    font-size: 12px;
 }
 
 /*Fim da seção Samir*/
