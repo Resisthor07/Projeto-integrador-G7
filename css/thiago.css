@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dongle:wght@400;700&display=swap');
+
+.text__base-normal{
+    display: flex;
+    text-align: justify;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50vw;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.4vh;
+    font-weight: bolder;
+    color: #ff1617;
+    }
+
+.text__price-size{
+    display: flex;
+    font-weight: bold;
+    justify-content:flex-end ;
+    font-size: 2.5vh;
+    }
+
+.text__position{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.img__product{
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+
+}
+
+.position__pdct-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.trash__wish-list{
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+
+}
