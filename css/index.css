@@ -32,19 +32,18 @@
 
 .header__menu-topo
 {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 381.63px;
     height: 56px;
-    left: 23px;
-    top: 135px;
+    
 }
 .header__botao_sandwich
 {
     visibility: hidden;
     width: 56px;
     height: 56px;
-    left: 23px;
-    top: 135px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +55,7 @@
     height: 63px;
     background-color: #ff7272;
     border-radius: 20px 20px 0px 0px;
+    border: none;
 }
 .header__image_1
 {
