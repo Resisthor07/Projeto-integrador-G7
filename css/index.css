@@ -48,6 +48,22 @@
 
 /*Seção de codigo Eduardo*/
 
+.blusa__inteira{ 
+    width: 60%;
+    height: 50%;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+    align-items: center;
+}
+
+.blusa__manga{
+    
+
+}
+
 .retangulo{
     position: absolute;
     
@@ -55,19 +71,19 @@
     height: 545px;
     left: 23px;
     top: 227px;
-    
-    
+      
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: rgba(255, 114, 114, 0.05);
     box-shadow: 0px 4px 4px rgba(255, 114, 114, 0.05);
     backdrop-filter: blur(1.5px);
     border-radius: 30px;
-    
-
-
 
 }
+
+
+
+
 /*Fim da seção Eduardo*/
 
 /*Seção de codigo Tailine*/
