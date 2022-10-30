@@ -96,4 +96,101 @@
 
 /*Seção de codigo Rafael*/
 
+.header__menu-topo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    width: 381.63px;
+    height: 56px;   
+}
+
+.header__sandwich
+{
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__botao_s
+{
+    visibility: hidden;
+}
+
+.header__busca
+{
+    width: 69px;
+    height: 45px;
+    border-radius: 30px;
+    border: 2px solid #FF7272;
+   
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__botao_b
+{
+    visibility: hidden;
+}
+
+.header__carrinho
+{
+    width: 48.63px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__botao_c
+{
+    visibility: hidden;
+}
+
+.header__wishlist
+{
+    width: 46px;
+    height: 43px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__botao_w
+{
+    visibility: hidden;
+}
+
+
+
+.header__image_1
+{
+    visibility: visible;
+    width: 56px;
+    height: 56px;
+}
+.header__image_2
+{
+    visibility: visible;
+    width: 22.61px;
+    height: 28.05px;
+}
+.header__image_3
+{
+    visibility: visible;
+    width: 48.63px;
+    height: 42px;
+}
+.header__image_4
+{
+    visibility: visible;
+    width: 46px;
+    height: 43px;
+}
+
+
 /*Fim da seção Rafael*/
