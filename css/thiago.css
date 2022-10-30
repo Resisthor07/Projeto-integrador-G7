@@ -3,42 +3,45 @@
 .text__base-normal{
     display: flex;
     text-align: justify;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 50vw;
+    width: 100%;
     font-family: 'Comfortaa', cursive;
-    font-size: 2vh;
+    font-size: 100%;
     font-weight: bolder;
     color: #ff1617;
-    }
+    line-height: 2;
+}
 
 .text__price-size{
-    display: flex;
+   text-align: justify;
     font-weight: bold;
-    justify-content:flex-end ;
-    font-size: 3vh;
-    }
-
-.text__position{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: justify;
+    width: 100vw;
+    justify-content: space-between ;
+    font-size: 2.5vh;
 }
 
+
+
+.text__title{
+    font-weight: bold;
+    width: 100vw;
+    text-align: center;
+    font-size: 5vh;
+
+}
 .img__product{
-    display: flex;
-    justify-content: flex-start;
-    width: 50vw;
-
-}
+    width: 100%}
 
 .position__pdct-description {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
+    width: 100vw;
+    gap: 20px;
+    justify-content: space-between;
+
+
+}
+body{
 
 }
 
@@ -58,15 +61,14 @@
 }
 
 .bkg__wish-list{
-    border: #ff7272 2px;
-    box-shadow: 1px 1px 2px #ff7272;
-    border-radius: 25px;
+    ;
 }
 
 .btn__add-carrinho{
     background-color: #ff7272;
     text-align: center;
     align-items: center;
+    font-size: 2vw;
     padding: 10px;
     border-radius: 25px;
     color: white;
