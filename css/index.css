@@ -98,6 +98,22 @@
 
 /*Fim estilização do layout padrão
 
+/*Estilização do carrossel de imagens*/
+.carrossel-imagens {
+    width: 73vw;
+    height: 25vh;
+    overflow: hidden;
+}
+
+.carrossel-imagens .carrossel-imagens__grupo {
+    width: 300%;
+    background-color: aquamarine;
+}
+
+.carrossel-imagens__img {}
+
+/*Fim da estilização do carrossel de imagens*/
+
 /*Fim da seção Samir*/
 
 /*Seção de codigo Eduardo*/
