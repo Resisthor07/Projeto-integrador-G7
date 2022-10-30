@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 #principal {
-    /*display: flex;
-    justify-content: center;
-    flex-direction: column;*/
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(../img/pagina-detalhes/Layout.png);
     margin: 0%;
@@ -18,7 +15,7 @@
 
 .logo__imagem {
     align-self: center;
-    width: 35%;
+    width: 10vh;
 }
 
 .logo__texto {
@@ -26,8 +23,8 @@
     color: white;
     font-family: 'Dongle', sans-serif;
     font-style: normal;
-    font-weight: 800;
-    font-size: 25px;
+    font-weight: bolder;
+    font-size: 10vw;
     line-height: 30px;
     -webkit-text-stroke: 1px #FF7272;
 }
@@ -35,8 +32,6 @@
 .logo__texto--da {
     font-size: 12px;
 }
-
-
 
 .menu-nav {
     display: flex;
@@ -48,8 +43,36 @@
     justify-content: space-around;
 }
 
-.menu-nav__tamanho {
+.menu-nav__tamanho-img {
     height: 90%;
+}
+
+.menu__principal {
+    bottom: 78vh;
+    background-color: rgb(255, 255, 255, 0.0);
+}
+
+.menu__rapido {
+    display: flex;
+    align-items: center;
+    bottom: 73vh;
+}
+
+.menu__rapido--opcao {
+    text-align: center;
+    background-color: #FF7272;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2vh;
+    width: 25%;
+    transition: all .3s;
+}
+
+.menu__rapido--opcao:active {
+    align-items: center;
+    background-color: #FFD0D0;
+    color: #FF7272;
+    height: 100%;
 }
 
 /*Fim da seção Samir*/
