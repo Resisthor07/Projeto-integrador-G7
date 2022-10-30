@@ -69,7 +69,6 @@
 }
 
 .menu__rapido--opcao:active {
-    align-items: center;
     background-color: #FFD0D0;
     color: #FF7272;
     height: 100%;
