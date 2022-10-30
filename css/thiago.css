@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     width: 50vw;
     font-family: 'Comfortaa', cursive;
-    font-size: 1.4vh;
+    font-size: 2vh;
     font-weight: bolder;
     color: #ff1617;
     }
@@ -16,7 +16,7 @@
     display: flex;
     font-weight: bold;
     justify-content:flex-end ;
-    font-size: 2.5vh;
+    font-size: 3vh;
     }
 
 .text__position{
@@ -37,12 +37,40 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: nowrap;
+
 }
 
 .trash__wish-list{
     display: flex;
     justify-content: flex-end;
-    height: 10vh;
+    height: 5vh;
 
+}
+.footer__wish-list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10vh;
+}
+
+.bkg__wish-list{
+    border: #ff7272 2px;
+    box-shadow: 1px 1px 2px #ff7272;
+    border-radius: 25px;
+}
+
+.btn__add-carrinho{
+    background-color: #ff7272;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    height: 5vh;
 }
