@@ -93,3 +93,85 @@
 .menu-rapido__opcao:active {
     background-color: #FFD0D0;
 }
+
+.pagina-alinhamento
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagina-estilo_texto-titulo
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 4vh;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+.pagina-estilo_texto-subtitulo
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+.pagina-estilo_texto-padrao
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5vh;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+.pagina-imagem_produto
+{
+    width: 130px;
+    height: 126px;
+    border: 20px;
+}
+
+.pagina-imagem_lixeira
+{
+    height: 54px;
+    width: 54px;
+}
+
+.pagina-divisao_produto
+{
+    padding-bottom: 1vh;
+    border-radius: 25px;
+    border-color: #FF7272;
+    width: 92vw;
+    height: 18vh;
+    display: flex;
+    /*align-items: flex-start;*/
+    /*justify-content: space-between;*/
+}
+
+.pagina-divisao_desc
+{
+    align-self: flex-start;
+    width: 46vw;
+    height: 8vh;
+}
+
+.pagina-divisao_info
+{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 56vw;
+    height: 2.5vh;
+    
+}
+
+.pagina-alinhamento2
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 18vh;
+}
