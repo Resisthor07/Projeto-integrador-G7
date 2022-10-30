@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     width: 100%;
     font-family: 'Comfortaa', cursive;
-    font-size: 100%;
+    font-size: 16px;
     font-weight: bolder;
     color: #ff1617;
     line-height: 2;
@@ -15,18 +15,19 @@
 .text__price-size{
    text-align: justify;
     font-weight: bold;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between ;
-    font-size: 2.5vh;
+    font-size: 25px;
 }
 
 
 
 .text__title{
     font-weight: bold;
-    width: 100vw;
+    justify-content: center;
+    width: 100%;
     text-align: center;
-    font-size: 5vh;
+    font-size: 30px;
 
 }
 .img__product{
@@ -35,20 +36,18 @@
 .position__pdct-description {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     gap: 20px;
     justify-content: space-between;
 
 
 }
-body{
 
-}
 
 .trash__wish-list{
     display: flex;
     justify-content: flex-end;
-    height: 5vh;
+    height: 40px;
 
 }
 .footer__wish-list{
@@ -57,10 +56,16 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 10vh;
 }
 
 .bkg__wish-list{
+    display: flex;
+    flex-direction: column;
+    box-shadow: gray 1px 1px 1px 1px;
+    border-radius: 25px;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
     ;
 }
 
@@ -68,11 +73,11 @@ body{
     background-color: #ff7272;
     text-align: center;
     align-items: center;
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding: 10px;
     border-radius: 25px;
     color: white;
     font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
     display: flex;
-    height: 5vh;
 }
