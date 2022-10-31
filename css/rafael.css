@@ -141,14 +141,15 @@
 
 .pagina-divisao_produto
 {
-    padding-bottom: 1vh;
+    border: #ff7272 2px;
+    box-shadow: 1px 1px 2px #ff7272;
     border-radius: 25px;
-    border-color: #FF7272;
+    padding-bottom: 1vh;
     width: 92vw;
     height: 18vh;
     display: flex;
-    /*align-items: flex-start;*/
-    /*justify-content: space-between;*/
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .pagina-divisao_desc
@@ -174,4 +175,17 @@
     align-items: center;
     flex-direction: column;
     height: 18vh;
+}
+
+.pagina-botao
+{
+    width: 56.5vw;
+    height: 7vh;
+    background: #FF7272;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #faffff;
 }
