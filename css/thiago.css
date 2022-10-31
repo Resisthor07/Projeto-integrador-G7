@@ -18,7 +18,7 @@
 
 .logo__imagem {
     align-self: center;
-    width: 81px;
+    width: 40%;
 }
 
 .logo__texto {
@@ -98,7 +98,7 @@
     margin: 5px;
     margin-bottom: 20px;
     padding: 10px;
-    ;
+
 }
 
 .btn__add-carrinho{
