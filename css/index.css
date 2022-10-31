@@ -7,6 +7,29 @@
     background-image: url(../img/pagina-detalhes/Layout.png);
     margin: 0%;
     padding: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.area-util {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.retangulo {
+    background-color: aquamarine;
+    height: 70px;
+    width: 80px;
+}
+
+.tamanho__header {
+    height: 27.5%;
+}
+
+.tamanho__main {
+    height: 67.5%;
 }
 
 .logo__posicao {
@@ -14,7 +37,6 @@
     flex-direction: column;
     margin: 0%;
 }
-
 
 .logo__imagem {
     align-self: center;
@@ -38,11 +60,11 @@
 
 .menu-nav {
     display: flex;
-    position: absolute;
+    justify-content: space-around;
+    position: fixed;
     bottom: 0%;
     height: 5%;
     width: 100%;
-    justify-content: space-around;
 }
 
 .menu-nav__botao {
