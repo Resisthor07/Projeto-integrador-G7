@@ -131,12 +131,16 @@
     width: 130px;
     height: 126px;
     border: 20px;
+    align-self: flex-start;
+    justify-self: flex-start;
 }
 
 .pagina-imagem_lixeira
 {
     height: 54px;
     width: 54px;
+    align-self: flex-start;
+    justify-self: flex-end;
 }
 
 .pagina-divisao_produto
@@ -161,20 +165,20 @@
 
 .pagina-divisao_info
 {
+    align-self: flex-end;
     display: flex;
     justify-content: space-between;
-    align-self: flex-end;
     width: 56vw;
     height: 2.5vh;
-    
 }
 
-.pagina-alinhamento2
+.pagina-alinhamento-info
 {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-around;
+    width: 46vw;
     height: 18vh;
+    flex-direction: column;
 }
 
 .pagina-botao
