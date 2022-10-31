@@ -12,38 +12,27 @@
 }
 
 .area-util {
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
 }
 
-.retangulo {
-    background-color: aquamarine;
-    height: 70px;
-    width: 80px;
-}
-
-.tamanho__header {
-    height: 27.5%;
-}
-
-.tamanho__main {
-    height: 67.5%;
-}
-
-.logo__posicao {
+.logo {
     display: flex;
     flex-direction: column;
     margin: 0%;
+    height: 50%;
 }
 
 .logo__imagem {
     align-self: center;
-    width: 10vh;
+    height: 100%;
 }
 
 .logo__texto {
+    height: 10%;
     text-align: center;
     color: white;
     font-family: 'Dongle', sans-serif;
@@ -55,7 +44,7 @@
 }
 
 .logo__texto--da {
-    font-size: 12px;
+    font-size: 3vh;
 }
 
 .menu-nav {
@@ -76,28 +65,37 @@
     transition: all 0.2s;
 }
 
-.menu-nav__botao:active {
-    background-color: #FFD0D0;
-}
-
 .menu-nav__tamanho-img {
     height: 80%;
+}
+
+.menu-nav__botao:active {
+    background-color: #FFD0D0;
 }
 
 .menu-principal {
     display: flex;
     justify-content: space-around;
+    justify-items: center;
     align-items: center;
+    height: 50%;
 }
 
-.menu-principal__tamanho-img {
+.menu-principal__img {
     width: 5vh;
+}
+
+.menu-principal__itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu__rapido {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 50%;
 }
 
 .menu-rapido__opcao {
@@ -105,7 +103,7 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    background-color: #FF7272;
+    background-color: #ff7272;
     color: white;
     font-weight: 700;
     width: 25%;
@@ -118,23 +116,88 @@
     background-color: #FFD0D0;
 }
 
+.menu_superiores {
+    height: 40%;
+}
+
+.tamanho__header {
+    height: 25%;
+}
+
+.tamanho__main {
+    height: 65%;
+}
+
 /*Fim estilização do layout padrão
 
-/*Estilização do carrossel de imagens*/
-.carrossel-imagens {
-    width: 73vw;
-    height: 25vh;
-    overflow: hidden;
+/*Estilização da página*/
+.bandeja-produto {
+    width: 45%;
+    height: 30%;
+    border-radius: 20px;
+    background-color: rgba(255, 112, 112, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.carrossel-imagens .carrossel-imagens__grupo {
-    width: 300%;
-    background-color: aquamarine;
+.bandeja-produto__organizacao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
 }
 
-.carrossel-imagens__img {}
+.imagem__principal {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-/*Fim da estilização do carrossel de imagens*/
+.info-produto__tamanho {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-produto__preco--texto {
+    font-family: 'Dongle', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #FF7272;
+}
+
+.info-produto__tamanho--texto {
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: bolder;
+    color: #FF7272;
+}
+
+.foto__principal {
+    height: 100%;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.foto__produto {
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.produtos__vitrine {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+/*Fim da estilização da página*/
 
 /*Fim da seção Samir*/
 
