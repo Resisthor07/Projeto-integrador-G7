@@ -1,0 +1,36 @@
+[33mcommit 5f834f3c0d86607fbcb4e50edbc761d930a524ad[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mMain[m[33m)[m
+Merge: 61d2f23 7e10fa5
+Author: Thiago Cavalcante <116036410+Thiago-cavalcante-oliveira@users.noreply.github.com>
+Date:   Fri Oct 28 18:03:20 2022 -0300
+
+    Merge pull request #1 from Resisthor07/Developer
+    
+    Developer
+
+[33mcommit 7e10fa51211df87a65dda8f13af3467c27339d5b[m
+Merge: 40ea15c 9e2c568
+Author: Administrador <thhyagofoz@gmail.com>
+Date:   Fri Oct 28 17:59:24 2022 -0300
+
+    Merge remote-tracking branch 'origin/Developer' into Developer
+    
+    # Conflicts:
+    #       Projeto-integrador-G7/css/thiago.css
+
+[33mcommit 40ea15c3d48967af140b584a7d26d68b7b16d18e[m
+Author: Administrador <thhyagofoz@gmail.com>
+Date:   Fri Oct 28 17:58:44 2022 -0300
+
+    Criei a estilização dos textos de conteúdo, vou rever a fonte do projeto para uma que atende nossa necessidade e mantenha as mesmas características
+
+[33mcommit 9e2c568b4e95f48420414c8922c0ff6b05c9fc7f[m
+Author: tailyne-bertoncelli <tailyne.berton@gmail.com>
+Date:   Fri Oct 28 16:52:10 2022 -0300
+
+    Arquivos
+
+[33mcommit 61d2f237fc5d537b20f6754ecb40f0680e94dbfe[m
+Author: tailyne-bertoncelli <tailyne.berton@gmail.com>
+Date:   Fri Oct 28 00:59:23 2022 -0300
+
+    arquivos
