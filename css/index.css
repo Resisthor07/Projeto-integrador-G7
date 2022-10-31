@@ -12,35 +12,24 @@
 }
 
 .area-util {
-    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
-.retangulo {
-    background-color: aquamarine;
-    height: 70px;
-    width: 80px;
-}
-
-.tamanho__header {
-    height: 27.5%;
-}
-
-.tamanho__main {
-    height: 67.5%;
-}
-
-.logo__posicao {
+.logo {
     display: flex;
     flex-direction: column;
     margin: 0%;
+    height: 50%;
 }
 
 .logo__imagem {
     align-self: center;
-    width: 10vh;
+    height: 100%;
 }
 
 .logo__texto {
@@ -49,13 +38,13 @@
     font-family: 'Dongle', sans-serif;
     font-style: normal;
     font-weight: bolder;
-    font-size: 10vw;
+    font-size: 4vh;
     line-height: 30px;
     -webkit-text-stroke: 1px #FF7272;
 }
 
 .logo__texto--da {
-    font-size: 12px;
+    font-size: 3vh;
 }
 
 .menu-nav {
@@ -76,28 +65,37 @@
     transition: all 0.2s;
 }
 
-.menu-nav__botao:active {
-    background-color: #FFD0D0;
-}
-
 .menu-nav__tamanho-img {
     height: 80%;
+}
+
+.menu-nav__botao:active {
+    background-color: #FFD0D0;
 }
 
 .menu-principal {
     display: flex;
     justify-content: space-around;
+    justify-items: center;
     align-items: center;
+    height: 25%;
 }
 
-.menu-principal__tamanho-img {
-    width: 5vh;
+.menu-principal__img {
+    width: 50%;
+}
+
+.menu-principal__itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu__rapido {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 25%;
 }
 
 .menu-rapido__opcao {
@@ -118,23 +116,36 @@
     background-color: #FFD0D0;
 }
 
+.tamanho__header {
+    height: 30%;
+}
+
+.tamanho__main {
+    height: 65%;
+}
+
 /*Fim estilização do layout padrão
 
-/*Estilização do carrossel de imagens*/
-.carrossel-imagens {
-    width: 73vw;
-    height: 25vh;
-    overflow: hidden;
+/*Estilização da página*/
+
+.imagem__principal {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.carrossel-imagens .carrossel-imagens__grupo {
-    width: 300%;
-    background-color: aquamarine;
+.foto__principal {
+    height: 100%;
+    width: 50%;
 }
 
-.carrossel-imagens__img {}
+.produtos__vitrine {
+    width: 100%;
+    height: 200%;
+}
 
-/*Fim da estilização do carrossel de imagens*/
+/*Fim da estilização da página*/
 
 /*Fim da seção Samir*/
 
