@@ -94,102 +94,52 @@
     background-color: #FFD0D0;
 }
 
-.pagina-alinhamento
-{
+.fundo-blog{
+    text-align:center;
+    background-color: rgba(255, 114, 114, 0.6);
+    width: 95%;
+    height: 67vh;
+    border-radius: 10px;
+}
+
+.imagem-blog{
+    height: 50%;
+    width: 50%;
+    align-items: center;
+}
+
+.blog_titulo{
+    display: flex;
+    justify-content: center;
+    color: #057C36;
+    font-family: 'Dongle', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 8vw;
+    line-height: 1%;
+    flex-direction: column;
+
+}
+
+.blog_texto{
+    text-align: center;
+    color: white;
+    font-family: 'Dongle', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 5vh;
+    line-height: 3vh;
+    padding: 20px;
+}
+
+.posicionamento{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 100%;
+    height: 70vh;
 }
 
-.pagina-estilo_texto-titulo
-{
-    font-family: 'Comfortaa', cursive;
-    font-size: 4vh;
-    font-weight: bolder;
-    color: #ff1617;
-}
-
-.pagina-estilo_texto-subtitulo
-{
-    font-family: 'Comfortaa', cursive;
-    font-size: 2vh;
-    font-weight: bolder;
-    color: #ff1617;
-}
-
-.pagina-estilo_texto-padrao
-{
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.5vh;
-    font-weight: bolder;
-    color: #ff1617;
-}
-
-.pagina-imagem_produto
-{
-    width: 130px;
-    height: 126px;
-    border: 20px;
-    align-self: flex-start;
-    justify-self: flex-start;
-}
-
-.pagina-imagem_lixeira
-{
-    height: 54px;
-    width: 54px;
-    align-self: flex-start;
-    justify-self: flex-end;
-}
-
-.pagina-divisao_produto
-{
-    border: #ff7272 2px;
-    box-shadow: 1px 1px 2px #ff7272;
-    border-radius: 25px;
-    padding-bottom: 1vh;
-    width: 92vw;
-    height: 18vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.pagina-divisao_desc
-{
-    align-self: flex-start;
-    width: 46vw;
-    height: 8vh;
-}
-
-.pagina-divisao_info
-{
-    align-self: flex-end;
-    display: flex;
-    justify-content: space-between;
-    width: 56vw;
-    height: 2.5vh;
-}
-
-.pagina-alinhamento-info
-{
-    display: flex;
-    justify-content: space-around;
-    width: 46vw;
-    height: 18vh;
-    flex-direction: column;
-}
-
-.pagina-botao
-{
-    width: 56.5vw;
-    height: 7vh;
-    background: #FF7272;
-    border: none;
-    border-radius: 30px;
-    font-family: 'Comfortaa', cursive;
-    font-size: 2vh;
-    font-weight: bolder;
-    color: #faffff;
+.titulo{
+    line-height: 5px;
 }
