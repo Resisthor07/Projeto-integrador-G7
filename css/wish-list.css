@@ -68,6 +68,7 @@
 
 .btn__add-carrinho{
     background-color: #ff7272;
+    text-decoration: none;
     text-align: center;
     align-items: center;
     font-size: 2.5vw;
@@ -77,6 +78,14 @@
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
     display: flex;
+}
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+main{
+    min-height: 100%;
+    overflow: visible;
 }
 
 
