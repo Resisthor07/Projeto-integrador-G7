@@ -107,9 +107,9 @@
 
 .pagina-estilo_texto-titulo
 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa';
     font-size: 4vh;
-    font-weight: bolder;
+    font-weight: bold;
     color: #ff1617;
 }
 
@@ -140,8 +140,7 @@
 
 .pagina-imagem_lixeira
 {
-    height: 54px;
-    width: 54px;
+    width: 13%;
     align-self: flex-start;
     justify-self: flex-end;
 }
