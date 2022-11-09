@@ -105,7 +105,6 @@ article {
 }
 
 @media (min-width:481px) and (max-width:768px) {
-    /*Estilização do layout padrão*/
     #principal {
         font-family: Arial, Helvetica, sans-serif;
         background-image: url(../img/pagina-detalhes/Layout.png);
@@ -114,7 +113,8 @@ article {
         margin: 0%;
         padding: 0%;
         height: 100vh;
-        width: 100vw;    
+        width: 100vw;
+        
     }
     
     .area__main{
@@ -140,9 +140,7 @@ article {
     }
     
     .Cabecario__Retangulo--logo {
-        align-self: center;
-        justify-content: center;
-        justify-items: center;
+        margin-left: 19vw;
         width: 15vw;
     }
     
@@ -151,7 +149,7 @@ article {
     .Cabecario__Retangulo {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         justify-items: center;
         margin-top: 2vh;
         height: 15vh;
@@ -159,14 +157,11 @@ article {
     }
     
     .Cabecario__Retangulo--fechar {
-        display:flex;
-        justify-content: flex-end;
-        margin-top: 20px;
-        padding-right: 50px;
-        margin-right: 5px;
+        margin-top: 10px;
+        margin-right: 20px;
         border-radius: 5px;
         font-family: 'Comfortaa';
-        font-size: 200%;
+        font-size: 50%;
         color: #f70707;
         font-weight: bold;
     }
@@ -181,14 +176,14 @@ article {
     }
     
     .compra-efetuada__icone {
-        width: 28.88%;
-        right: 28.00%;
+        width: 10vh;
+        right: 10vw;
     }
     
     .compra-efetuada__whats {
-        padding: 2%;
-        width: 15%;
-        right: 15%;
+        padding: 2vw;
+        width: 4vw;
+        right: 4vh;
     }
     
     article {
@@ -197,18 +192,17 @@ article {
         align-items: center;
         color: #099C2A;
         font-family: 'Popins';
-        font-size: 4vw;
+        font-size: 2vw;
      
     }
     
     .texto__informacao {
         display: flex;
         width: 90vw;
-        height: 40vh;
-        align-items: flex-end;
-        justify-content: space-around;
+        height: 30vh;
+        align-items: center;
         color: #FF1617;
-        font-size: 4.5vw;
+        font-size: 3vw;
     }
     
     }
