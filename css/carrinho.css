@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#principal {
+    font-family: 'Dongle', Helvetica, sans-serif;
+    background-image: url(../img/pagina-detalhes/Layout.png);
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+
+.logo__posicao {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+
+
+.logo__imagem {
+    align-self: center;
+    width: 10vh;
+}
+
+.logo__texto {
+    text-align: center;
+    color: white;
+    font-family: 'Dongle', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 10vw;
+    line-height: 30px;
+    -webkit-text-stroke: 1px #FF7272;
+}
+
+.logo__texto--da {
+    font-size: 12px;
+}
+
+.menu-nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.menu-nav__botao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FF7272;
+    width: 33.33%;
+    transition: all 0.2s;
+}
+
+.menu-nav__botao:active {
+    background-color: #FFD0D0;
+}
+
+.menu-nav__tamanho-img {
+    height: 80%;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-principal__tamanho-img {
+    width: 5vh;
+}
+
+.menu__rapido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-rapido__opcao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #FF7272;
+    color: white;
+    font-weight: 700;
+    width: 25%;
+    height: 5vh;
+    font-size: 2vh;
+    transition: all .2s;
+}
+
+.menu-rapido__opcao:active {
+    background-color: #FFD0D0;
+}
+
+.pagina-alinhamento
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagina-estilo_texto-titulo
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 4vh;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+.pagina-estilo_texto-subtitulo
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+.pagina-estilo_texto-padrao
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5vh;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+.pagina-imagem_produto
+{
+    width: 130px;
+    height: 126px;
+    border: 20px;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.pagina-imagem_lixeira
+{
+    height: 54px;
+    width: 54px;
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+.pagina-divisao_produto
+{
+    border: #ff7272 2px;
+    box-shadow: 1px 1px 2px #ff7272;
+    border-radius: 25px;
+    padding-bottom: 1vh;
+    width: 92vw;
+    height: 18vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.pagina-divisao_desc
+{
+    align-self: flex-start;
+    width: 46vw;
+    height: 8vh;
+}
+
+.pagina-divisao_info
+{
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 56vw;
+    height: 2.5vh;
+}
+
+.pagina-alinhamento-info
+{
+    display: flex;
+    justify-content: space-around;
+    width: 46vw;
+    height: 18vh;
+    flex-direction: column;
+}
+
+.pagina-botao
+{
+    width: 56.5vw;
+    height: 7vh;
+    background: #FF7272;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #faffff;
+}
