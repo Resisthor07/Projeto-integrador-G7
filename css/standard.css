@@ -67,9 +67,16 @@ h1 {
     width: 25%;
 }
 
+main {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin-left: 7vw;
+}
+
 @media (max-width: 374px) {
     .header__text-menu--text {
-        width: 100%;
+        width: 50%;
     }
 
     .header__icon-menu--icon {
@@ -86,7 +93,20 @@ h1 {
         flex-wrap: wrap;
     }
 
+    .header__logo {
+        height: 45%;
+    }
+
     .header__icon-menu {
         order: 1;
+        flex-direction: column;
+        margin: 1vw;
+        height: max-content;
+    }
+
+    .header__icon-menu--icon {
+        width: 5vw;
+        height: auto;
+        margin-top: 2vh;
     }
 }
