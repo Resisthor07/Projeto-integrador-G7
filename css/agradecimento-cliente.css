@@ -1,23 +1,23 @@
 /*Seção de codigo Samir*/
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media (max-width:2500px) {
 
 /*Estilização do layout padrão*/
 #principal {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/pagina-detalhes/Layout.png);
-    background-repeat: no-repeat;
-    background-size:100vw 100vh;
+    background-image: url(../img/Tela\ de\ cadastro\ dos\ produtos.png);
+    background-size: auto;
     margin: 0%;
     padding: 0%;
     height: 100vh;
     width: 100vw;
+    
 }
 
 .area__main{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100vw;
     margin: 0vh;
@@ -36,30 +36,20 @@
     border-radius: 30px;
 }
 
-.Cabecario__Retangulo--logo {
-    align-self: center;
-    justify-content: center;
-    justify-items: center;
-    width: 15vw;
-}
-
-.texto__agradecimento {
+article {
     display: flex;
-    height: 80vh;
-    padding: 2%;
-    line-height: 150%;
-    font-family: 'Comfortaa';
-    text-align:justify;
-    flex-wrap: wrap;
-    font-size: 200%;
-    color: #ff1617;
-    font-weight: bold;
+    flex-direction:column;
+    align-items: center;
+    color: #099C2A;
+    font-family: 'Popins';
+    font-size: 3vw;
+ 
 }
 
 .Cabecario__Retangulo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     justify-items: center;
     margin-top: 2vh;
     height: 15vh;
@@ -67,16 +57,148 @@
 }
 
 .Cabecario__Retangulo--fechar {
-    display:flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-    padding-right: 50px;
-    margin-right: 5px;
+    margin-top: 5px;
+    margin-right: 20px; 
     border-radius: 5px;
     font-family: 'Comfortaa';
-    font-size: 200%;
+    font-size: 50%;
     color: #f70707;
     font-weight: bold;
 }
 
+.Cabecario__Retangulo--logo {
+    margin-left: 19vw;
+    width: 15vw;
 }
+
+.compra-efetuada {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.compra-efetuada__icone {
+    width: 10vh;
+    right: 10vw;
+}
+
+.compra-efetuada__whats {
+    padding: 2vw;
+    width: 10vw;
+    right: 10vh;
+}
+
+.texto__informacao {
+    display: flex;
+    width: 90vw;
+    height: 40vh;
+    align-items: flex-end;
+    justify-content: center;
+    color: #FF1617;
+    font-size: 4vw;
+}
+
+
+
+@media (min-width:481px) and (max-width:768px) {
+    #principal {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    article {
+        font-size: 3vw; 
+    }
+
+
+    .compra-efetuada__whats {
+        width: 4vw;
+        right: 4vh;
+    }
+    
+    .texto__informacao {
+        width: 90vw;
+        height: 30vh;
+        align-items: center;
+        font-size: 3vw;
+    }
+    
+    }
+
+    @media (min-width:769px) and (max-width:1200px) {
+       
+        #principal {
+            background-image: url(../img/Backgroud-Web.png); 
+            background-repeat: no-repeat;
+        }
+
+        article {
+            font-size: 2vw; 
+        }
+
+        .compra-efetuada__whats {
+            width: 3vw;
+            right: 3vh;
+        }
+
+        .texto__informacao {
+            width: 90vw;
+            height: 30vh;
+            align-items: center;
+            font-size: 2vw;
+        }
+    }
+
+    @media (min-width:1201px) { 
+        
+        #principal {
+            background-image: url(../img/Backgroud-Web.png); 
+            background-repeat: no-repeat;
+            max-width: 1200px;
+            max-height: 900px;
+        }
+
+        .area__main{
+            max-width: 1200px;
+            max-height: 900px;
+
+        }
+
+        .area__retangulo{
+            height: 810px;
+            width: 1350px;
+            margin: 3%;
+            
+        }
+
+        article {
+            font-size: 40px; 
+        }
+
+        .Cabecario__Retangulo--logo {
+            position: static;
+            margin-left: 300px;
+            width: 150px;
+        }
+
+        .compra-efetuada__icone {
+            width: 150px;
+            right: 50px;
+        }
+
+        .compra-efetuada__whats {
+            max-width: 50px;
+            right: 50px;
+        }
+
+        .texto__informacao {
+            max-width: 1350px;
+            max-height: 90px;
+            align-items: center;
+            font-size: 20px;
+        }
+       
+    }
