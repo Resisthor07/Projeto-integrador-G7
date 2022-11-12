@@ -5,9 +5,8 @@
 /*Estilização do layout padrão*/
 #principal {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/pagina-detalhes/Layout.png);
-    background-repeat: no-repeat;
-    background-size:100vw 100vh;
+    background-image: url(../img/Tela\ de\ cadastro\ dos\ produtos.png);
+    background-size: auto;
     margin: 0%;
     padding: 0%;
     height: 100vh;
@@ -101,87 +100,23 @@ article {
     align-items: flex-end;
     justify-content: center;
     color: #FF1617;
-    font-size: 3vw;
+    font-size: 4vw;
 }
+
+
 
 @media (min-width:481px) and (max-width:768px) {
     #principal {
-        font-family: Arial, Helvetica, sans-serif;
-        background-image: url(../img/pagina-detalhes/Layout.png);
-        background-repeat: no-repeat;
-        background-size:100vw 100vh;
-        margin: 0%;
-        padding: 0%;
         height: 100vh;
         width: 100vw;
-        
-    }
-    
-    .area__main{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        margin: 0vh;
-    }
-    
-    .area__retangulo{
-        display: flex;
-        justify-items: center;
-        flex-direction: column;
-        height: 90vh;
-        width: 90%;
-        margin: 3%;
-        background: rgba(255, 114, 114, 0.30) ;
-        box-shadow: 0px 4px 4px rgb(211, 49, 50);
-        backdrop-filter: blur(5.5px);
-        border-radius: 30px;
-    }
-    
-    .Cabecario__Retangulo--logo {
-        margin-left: 19vw;
-        width: 15vw;
-    }
-    
-    
-    
-    .Cabecario__Retangulo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-items: center;
-        margin-top: 2vh;
-        height: 15vh;
-        width: 100%;
     }
     
     .Cabecario__Retangulo--fechar {
         margin-top: 10px;
         margin-right: 20px;
-        border-radius: 5px;
-        font-family: 'Comfortaa';
-        font-size: 50%;
-        color: #f70707;
-        font-weight: bold;
     }
-    
-    .compra-efetuada {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-        height: 80vh;
-    }
-    
-    .compra-efetuada__icone {
-        width: 10vh;
-        right: 10vw;
-    }
-    
+
     .compra-efetuada__whats {
-        padding: 2vw;
         width: 4vw;
         right: 4vh;
     }
@@ -206,3 +141,17 @@ article {
     }
     
     }
+
+    @media (min-width:768px) and (max-width:1200px) {
+        #principal {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../img/Backgroud-Web.png);
+            background-size: auto;
+            margin: 0%;
+            padding: 0%;
+            height: 100cm;
+            width: 100cm;
+            
+        }
+
+     }
