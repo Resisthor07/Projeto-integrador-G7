@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-size: 1vw;
+    max-width: 2300px;
+    margin: auto;
+    font-family: 'Dongle', Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    margin: 0;
+    border: 0;
+
+}
+.img__w-l{
+    width: 8rem;
+    max-width: 250px;
+}
+
+.organize__wish-list{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 114, 114, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+}
+.organize__wl-l1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.organize__txt{
+    display: flex;
+    text-align: justify;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: #ff1617;
+
+;
+
+}
+
+.organize__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.btn__add-carrinho{
+    border-radius: 5px;
+    width: 4rem;
+    background-color: #FF7272;
+
+}
+
+.btn__trash{
+    width: 2.5rem;
+}
+
+@media screen and (min-width: 480px) and  (max-width: 768px){
+    .img__w-l{
+        width: 10rem;
+    }
+    .organize__txt{
+        font-size: 3.5rem;
+    }
+    .btn__add-carrinho{
+        width: 5rem;
+    }
+    .btn__trash{
+        width: 3rem;
+    }
+}
