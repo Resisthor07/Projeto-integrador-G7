@@ -1,0 +1,101 @@
+@media (max-width: 480px)
+{
+    
+
+    #principal {
+        font-family: 'Dongle', Helvetica, sans-serif;
+        background-image: url(../img/pagina-detalhes/Layout.png);
+        margin: 0%;
+        padding: 0%;
+        position: relative;
+    }
+
+    .pagina__pagamento
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .pagina__opcao-1
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 54vw;
+        height: 11vh;
+    }
+
+    .pagina__opcao-1_imagem
+    {
+        width: 53vw;
+    }
+
+    .pagina__opcao-2
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 61vw;
+        height: 7.5vh;
+    }
+
+    .pagina__opcao-2_imagem
+    {
+        width: 60vw;
+    }
+
+    .pagina__opcao-3
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 46vw;
+        height: 22vh;
+    }
+
+    .pagina__opcao-3_imagem
+    {
+        width: 45vw;
+    }
+
+    .pagina__endereco
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    .pagina-estilo_texto-titulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 4vh;
+        font-weight: bold;
+        color: #ff7272;
+    }
+
+    .pagina-estilo_texto-subtitulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 2vh;
+        font-weight: bolder;
+        color: #ff1617;
+    }
+
+}
