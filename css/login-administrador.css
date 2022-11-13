@@ -107,6 +107,38 @@ a {
     font-weight: 700;
     font-size: 6vw;
     color: #017A36;
+}
+
+@media (min-width:481px) and (max-width:768px) {
+body {
+    background-color: rgb(253, 205, 251);
+    }
+
+input {  
+
+        background: rgba(69, 197, 176, 0.08);
+ }
+.texto__input  {
+    font-weight: 800;
+    font-size: 350%;
+}
+
+.area__login {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 0%;
+}
+
+.area__senha {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 0%;
+}
+
 
 
 }
