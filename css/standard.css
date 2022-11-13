@@ -83,14 +83,9 @@ h1 {
     height: 4.64vh;
 }
 
-#header__search {
+#header__form {
     display: flex;
-    justify-content: space-around;
-    max-width: 50vw;
-    border-color: var(--standard-pink);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 30px;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -98,6 +93,7 @@ h1 {
     background: white;
     border: none;
     height: 4.64vh;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,13 +105,36 @@ h1 {
 }
 
 #header__input {
-
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--standard-pink);
     height: 4.64vh;
+    width: 40px;
     max-width: 50%;
     border-radius: 0 30px 30px 0;
     border-width: 2px 2px 2px 0;
-    border-style: hidden;
+    border-style: solid;
     border-color: var(--standard-pink);
+    transition: width 0.5s;
+}
+
+#header__search {
+    display: flex;
+    border-color: var(--standard-pink);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+}
+
+#header__input:focus {}
+
+#header__input:focus {
+    outline: var(--standard-pink);
+    width: 50%;
+}
+
+input#header__input::placeholder {
+    color: var(--standard-pink);
 }
 
 .header__text-menu {
