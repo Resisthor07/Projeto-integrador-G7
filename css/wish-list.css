@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dongle:wght@400;700&display=swap');
 
-
+body{
+    font-size: 1vw;
+    max-width: 2300px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
 .text__base-normal{
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
-    width: 100%;
     font-family: 'Comfortaa', cursive;
-    font-size: 16px;
+    font-size: 2.5em;
+    font-min-size: 14px;
     font-weight: bolder;
     color: #ff1617;
-    line-height: 2;
+
 }
 
 .text__price-size{
@@ -18,7 +25,8 @@
     font-weight: bold;
     width: 100%;
     justify-content: space-between ;
-    font-size: 25px;
+    font-size: 4em;
+    font-max-size: 25px;
 }
 
 .text__title{
@@ -26,25 +34,29 @@
     justify-content: center;
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 4em;
+    font-max-size: 25px;
 
 }
 .img__product{
-    width: 100%}
+    width: 40em;
+    max-width:50%;
+}
 
 .position__pdct-description {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 20px;
+    gap: 0.8em;
     justify-content: space-between;
+    align-items: center;
 }
 
 
 .trash__wish-list{
     display: flex;
     justify-content: flex-end;
-    height: 40px;
+    height: 2.5em;
 
 }
 .footer__wish-list{
@@ -53,6 +65,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    align-items: flex-end;
 }
 
 .bkg__wish-list{
@@ -60,8 +73,8 @@
     flex-direction: column;
     box-shadow: gray 1px 1px 1px 1px;
     border-radius: 25px;
-    margin: 5px;
-    margin-bottom: 20px;
+    margin: 1em;
+    margin-bottom: 0.4em;
     padding: 10px;
 
 }
@@ -71,21 +84,47 @@
     text-decoration: none;
     text-align: center;
     align-items: center;
-    font-size: 2.5vw;
-    padding: 10px;
+    font-size: 1.5em;
+    padding: 0.35em;
     border-radius: 25px;
     color: white;
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
     display: flex;
+    border: 0;
+    margin-top: 1.5em;
 }
 a{
     text-decoration: none;
-    text-decoration-line: none;
+    
 }
 main{
-    min-height: 100%;
+
     overflow: visible;
+}
+
+@media (min-width: 320px) and (max-width: 480px)  {
+    body {
+        font-size: 4px;
+    }
+    text__base-normal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn__add-carrinho{
+        font-size: 5px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px)  {
+    body {
+        font-size: 6px;
+         }
+    text__base-normal{
+        text-align: center;
+        align-items: center;
+    }
 }
 
 
