@@ -99,10 +99,12 @@
 
 .pagina-alinhamento
 {
+    
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
+    
 }
 
 .pagina-estilo_texto-titulo
@@ -115,7 +117,8 @@
 
 .pagina-estilo_texto-subtitulo
 {
-    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-family: 'Comfortaa';
     font-size: 2vh;
     font-weight: bolder;
     color: #ff1617;
@@ -123,63 +126,53 @@
 
 .pagina-estilo_texto-padrao
 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.5vh;
+    margin-left: 6px;
+
+    font-family: 'Comfortaa';
+    font-size: 1vh;
     font-weight: bolder;
-    color: #ff1617;
+
+    background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pagina-imagem_alinhamento
+{
+    margin: 0px;
+    align-self: flex-start;
+    flex-direction: column;
 }
 
 .pagina-imagem_produto
 {
-    width: 130px;
-    height: 126px;
-    border: 20px;
-    align-self: flex-start;
-    justify-self: flex-start;
+    
+    height: 11vh;
+    border-radius: 20px;
 }
 
 .pagina-imagem_lixeira
 {
-    width: 13%;
-    align-self: flex-start;
-    justify-self: flex-end;
+    width: 50px;
+    height: 50px;
 }
 
 .pagina-divisao_produto
 {
-    border: #ff7272 2px;
-    box-shadow: 1px 1px 2px #ff7272;
+    margin: 15px;
+    background: rgba(205, 141, 141, 0.25);
     border-radius: 25px;
     padding-bottom: 1vh;
-    width: 92vw;
-    height: 18vh;
+    width: 84vw;
+    height: 13vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-}
-
-.pagina-divisao_desc
-{
-    align-self: flex-start;
-    width: 46vw;
-    height: 8vh;
-}
-
-.pagina-divisao_info
-{
-    align-self: flex-end;
-    display: flex;
-    justify-content: space-between;
-    width: 56vw;
-    height: 2.5vh;
 }
 
 .pagina-alinhamento-info
 {
-    display: flex;
-    justify-content: space-around;
-    width: 46vw;
-    height: 18vh;
     flex-direction: column;
 }
 
