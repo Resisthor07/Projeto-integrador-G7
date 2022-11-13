@@ -168,24 +168,24 @@ article {
         }
 
         .area__retangulo{
-            height: 810px;
-            width: 1350px;
-            margin: 3%;
+            height: 700px;
+            width: 1000px;
+            margin: 10px;
             
         }
 
         article {
-            font-size: 40px; 
+            font-size: 25px; 
         }
 
         .Cabecario__Retangulo--logo {
             position: static;
-            margin-left: 300px;
+            margin-left: 210px;
             width: 150px;
         }
 
         .compra-efetuada__icone {
-            width: 150px;
+            width: 100px;
             right: 50px;
         }
 
@@ -195,7 +195,7 @@ article {
         }
 
         .texto__informacao {
-            max-width: 1350px;
+            max-width: 1000px;
             max-height: 90px;
             align-items: center;
             font-size: 20px;
