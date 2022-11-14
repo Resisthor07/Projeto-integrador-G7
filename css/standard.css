@@ -67,12 +67,12 @@ h1 {
     width: 25%;
 }
 
-main {
+/*main {
     width: 100px;
     height: 100px;
     background-color: aquamarine;
     margin-left: 7vw;
-}
+}*/
 
 @media (max-width: 374px) {
     .header__text-menu--text {
