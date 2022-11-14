@@ -18,9 +18,14 @@
     </header>
 
     <main>
-        <nav class="header__icon-menu">
 
-            <img class="header__icon-menu--icon" src="../img/menus/menu-sandwich.png" alt="Menu sandwiche" />
+        <!--Menu sandwiche-->
+        <nav class="header__icon-menu">
+            <div class="header__menu-sandwiche header__menu-sandwiche--hidden">
+                <div class="header__menu-sandwiche--linha"></div>
+                <div class="header__menu-sandwiche--linha"></div>
+                <div class="header__menu-sandwiche--linha"></div>
+            </div>
 
             <!--Campo de busca-->
             <form id="header__form" method="post">
@@ -32,8 +37,20 @@
                 </div>
             </form>
 
-            <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
-            <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+            <!--Logo para telas maiores-->
+            <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
+
+            <!--Icone do carrinho de compras e favoritos para telas maiores-->
+            <nav class="header__icon-menu--conjunto">
+                <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
+                <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+            </nav>
+
+            <!--Icone carrinho de compras e favoritos para telas menores-->
+            <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
+                alt="Carrinho de compras" />
+            <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
+                alt="Favoritos">
 
         </nav>
 
@@ -56,6 +73,7 @@
                 <a class="header__text-menu--text header__text-menu-hidden" href="">Saias</a>
             </nav>
         </nav>
+
 
         <!--Insira seu código abaixo desta linha-->
 
