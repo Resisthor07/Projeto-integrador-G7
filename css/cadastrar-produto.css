@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.fundo-cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    height: 70vh;
+    border-radius: 10px;
+    margin-left: 7vw;
+    margin-top: 4vw;
+    align-items: center;
+}
+
+.texto-tipoproduto{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8vw;
+    margin: 0vh;
+    color: rgb(255, 114, 114);
+    width: 30vh;
+    height: 4vh;
+}
+
+.opc-tipoproduto{
+    display: flex;
+    background-color: rgb(255, 114, 114);
+    width: 75vw;
+    height: 4vh;
+    border-radius: 15px;
+    border: 0vh;
+
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vh;
+    line-height: 46px;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.opc-descricao{
+    display: flex;
+    background-color: rgb(255, 114, 114);
+    width: 75vw;
+    height: 9vh;
+    border-radius: 15px;
+    border: 0vh;
+
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vh;
+    line-height: 46px;
+    text-align: start;
+    color: white;
+}
+
+.anexar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75vw;
+    height: 12vh;
+    background-color: rgb(255, 114, 114);
+    border-radius: 15px;
+}
+
+.anexo-img{
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    margin: 1.5vh;
+    border-radius: 1vh;
+}
