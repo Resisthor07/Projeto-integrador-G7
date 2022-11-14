@@ -55,6 +55,7 @@ a {
 
 .area__texto {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-items: center;
     justify-content: space-around;
