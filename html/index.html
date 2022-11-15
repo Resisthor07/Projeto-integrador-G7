@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flor da Fronteira</title>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/standard.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="icon" href="../img/logo.png" />
 </head>
 
@@ -14,25 +16,123 @@
     <header>
         <img class="header__logo" src="../img/menus/logo.png" alt="Logo">
         <h1>Flôr da Fronteira</h1>
-
-        <nav class="header__icon-menu">
-            <img class="header__icon-menu--icon" src="../img/menus/menu-sandwich.png" alt="Menu sandwiche" />
-            <img class="header__icon-menu--icon" src="../img/menus/menu-busca.png" alt="Buscar" />
-            <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
-            <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
-        </nav>
-
-        <nav class="header__text-menu">
-            <a class="header__text-menu--text" href="">Cardigans</a>
-            <a class="header__text-menu--text" href="">Blazers</a>
-            <a class="header__text-menu--text" href="">Camisas</a>
-            <a class="header__text-menu--text" href="">Calças</a>
-        </nav>
     </header>
 
     <main>
 
+        <!--Menu sandwiche-->
+        <nav class="header__icon-menu">
+            <div class="header__menu-sandwiche header__menu-sandwiche--hidden">
+                <div class="header__menu-sandwiche--linha"></div>
+                <div class="header__menu-sandwiche--linha"></div>
+                <div class="header__menu-sandwiche--linha"></div>
+            </div>
+
+            <!--Campo de busca-->
+            <form id="header__form" method="post">
+                <div id="header__search">
+                    <!-- <button id="header__send" name="header__send" type="submit">
+                        <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
+                    </button> -->
+                    <div id="header__send-lupa--posicao">
+                        <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
+                    </div>
+                    <input id="header__input" name="header__input" type="search" placeholder="Pesquisar" />
+                </div>
+            </form>
+
+            <!--Logo para telas maiores-->
+            <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
+
+            <!--Icone do carrinho de compras e favoritos para telas maiores-->
+            <nav class="header__icon-menu--conjunto">
+                <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
+                <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+            </nav>
+
+            <!--Icone carrinho de compras e favoritos para telas menores-->
+            <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
+                alt="Carrinho de compras" />
+            <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
+                alt="Favoritos">
+
+        </nav>
+
+        <nav class="header__text-menu">
+            <nav class="header__menu-sandwiche--conjunto">
+                <div class="header__menu-sandwiche">
+                    <div class="header__menu-sandwiche--linha"></div>
+                    <div class="header__menu-sandwiche--linha"></div>
+                    <div class="header__menu-sandwiche--linha"></div>
+                </div>
+                <a class="header__text-menu--text header__menu-sandwiche--texto" href="">Todas as categorias</a>
+            </nav>
+
+            <nav class="header__text-menu--nav">
+                <a class="header__text-menu--text" href="">Cardigans</a>
+                <a class="header__text-menu--text" href="">Blazers</a>
+                <a class="header__text-menu--text" href="">Camisas</a>
+                <a class="header__text-menu--text" href="">Calças</a>
+                <a class="header__text-menu--text header__text-menu-hidden" href="">Vestidos</a>
+                <a class="header__text-menu--text header__text-menu-hidden" href="">Saias</a>
+            </nav>
+        </nav>
+
+        <!--Insira seu código abaixo desta linha-->
+
+        <section class="corpo">
+
+            <!--Conjunto carrossel com sustentabilidade-->
+            <section class="conjunto-carrossel-sustentabilidade">
+
+                <!--Bloco do carrossel de imagens-->
+                <section id="carrossel-de-imagens" class="carrossel">
+                    <img class="img__carrossel" src="../img/index/temp/mobile/carrossel.png" alt="carrossel" />
+                </section>
+
+
+                <!--Bloco da sustentabilidade-->
+                <section id="sustentabilidade" class="sustentabilidade">
+                    <img class="img__sustentabilidade" src="../img/index/temp/mobile/Sustentabilidade.png"
+                        alt="sustenbilidade" />
+                </section>
+            </section>
+
+            <!--Bloco da ofertas-->
+            <section id="ofertas" class="ofertas">
+                <img class="img__ofertas" src="../img/index/temp/mobile/Ofertas.png" alt="ofertas" />
+            </section>
+
+            <!--Bloco da moda da casa-->
+            <section id="moda-da-casa" class="moda">
+                <img class="img__moda-da-casa" src="../img/index/temp/mobile/moda-da-casa.png" alt="moda da casa" />
+            </section>
+
+            <!--Bloco de variedades -->
+            <section id="variedades" class="variedades">
+                <img class="img__variedades" src="../img/index/temp/mobile/Variedades.png" alt="variedades" />
+            </section>
+
+            <!--Bloco de rodape -->
+            <section id="rodape" class="rodape">
+                <img class="img__rodape" src="../img/index/temp/mobile/rodape.png" alt="variedades" />
+            </section>
+        </section>
+
     </main>
+
+    <footer>
+        <!-- <nav class="footer__menu">
+            <a class="footer__menu-icon"><img class="footer__menu-icon--img" src="../img/menus/nav-menu-seta.png"
+                    alt="voltar"></a>
+            <a class="footer__menu-icon"><img class="footer__menu-icon--img" src="../img/menus/nav-menu-home.png"
+                    alt="home"></a>
+            <a class="footer__menu-icon"><img class="footer__menu-icon--img" src="../img/menus/nav-menu-dialogo.png"
+                    alt="chat"></a>
+            <a class="footer__menu-icon"><img class="footer__menu-icon--img"
+                    src="../img/menus/nav-menu-compartilhar.png" alt="compartilhar"></a>
+        </nav> -->
+    </footer>
 </body>
 
 </html>

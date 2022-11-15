@@ -9,7 +9,6 @@ body {
     box-sizing: content-box;
     transform: none;
     width: 100vw;
-    height: 400vh;
     font-family: var(--standard-font);
     background-image: url(../img/menus/Backgroud-Web.png);
     background-size: contain;
