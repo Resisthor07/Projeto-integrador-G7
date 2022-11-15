@@ -93,6 +93,7 @@ header {
     width: 100%;
     background: none;
     border: none;
+    display: none;
 }
 
 #header__input:focus {
@@ -139,14 +140,14 @@ input#header__input::placeholder {
 
 #header__search {
     display: flex;
-    width: 38px;
+    width: 60px;
     height: 38px;
     border-color: var(--standard-pink);
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
     transition: width 0.3s;
-    overflow: hidden;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -162,6 +163,14 @@ input#header__input::placeholder {
 
 #header__send-lupa {
     height: 28px;
+}
+
+#header__send-lupa--posicao {
+    width: 60px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__text-menu {
@@ -323,21 +332,25 @@ main {
     .header__text-menu--text {
         width: 50%;
     }
+
+    #header__search:hover {
+        width: 145px;
+    }
 }
 
 @media (min-width: 580px) {
     #header__search {
-        width: 25vw;
+        width: 35vw;
     }
 }
 
 @media (min-width: 480px) and (max-width: 834px) and (orientation: landscape) {
-    :root {
-        --standard-font: 'Inter', Helvetica, sans-serif;
-        --standard-pink: black;
-    }
 
     #header__search {
+        width: 35vw;
+    }
+
+    #header__search:hover {
         width: 35vw;
     }
 
@@ -345,14 +358,15 @@ main {
         min-width: 0;
         font-size: 1.5rem;
     }
-
 }
 
 
-@media (min-width: 835px) and (max-width: 1200px) {
+@media (min-width: 835px) and (min-height: 420px) {
     #header__search {
         width: 25vw;
     }
-}
 
-@media (min-width: 1201px) {}
+    footer {
+        display: none;
+    }
+}
