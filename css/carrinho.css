@@ -15,11 +15,10 @@
 
     .pagina-alinhamento
     {
-        
         display: flex;
         align-items: center;
         flex-direction: column;
-        
+        margin: 4vh;
     }
 
     .pagina-divisao_produto
@@ -58,9 +57,10 @@
     .pagina-centraliza
     {
         width: 100%;
+        gap: 30%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-end;
         flex-direction: row;
     }
     
@@ -86,6 +86,8 @@
 
     .pagina_confirma
     {
+        margin-top: 2vh;
+        gap: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -133,7 +135,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        
+        margin: 4vh;
     }
 
     .pagina-divisao_produto
@@ -168,19 +170,22 @@
         height: 50px;
     }
 
+    .pagina-centraliza
+    {
+        width: 100%;
+        margin: 2vh;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
     .pagina-alinhamento-info
     {
         margin-left: 1.5vw;
         height: 4vh;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         gap: 4vw;
-    }
-
-    .pagina-alinhamento-lixeira
-    {
-        align-self: center;
     }
 
     .pagina-botao
@@ -227,6 +232,7 @@
     .pagina-estilo_texto-padrao
     {
         margin-left: 6px;
+        white-space: nowrap;
 
         font-family: 'Comfortaa';
         font-size: 2vh;

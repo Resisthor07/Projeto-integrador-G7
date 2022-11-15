@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carrinho</title>
         <link rel="stylesheet" href="../css/carrinho.css">
+        <link rel="stylesheet" href="../css/standard.css" />
     </head>
 
     <body id="principal">
@@ -15,6 +16,64 @@
         </header>
 
         <main>
+
+            <nav class="header__icon-menu">
+                <div class="header__menu-sandwiche header__menu-sandwiche--hidden">
+                    <div class="header__menu-sandwiche--linha"></div>
+                    <div class="header__menu-sandwiche--linha"></div>
+                    <div class="header__menu-sandwiche--linha"></div>
+                </div>
+    
+                <!--Campo de busca-->
+                <form id="header__form" method="post">
+                    <div id="header__search">
+                        <!-- <button id="header__send" name="header__send" type="submit">
+                            <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
+                        </button> -->
+                        <div id="header__send-lupa--posicao">
+                            <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
+                        </div>
+                        <input id="header__input" name="header__input" type="search" placeholder="Pesquisar" />
+                    </div>
+                </form>
+    
+                <!--Logo para telas maiores-->
+                <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
+    
+                <!--Icone do carrinho de compras e favoritos para telas maiores-->
+                <nav class="header__icon-menu--conjunto">
+                    <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
+                    <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+                </nav>
+    
+                <!--Icone carrinho de compras e favoritos para telas menores-->
+                <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
+                    alt="Carrinho de compras" />
+                <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
+                    alt="Favoritos">
+    
+            </nav>
+    
+            <nav class="header__text-menu">
+                <nav class="header__menu-sandwiche--conjunto">
+                    <div class="header__menu-sandwiche">
+                        <div class="header__menu-sandwiche--linha"></div>
+                        <div class="header__menu-sandwiche--linha"></div>
+                        <div class="header__menu-sandwiche--linha"></div>
+                    </div>
+                    <a class="header__text-menu--text header__menu-sandwiche--texto" href="">Todas as categorias</a>
+                </nav>
+    
+                <nav class="header__text-menu--nav">
+                    <a class="header__text-menu--text" href="">Cardigans</a>
+                    <a class="header__text-menu--text" href="">Blazers</a>
+                    <a class="header__text-menu--text" href="">Camisas</a>
+                    <a class="header__text-menu--text" href="">Calças</a>
+                    <a class="header__text-menu--text header__text-menu-hidden" href="">Vestidos</a>
+                    <a class="header__text-menu--text header__text-menu-hidden" href="">Saias</a>
+                </nav>
+            </nav>
+
             <section class="pagina-alinhamento">
                 <h1 class="pagina-estilo_texto-titulo">Meu carrinho</h1>
 
@@ -34,11 +93,7 @@
                             <h3 class="pagina-estilo_texto-subtitulo">G</h3>
                             <h3 class="pagina-estilo_texto-subtitulo">R$ 99.90</h3>
                         </div>
-                        
-                    
-                    
-
-                    
+                                            
                         <img class="pagina-imagem_lixeira" src="../img/lixeira.png" alt="lixeira"
                         title="lixeira" />
                     </div>
@@ -62,10 +117,6 @@
                             <h3 class="pagina-estilo_texto-subtitulo">R$ 99.90</h3>
                         </div>
                         
-                    
-                    
-
-                    
                         <img class="pagina-imagem_lixeira" src="../img/lixeira.png" alt="lixeira"
                         title="lixeira" />
                     </div>
@@ -82,7 +133,16 @@
         </main>
 
         <footer>
-    
+            <nav class="footer__menu">
+                <a class="footer__menu-icon"><img class="footer__menu-icon--img" src="../img/menus/nav-menu-seta.png"
+                        alt="voltar"></a>
+                <a class="footer__menu-icon"><img class="footer__menu-icon--img" src="../img/menus/nav-menu-home.png"
+                        alt="home"></a>
+                <a class="footer__menu-icon"><img class="footer__menu-icon--img" src="../img/menus/nav-menu-dialogo.png"
+                        alt="chat"></a>
+                <a class="footer__menu-icon"><img class="footer__menu-icon--img"
+                        src="../img/menus/nav-menu-compartilhar.png" alt="compartilhar"></a>
+            </nav>
         </footer>
         
     </body>
