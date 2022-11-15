@@ -1,6 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media (max-width: 480px) {
+#principal {
+    font-family: 'Dongle', Helvetica, sans-serif;
+    background-image: url(../img/pagina-detalhes/Layout.png);
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+
+.pagina-estilo_texto-titulo
+{
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 4vh;
+    font-weight: bold;
+    color: #ff7272;
+}
+
+.pagina-estilo_texto-subtitulo
+{
+    margin-left: 5vw;
+    margin-bottom: 0px;
+
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+@media (max-width: 768px) {
 
     .pagina
     {
@@ -64,27 +94,5 @@
         font-size: 2vh;
         font-weight: bolder;
         color: #ffffff;
-    }
-
-    .pagina-estilo_texto-titulo
-    {
-        margin-bottom: 0px;
-        text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 4vh;
-        font-weight: bold;
-        color: #ff7272;
-    }
-
-    .pagina-estilo_texto-subtitulo
-    {
-        margin-left: 5vw;
-        margin-bottom: 0px;
-
-        text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 2vh;
-        font-weight: bolder;
-        color: #ff1617;
     }
 }
