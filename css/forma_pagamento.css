@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media (max-width: 480px)
+@media (max-width: 786px)
 {
-    
-
     #principal {
         font-family: 'Dongle', Helvetica, sans-serif;
         background-image: url(../img/pagina-detalhes/Layout.png);
@@ -14,6 +12,12 @@
 
     .pagina__pagamento
     {
+        margin: 2vh;
+    }
+
+    .pagina__alinhamento_opcoes
+    {
+        margin: 1vh;
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -76,6 +80,12 @@
         width: 45vw;
     }
 
+    .pagina__botao_opcao
+    {
+        display: none;
+        visibility: hidden;
+    }
+
     .pagina__endereco
     {
         display: none;
@@ -100,4 +110,151 @@
         color: #ff1617;
     }
 
+}
+
+@media (min-width: 769px)
+{
+    #principal {
+        font-family: 'Dongle', Helvetica, sans-serif;
+        background-image: url(../img/pagina-detalhes/Layout.png);
+        margin: 0%;
+        padding: 0%;
+        position: relative;
+    }
+
+    .pagina__pagamento
+    {
+        margin: 2vh;
+    }
+
+    .pagina__alinhamento_opcoes
+    {
+        margin: 1vh;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pagina__opcao-1
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 16vw;
+        height: 17vh;
+    }
+
+    .pagina__opcao-1_imagem
+    {
+        width: 15vw;
+    }
+
+    .pagina__opcao-2
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 20vw;
+        height: 13vh;
+    }
+
+    .pagina__opcao-2_imagem
+    {
+        width: 19vw;
+    }
+
+    .pagina__opcao-3
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 14vw;
+        height: 29vh;
+    }
+
+    .pagina__opcao-3_imagem
+    {
+        width: 13vw;
+    }
+
+    .pagina__botao_opcao
+    {
+        width: 20px;
+        height: 20px;
+
+        background: #FFFFFF;
+        border: 2px solid #FF7272;
+        border-radius: 100px;
+    }
+
+    .pagina__endereco
+    {
+        gap: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagina__endereco_campo_info
+    {
+        width: 71.5vw;
+        height: 21.5vh;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 30px;
+        gap: 1vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    
+    .pagina__endereco_campo_info_input
+    {
+        width: 21vw;
+        height: 5vh;
+        background: #FFFFFF;
+        border: 2px solid #FF7272;
+        border-radius: 25px;
+    }
+
+    .pagina-estilo_texto-titulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 5vh;
+        font-weight: bold;
+        color: #ff7272;
+    }
+
+    .pagina-estilo_texto-subtitulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 3vh;
+        font-weight: bolder;
+        color: #ff1617;
+    }
+
+    #pagina-estilo_texto-subtitulo
+    {
+        text-align: start;
+        margin: 0px;
+    }
 }
