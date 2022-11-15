@@ -30,69 +30,68 @@
     color: #ff1617;
 }
 
-@media (max-width: 768px) {
+.pagina
+{
+    margin: 4vw;
+    background: rgba(205, 141, 141, 0.25);
+    border-radius: 30px;
+    padding-bottom: 1vh;
+    width: 92.5vw;
+    height: 62vh;
 
-    .pagina
-    {
-        background: rgba(205, 141, 141, 0.25);
-        border-radius: 30px;
-        padding-bottom: 1vh;
-        width: 92.5vw;
-        height: 62vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-    }
-    
-    #pagina_input-linha-1
-    {
-        gap: 5vw;
-        display: flex;     
-        flex-direction: row;
-    }
+#pagina_input-linha-1
+{
+    gap: 5vw;
+    display: flex;     
+    flex-direction: row;
+}
 
-    .pagina_input-secao
-    {
-        flex-direction: column;
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    .pagina_input_1
-    {
-        width: 37.5vw;
-        height: 5vh;
+.pagina_input-secao
+{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
 
-        background: #FFFFFF;
-        border: 2px solid #FF7272;
-        border-radius: 25px;
-    }
+.pagina_input_1
+{
+    width: 37.5vw;
+    height: 5vh;
 
-    .pagina_input_2
-    {
-        width: 80vw;
-        height: 5vh;
+    background: #FFFFFF;
+    border: 2px solid #FF7272;
+    border-radius: 25px;
+}
 
-        background: #FFFFFF;
-        border: 2px solid #FF7272;
-        border-radius: 25px;
-    }
+.pagina_input_2
+{
+    width: 80vw;
+    height: 5vh;
 
-    .pagina_input_botao
-    {
-        margin-top: 2vh;
-        width: 34vw;
-        height: 6.5vh;    
-    
-        background: #FF7272;
-        border: 1px solid #FF7272;
-        border-radius: 30px;
+    background: #FFFFFF;
+    border: 2px solid #FF7272;
+    border-radius: 25px;
+}
 
-        text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 2vh;
-        font-weight: bolder;
-        color: #ffffff;
-    }
+.pagina_input_botao
+{
+    margin-top: 2vh;
+    width: 34vw;
+    height: 6.5vh;    
+
+    background: #FF7272;
+    border: 1px solid #FF7272;
+    border-radius: 30px;
+
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #ffffff;
 }
