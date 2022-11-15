@@ -42,7 +42,7 @@ a {
     align-items: center;
     margin-top: 10%;
     width: 100%;
-}
+ }
 
 .area__texto {
     display: flex;
@@ -135,7 +135,9 @@ a {
     font-size: 60%;
 }
 
-
+.area__retangulo {
+    display: none;
+}
 
 .texto__input {
     font-size: 150%;
@@ -159,79 +161,58 @@ a {
 
 @media (min-width:769px) and (max-width:2000px) {
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+}
 a {
-    font-weight: 700;
-    font-size: 100%;
+    font-size: 50%;
     color: #017A36;
 }
 
-.area__bot--entrar {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
-    height: 15%;
-}
-
-.area__logo {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
-    height: 20%;
-}
-
-.area__retangulo {
+.area__main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #F09C9C;
     border-radius: 30px;
-    width: 30%;
-    height: 110%;
-    margin-top: 10%;
+    width: 35%; 
+    height: 550px;
+ }
+
+.area__bot--entrar {
+    width: 90%;
 }
 
+
 .area__texto {
-    width: 100vw;
+    align-items: center;
+    width: 100%;
 }
 
 .botao__entrar-font {
-    width: 30%;
-    height: 60%;
-    font-size:150%;
+    width: 20%;
+    font-size:100%;
 }
 
-.cadastro__admin {
-    height: 35%;
-    width: 50%;
-}
-
-input {
-    width: 90%;
-    height: 10%;
-    background: #FAFFFF;
-    border: 1vw solid white;
-    backdrop-filter: blur(2px);
-    border-radius: 110px;
-}
+input {  
+    background: white;
+    border: 0.1vw solid white;
+    width: 100%;
+    height: 25px;
+ }
 
 .logo__web {
     margin: 0vw;
-    width: 20%;
+    width: 40%;
 }
 
 .texto__input  {
     color: #FAFFFF;
-    font-weight: 800;
-    font-size: 250%;
+    font-size: 75%;
 }
-
-.senha__admin {
-    height: 35%;
-    width: 50%;
-}
-
 
 }
