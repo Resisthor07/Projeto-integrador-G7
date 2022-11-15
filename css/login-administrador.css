@@ -159,7 +159,7 @@ a {
 
 }
 
-@media (min-width:769px) and (max-width:2000px) {
+@media (min-width:769px) and (max-width:5000px) {
 
 body {
     display: flex;
@@ -214,5 +214,6 @@ input {
     color: #FAFFFF;
     font-size: 75%;
 }
+
 
 }
