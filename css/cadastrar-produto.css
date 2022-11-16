@@ -4,11 +4,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80vw;
+    width: 90vw;
     height: 70vh;
     border-radius: 10px;
     align-items: center;
-    
+    padding: 2vh;
+    margin-top: 5%;
+
 }
 
 .texto-tipoproduto{
@@ -17,11 +19,12 @@
     font-family: 'Dongle';
     font-style: normal;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: clamp(2em, 2em + 3vw, 3em);
     margin: 0vh;
     color: rgb(255, 114, 114);
     width: 50vw;
     height: 4vh;
+    padding: 1%;
 }
 
 .opc-tipoproduto{
@@ -37,7 +40,6 @@
     font-weight: 700;
     font-size: 2rem;
     line-height: 46px;
-    display: flex;
     text-align: center;
     color: white;
 }
