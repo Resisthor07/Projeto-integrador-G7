@@ -1,356 +1,257 @@
-/*Seção de codigo Samir*/
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Seção temporari*/
 
-/*Estilização do layout padrão*/
-#principal {
-    font-family: 'Dongle', Helvetica, sans-serif;
-    background-image: url(../img/pagina-detalhes/Layout.png);
-    margin: 0%;
-    padding: 0%;
-    height: 100%;
+.img__carrossel,
+.img__sustentabilidade,
+.img__ofertas,
+.img__moda-da-casa,
+.img__variedades,
+.img__rodape,
+footer {
     width: 100vw;
-    min-height: 100%;
-    position:relative;
-
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    position: static;
 }
 
-.area-util {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
+.img__carrossel {}
+
+.img__sustentabilidade {
     width: 100%;
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    margin: 0%;
-    height: 50%;
-}
-
-.logo__imagem {
-    align-self: center;
     height: 100%;
 }
 
-.logo__texto {
-    height: 10%;
-    text-align: center;
-    color: white;
-    font-family: 'Dongle', sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 10vw;
-    line-height: 30px;
-    -webkit-text-stroke: 1px #FF7272;
+.img__ofertas {}
+
+.img__moda-da-casa {}
+
+.img__variedades {}
+
+.img__rodape {}
+
+/*Fim da seção temporária*/
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.logo__texto--da {
-    font-size: 3vh;
-}
-
-.menu-nav {
-    display: flex;
-    justify-content: space-around;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    height: 5%;
-    width: 100%;
-    overflow: visible;
-}
-
-.menu-nav__botao {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FF7272;
-    width: 33.33%;
-    transition: all 0.2s;
-}
-
-.menu-nav__tamanho-img {
-    height:5px;
-}
-
-.menu-nav__botao:active {
-    background-color: #FFD0D0;
-}
-
-.menu-principal {
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
-}
-
-.menu-principal__img {
-
-}
-
-.menu-principal__itens {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu__rapido {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50%;
-}
-
-.menu-rapido__opcao {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #ff7272;
-    color: white;
-    font-weight: 700;
-    width: 25%;
-    height: 5vh;
-    font-size: 2vh;
-    transition: all .2s;
-}
-
-.menu-rapido__opcao:active {
-    background-color: #FFD0D0;
-}
-
-.menu_superiores {
-    height: 40%;
-}
-
-.tamanho__header {
-    height: 25%;
-}
-
-.tamanho__main {
-    height: 65%;
-}
-
-/*Fim estilização do layout padrão
-
-/*Estilização da página*/
-.bandeja-produto {
-    width: 45%;
-    height: 30%;
-    border-radius: 20px;
-    background-color: rgba(255, 112, 112, 0.2);
+.corpo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 10vh;
 }
 
-.bandeja-produto__organizacao {
+.moda .background {
+    width: 100vw;
+    height: 567px;
+    background: rgba(85, 170, 173, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-end;
-    width: 100%;
+    align-items: center;
 }
 
-.imagem__principal {
-    height: 25%;
-    width: 100%;
+.moda .scroll-menu {
+    width: 100vw;
+    height: 162px;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    gap: 10vw;
+}
+
+.moda .scroll-menu .item {
+    width: 130px;
+    height: 130px;
+    background: #ff727200;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
 }
 
-.info-produto__tamanho {
+.moda .scroll-menu img {
+    width: 130px;
+    height: 130px;
+}
+
+.moda .titulo img {
+    width: 80vw;
+}
+
+.ofertas {
+    width: 100vw;
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
     display: flex;
     flex-direction: column;
-}
-
-.info-produto__preco--texto {
-    font-family: 'Dongle', sans-serif;
-    font-size: 35px;
-    font-weight: bolder;
-    color: #FF7272;
-}
-
-.info-produto__tamanho--texto {
-    font-family: 'Dongle', sans-serif;
-    font-size: 30px;
-    line-height: 25px;
-    font-weight: bolder;
-    color: #FF7272;
-}
-
-.foto__principal {
-    height: 100%;
-    width: 50%;
-    border-radius: 15px;
-}
-
-.foto__produto {
-    width: 70%;
-    height: 80%;
-    border-radius: 10px;
-}
-
-.produtos__vitrine {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    flex-wrap: wrap;
-}
-
-/*Fim da estilização da página*/
-
-/*Fim da seção Samir*/
-
-/*Seção de codigo Eduardo*/
-
-.blusa__inteira{ 
-    width: 60%;
-    height: 50%;
-    display: flex;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 30px;
     align-items: center;
+    gap: 5vw;
+    margin-top: 10vw;
+    overflow: hidden;
 }
 
-.blusa__manga{
-    
-
-}
-
-.retangulo{
+.ofertas .background-expositor {
     position: absolute;
-    
-    width: 384px;
-    height: 545px;
-    left: 23px;
-    top: 227px;
-      
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: rgba(255, 114, 114, 0.05);
-    box-shadow: 0px 4px 4px rgba(255, 114, 114, 0.05);
-    backdrop-filter: blur(1.5px);
-    border-radius: 30px;
-
+    right: 0px;
+    bottom: 33px;
+    width: 140px;
+    opacity: 0.2;
+    z-index: 4;
 }
 
+.ofertas .expositor {
+    width: 264px;
+    height: 466px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.ofertas h3 {
+    font-size: 40px;
+    line-height: 58px;
+    display: inline;
+    align-self: flex-start;
+}
 
+.ofertas .imagem-produto {
+    width: 236px;
+    height: 246px;
+}
 
-/*Fim da seção Eduardo*/
+.ofertas .informacoes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
 
-/*Seção de codigo Tailine*/
-
-/*Fim da seção Tailine*/
-
-/*Seção de codigo Thiago*/
-
-/*Fim da seção Thiago*/
-
-/*Seção de codigo Rafael*/
-
-.header__menu-topo
-{
+.ofertas label {
+    font-size: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 54px;
-    width: 381.63px;
-    height: 56px;   
+    color: #FFFFFF;
+    z-index: 5;
 }
 
-.header__sandwich
-{
-    width: 56px;
-    height: 56px;
-
+.ofertas .menu-deslizante {
+    width: 100vw;
+    height: 510px;
+    background: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header__botao_s
-{
-    visibility: hidden;
+    gap: 10vw;
+    overflow: scroll;
 }
 
-.header__busca
-{
-    width: 69px;
-    height: 45px;
-    border-radius: 30px;
-    border: 2px solid #FF7272;
-   
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header__botao_b
-{
-    visibility: hidden;
+.ofertas .menu-deslizante #primeiro-expositor {
+    margin-left: 10vw;
 }
 
-.header__carrinho
-{
-    width: 48.63px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header__botao_c
-{
-    visibility: hidden;
+.ofertas .modelo-roupa {
+    width: 173px;
+    height: 60px;
+    background: #7BB593;
+    border-radius: 20px;
 }
 
-.header__wishlist
-{
-    width: 46px;
-    height: 43px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header__botao_w
-{
-    visibility: hidden;
+.ofertas .preco {
+    width: 149px;
+    height: 53.64px;
+    background: #FF7272;
+    border-radius: 20px;
+    align-self: flex-end;
 }
 
-
-
-.header__image_1
-{
-    visibility: visible;
-    width: 56px;
-    height: 56px;
-}
-.header__image_2
-{
-    visibility: visible;
-    width: 22.61px;
-    height: 28.05px;
-}
-.header__image_3
-{
-    visibility: visible;
-    width: 48.63px;
-    height: 42px;
-}
-.header__image_4
-{
-    visibility: visible;
-    width: 46px;
-    height: 43px;
+.ofertas #titulo {
+    width: 80vw;
+    max-width: 700px;
 }
 
+.slider {
+    width: 100vw;
+    height: 45vw;
+}
 
-/*Fim da seção Rafael*/
+.slider img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    position: absolute;
+    background: var(--standard-pink-white);
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    bottom: -20px;
+    z-index: 3;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.slider li:nth-child(1) label {
+    left: calc(50% - 40px);
+}
+
+.slider li:nth-child(2) label {
+    left: calc(50% - 20px);
+}
+
+.slider li:nth-child(3) label {
+    left: calc(50%);
+}
+
+.slider li:nth-child(4) label {
+    left: calc(50% + 20px);
+}
+
+.slider li:nth-child(5) label {
+    left: calc(50% + 40px);
+}
+
+.slider li input:checked~label {
+    background: var(--standard-pink);
+}
+
+.slider li input:checked~img {
+    display: unset;
+    z-index: 3;
+}
+
+.sustentabilidade img {
+    width: 62vw;
+    height: 24vw;
+}
+
+@media (orientation: landscape) {
+
+    .slider {
+        height: 30vw;
+    }
+
+    .slider img {
+        width: 80%;
+        padding: 0 10%;
+    }
+}
