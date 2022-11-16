@@ -96,14 +96,18 @@ footer {
     left: calc(50% + 40px);
 }
 
+.slider li input:checked~label {
+    background: var(--standard-pink);
+}
+
 .slider li input:checked~img {
-    opacity: 1;
     display: unset;
     z-index: 3;
 }
 
-.sustentabilidade {
-    width: 60vw;
+.sustentabilidade img {
+    width: 62vw;
+    height: 24vw;
 }
 
 @media (orientation: landscape) {
