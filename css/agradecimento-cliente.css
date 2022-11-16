@@ -1,0 +1,82 @@
+/*Seção de codigo Samir*/
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (max-width:2500px) {
+
+/*Estilização do layout padrão*/
+#principal {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/pagina-detalhes/Layout.png);
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.area__main{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0vh;
+}
+
+.area__retangulo{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 90%;
+    margin: 3%;
+    background: rgba(255, 114, 114, 0.30) ;
+    box-shadow: 0px 4px 4px rgb(211, 49, 50);
+    backdrop-filter: blur(5.5px);
+    border-radius: 30px;
+}
+
+.Cabecario__Retangulo--logo {
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    width: 15vw;
+}
+
+.texto__agradecimento {
+    display: flex;
+    height: 80vh;
+    padding: 2%;
+    line-height: 150%;
+    font-family: 'Comfortaa';
+    text-align:justify;
+    flex-wrap: wrap;
+    font-size: 200%;
+    color: #ff1617;
+    font-weight: bold;
+}
+
+.Cabecario__Retangulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 2vh;
+    height: 15vh;
+    width: 100%;
+}
+
+.Cabecario__Retangulo--fechar {
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-right: 50px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: 'Comfortaa';
+    font-size: 200%;
+    color: #f70707;
+    font-weight: bold;
+}
+
+}
