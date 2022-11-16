@@ -100,6 +100,7 @@
         font-size: 4vh;
         font-weight: bold;
         color: #ff7272;
+        line-height: 4vh;
     }
 
     .pagina-estilo_texto-subtitulo
@@ -172,20 +173,19 @@
 
     .pagina-centraliza
     {
-        width: 100%;
         margin: 2vh;
         display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2vh;
     }
 
     .pagina-alinhamento-info
     {
         margin-left: 1.5vw;
-        height: 4vh;
         display: flex;
         flex-direction: row;
-        gap: 4vw;
+        gap: 2vw;
     }
 
     .pagina-botao
@@ -220,11 +220,10 @@
 
     .pagina-estilo_texto-subtitulo
     {
-        height: 4vh;
         margin: 0px;
         text-align: center;
         font-family: 'Comfortaa';
-        font-size: 4vh;
+        font-size: 2.5vw;
         font-weight: bolder;
         color: #ff1617;
     }
