@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html{
+html {
     font-size: 5vw;
     font-family: 'Dongle', Helvetica, sans-serif;
     max-width: 2300px;
@@ -8,136 +8,172 @@ html{
     background-color: #faffff;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
+    font-family: 'Dongle', Helvetica, sans-serif;
 }
-    img {
-        width: 100%;
-        border-radius: 5px
-    }
 
-    .grupo__pedido {
-        background-color: rgba(205, 141, 141, 0.3);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 0.5rem;
-        padding: 0.5rem;
-        border-radius: 5px;
-        max-width: 800px;
-    }
+img {
+    width: 100%;
+    border-radius: 5px
+}
 
-    .txt__title-pedidos {
-        color: #ff1617;
-        font-size: 3rem;
-        text-align: center;
-        font-max-size: 40px;
-    }
+.grupo__pedido {
+    background-color: rgba(205, 141, 141, 0.3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    max-width: 570px;
+}
 
-    .img__pedidos {
-        width: 5rem;
-        max-width: 230px;
+.txt__title-pedidos {
+    color: #ff1617;
+    font-size: 3rem;
+    text-align: center;
+    font-max-size: 40px;
+}
+
+.img__pedidos {
+    width: 14vw;
+    max-width: 230px;
+}
+
+.title__imput {
+    display: flex;
+    width: 5rem;
+    max-width: 190px;
+    font-size: 3.5vw;
+    margin: 0;
+    font-max-size: 30px;
+}
+
+.imput__pedidos {
+    line-height: 1rem;
+    font-size: 6vw;
+    width: 6rem;
+    max-width: 204px;
+    text-align: center;
+    background-color: #faffff;
+    border-radius: 5px;
+    margin: 0;
+
+
+}
+
+.organiza__imput-l1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: flex-start;
+    align-items: flex-start;
+    max-width: 570px;
+    gap: 0.4rem;
+}
+
+.cliente {
+    width: 10rem;
+    max-width: 230px;
+}
+
+.endereco {
+    width: 18rem;
+    max-width: 600px;
+}
+
+.organize__l1 {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+}
+
+.organize__l2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.7rem;
+}
+
+.organize__l3 {
+    width: 10rem;
+    text-align: right;
+    align-items: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.organiza__grupo-1 {
+    flex-direction: row;
+}
+
+.btn__confirmar{
+    margin-top: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    color: #faffff;
+    font-weight: 600;
+    line-height: 1rem;
+    border: 0;
+    background-color: #057C36;
+    width: 20%;
+    font-size: 0.5rem;
+}
+.btn__cancelar{
+    margin-top: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    color: #faffff;
+    font-weight: 600;
+    line-height: 1rem;
+    border: 0;
+    background-color: red;
+    width: 20%;
+    font-size: 0.5rem;
+}
+
+.organiza__btn-confirma{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+
+    .imput__pedidos {
+        font-size: 5vw;
+        max-width: 204px;
+
     }
 
     .title__imput {
-        display: flex;
-        width: 5rem;
-        max-width: 190px;
-        font-size: 0.5rem;
-        margin: 0;
-        font-max-size: 30px;
-    }
-
-    .imput__pedidos {
-        font-size: 1rem;
-        width: 6rem;
-        max-width: 200px;
-        text-align: center;
-        background-color: #faffff;
-        border-radius: 5px;
-        margin: 0;
-        padding: 5px;
-
-    }
-
-    .organiza__imput-l1 {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        justify-items: flex-start;
-        align-items: flex-start;
-        max-width: 800px;
-        gap: 0.4rem;
+        font-size: 3.5vw;
     }
 
     .cliente {
-        width: 10rem;
-        max-width: 230px;
+        width: 12rem;
+        max-width: 50vw;
+        font-size: 5vw;
     }
 
     .endereco {
-        width: 18rem;
-        max-width: 600px;
-    }
-
-    .organize__l1 {
-        max-width: 700px;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 0.5rem;
-
-    }
-
-    .organize__l2 {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 0.7rem;
+        max-width: 100vw;
+        font-size: 5vw;
     }
 
     .organize__l3 {
-        width: 10rem;
-        text-align: right;
-        align-items: normal;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-
-    .organiza__grupo-1 {
-        flex-direction: row;
-
-    }
-
-
-@media screen and (min-width: 480px){
-
-    .imput__pedidos{
-        font-size: 40px;
-
-    }
-    .title__imput{
-        font-size: 26px;
-
-
-    }
-    .cliente{
-        width: 12rem;
-        max-width: 300px;
-        font-size: 40px;
-    }
-    .endereco{
-        width: 100%;
-        max-width: 800px;
-        font-size: 40px;
-    }
-    .organize__l3{
         align-items: flex-start;
         width: 100%;
         text-align: justify;
@@ -145,12 +181,49 @@ main{
 
 }
 
-@media screen and (min-width: 679px){
-    main{
+@media screen and (min-width: 679px) {
+    .img__pedidos{
+        width: 100px;
+    }
+
+    main {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 5px
     }
 
+    .txt__title-pedidos {
+        font-size: 80px;
+    }
+
+    .title__imput {
+        font-size: 20px;
+
+    }
+    .imput__pedidos{
+        font-size: 34px;
+        line-height:34px ;
+    }
+
+    .cliente{
+        font-size: 34px;
+        width: 314px;
+    }
+
+    .organize__l2{
+        width: 542px;
+    }
+
+    .btn__confirmar{
+        font-size: 18px;
+        width: 120px;
+        line-height: 40px;
+    }
+    .btn__cancelar{
+        font-size: 18px;
+        width: 120px;
+        line-height: 40px;
+    }
 }
 
