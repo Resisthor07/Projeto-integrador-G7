@@ -296,11 +296,6 @@ footer {
     align-items: center;
 }
 
-.variedades__background {
-    background: #FFD0D0;
-    width: 100vw;
-}
-
 .variedades #expositor__logo-background {
     width: 22%;
     max-width: 69px;
@@ -359,6 +354,20 @@ footer {
 
 .variedades #retangulo-bottom__tamanho {
     color: white;
+}
+
+
+.variedades .variedades__background {
+    background: #FFD0D0;
+    width: 100vw;
+}
+
+.variedades .variedades__menu-deslizante:first-child {
+    margin-top: 20px;
+}
+
+.variedades .variedades__menu-deslizante:last-child {
+    margin-bottom: 30px;
 }
 
 .variedades .variedades__menu-deslizante {
