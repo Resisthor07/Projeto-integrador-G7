@@ -3,13 +3,14 @@
 :root {
     --standard-font: 'Inter', Helvetica, sans-serif;
     --standard-pink: #FF7272;
+    --standard-pink-white: #FCF1EE;
+    --standard-green: #7BB593;
 }
 
 body {
     box-sizing: content-box;
     transform: none;
     width: 100vw;
-    height: 400vh;
     font-family: var(--standard-font);
     background-image: url(../img/menus/Backgroud-Web.png);
     background-size: contain;
@@ -74,6 +75,7 @@ header {
     background-color: white;
     padding: 1vh 3vw;
     align-items: center;
+    z-index: 10;
 }
 
 .header__icon-menu--conjunto {
@@ -177,6 +179,7 @@ input#header__input::placeholder {
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
+    z-index: 5;
 }
 
 .header__text-menu--nav {
@@ -208,7 +211,6 @@ input#header__input::placeholder {
 
 main {
     width: 100vw;
-    height: 350vh;
 }
 
 @media (orientation: portrait) {
