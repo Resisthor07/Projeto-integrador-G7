@@ -76,6 +76,13 @@ footer {
 .moda .scroll-menu img {
     width: 130px;
     height: 130px;
+    transform: rotate(0deg);
+    transition: all 2s;
+}
+
+.moda .scroll-menu img:ho {
+    transform: rotate(1000deg) translateX(50px);
+    background: #7BB593;
 }
 
 .moda .titulo img {
@@ -109,12 +116,17 @@ footer {
     height: 466px;
     border-radius: 20px;
     background: #FFFFFF;
-    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
     padding: 0 10px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    transition: filter 0.3s;
+}
+
+.ofertas .expositor:hover {
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 
 .ofertas h3 {
@@ -239,9 +251,128 @@ footer {
     z-index: 3;
 }
 
+.sustentabilidade .caixa-principal {
+    perspective: 150px;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sustentabilidade .figura-retangulo {
+    width: 35vw;
+    height: 30vw;
+    max-width: 264px;
+    max-height: 150px;
+    transition: all 0.2s;
+    border-radius: 10px;
+    transform: rotateX(60deg);
+    background: var(--standard-green);
+    position: absolute;
+}
+
+.sustentabilidade .figura-retangulo:hover {
+    transform-style: preserve-3d;
+    transform: rotate(0deg);
+}
+
 .sustentabilidade img {
-    width: 62vw;
-    height: 24vw;
+    height: 15vw;
+    max-height: 120px;
+    z-index: 2;
+}
+
+.sustentabilidade #planeta-terra {
+    height: 11vw;
+}
+
+.variedades {
+    width: 100vw;
+    margin-top: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+    align-items: center;
+}
+
+.variedades__background {
+    background: #FFD0D0;
+    width: 100vw;
+}
+
+.variedades #expositor__logo-background {
+    width: 22%;
+    max-width: 69px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 5;
+}
+
+.variedades .expositor__produto {
+    width: 100%;
+    height: 67%;
+}
+
+.variedades .expositor__retangulo-bottom {
+    width: 100%;
+    height: 17%;
+    max-height: 52px;
+    background: #55AAAD;
+    display: flex;
+    justify-content: space-around;
+}
+
+.variedades #expositor__info-adicional {
+    color: #989898;
+}
+
+.menu-deslizante__expositor {
+    height: 430px;
+    width: 300px;
+    max-width: 300px;
+    background-color: white;
+}
+
+.menu-deslizante__quadro {
+    background: white;
+    width: 160px;
+    height: 160px;
+
+}
+
+.variedades p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #676767;
+}
+
+.variedades #retangulo-bottom__preco {
+    font-weight: 900;
+    color: white;
+}
+
+.variedades #retangulo-bottom__tamanho {
+    color: white;
+}
+
+.variedades .variedades__menu-deslizante {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+
+.variedades .variedades__titulo {
+    width: 70vw;
+    max-height: 10%;
+    max-width: 451px;
 }
 
 @media (orientation: landscape) {
