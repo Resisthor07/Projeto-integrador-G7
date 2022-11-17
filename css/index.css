@@ -37,6 +37,93 @@ footer {
     margin: 0;
 }
 
+.slider {
+    width: 100vw;
+    height: 45vw;
+    display: flex;
+    animation: slider 10s infinite;
+}
+
+@keyframes slider {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-100vw);
+    }
+
+    40% {
+        transform: translate(-200vw);
+    }
+
+    60% {
+        transform: translate(-300vw);
+    }
+
+    80% {
+        transform: translate(-400vw);
+    }
+
+    100% {
+        transform: translate(0vw);
+    }
+}
+
+.slider img {
+    width: 100vw;
+    height: 100%;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    position: absolute;
+    background: var(--standard-pink-white);
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    bottom: -20px;
+    z-index: 3;
+}
+
+.slider li {
+    list-style: none;
+    width: inherit;
+    height: inherit;
+}
+
+.slider li:nth-child(1) label {
+    left: calc(50% - 40px);
+}
+
+.slider li:nth-child(2) label {
+    left: calc(50% - 20px);
+}
+
+.slider li:nth-child(3) label {
+    left: calc(50%);
+}
+
+.slider li:nth-child(4) label {
+    left: calc(50% + 20px);
+}
+
+.slider li:nth-child(5) label {
+    left: calc(50% + 40px);
+}
+
+.slider li input:checked~label {
+    background: var(--standard-pink);
+}
+
+.slider li input:checked~img {
+    display: unset;
+    z-index: 3;
+}
+
 .corpo {
     display: flex;
     flex-direction: column;
@@ -188,67 +275,6 @@ footer {
 .ofertas #titulo {
     width: 80vw;
     max-width: 700px;
-}
-
-.slider {
-    width: 100vw;
-    height: 45vw;
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.slider input {
-    display: none;
-}
-
-.slider label {
-    position: absolute;
-    background: var(--standard-pink-white);
-    width: 15px;
-    height: 15px;
-    border-radius: 20px;
-    bottom: -20px;
-    z-index: 3;
-}
-
-.slider li {
-    list-style: none;
-    position: absolute;
-    width: inherit;
-    height: inherit;
-}
-
-.slider li:nth-child(1) label {
-    left: calc(50% - 40px);
-}
-
-.slider li:nth-child(2) label {
-    left: calc(50% - 20px);
-}
-
-.slider li:nth-child(3) label {
-    left: calc(50%);
-}
-
-.slider li:nth-child(4) label {
-    left: calc(50% + 20px);
-}
-
-.slider li:nth-child(5) label {
-    left: calc(50% + 40px);
-}
-
-.slider li input:checked~label {
-    background: var(--standard-pink);
-}
-
-.slider li input:checked~img {
-    display: unset;
-    z-index: 3;
 }
 
 .sustentabilidade .caixa-principal {
