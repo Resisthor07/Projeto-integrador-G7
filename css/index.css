@@ -328,18 +328,16 @@ footer {
     color: #989898;
 }
 
-.menu-deslizante__expositor {
-    height: 430px;
-    width: 300px;
+.variedades .menu-deslizante__expositor {
+    width: 70vw;
     max-width: 300px;
     background-color: white;
 }
 
-.menu-deslizante__quadro {
+.variedades .menu-deslizante__quadro {
     background: white;
-    width: 160px;
-    height: 160px;
-
+    width: 70vw;
+    max-width: 300px;
 }
 
 .variedades p {
@@ -367,6 +365,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 10vw;
+    list-style: none;
+    overflow: scroll;
 }
 
 .variedades .variedades__titulo {
