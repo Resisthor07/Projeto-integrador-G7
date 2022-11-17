@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins';
-    background-color: white;
+    background-image:linear-gradient(45deg,  #75d3cd92, #f04c70);
     margin: 0%;
     width: 100vw;
 }
@@ -77,11 +77,17 @@ input {
     display: flex;
     width: 100%;
     height: 30px;
-    background: rgba(255, 114, 114, 0.08);
-    border: 1vw solid #FF7272;
-    backdrop-filter: blur(2vw);
     border-radius: 10vw;
+    filter: box-shadow: 5px 5px 5px 5px rgba(255, 114, 114, 0.2);
 }
+
+/*
+input:focus { 
+    transform: filter (0.3seg);
+    background-color: rgb(229, 222, 222);
+    border: 1vw solid rgba(222, 213, 213, 0.71);
+}
+*/
 
 .logo__web {
     margin: 0%;
@@ -163,6 +169,7 @@ a {
 
 body {
     display: flex;
+    background-image:linear-gradient(45deg,  #100101ec, #e40031);
     flex-direction: column;
     align-items: center;
     margin: 0%;
@@ -177,7 +184,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #F09C9C;
+    background-image:linear-gradient(45deg,  #90d37592, #f04c70);
     border-radius: 30px;
     width: 35%; 
     height: 550px;
