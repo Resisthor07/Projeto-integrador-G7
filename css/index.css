@@ -37,7 +37,13 @@ footer {
     margin: 0;
 }
 
-.slider {
+.carrossel .moldura {
+    width: 100vw;
+    max-width: 1027px;
+    overflow: hidden;
+}
+
+.carrossel .slider {
     width: 100vw;
     height: 45vw;
     display: flex;
@@ -49,19 +55,23 @@ footer {
         transform: translate(0);
     }
 
-    20% {
+    5% {
+        transform: translate(0);
+    }
+
+    25% {
         transform: translate(-100vw);
     }
 
-    40% {
+    45% {
         transform: translate(-200vw);
     }
 
-    60% {
+    65% {
         transform: translate(-300vw);
     }
 
-    80% {
+    85% {
         transform: translate(-400vw);
     }
 
@@ -70,16 +80,16 @@ footer {
     }
 }
 
-.slider img {
+.carrossel .slider img {
     width: 100vw;
     height: 100%;
 }
 
-.slider input {
+.carrossel .slider input {
     display: none;
 }
 
-.slider label {
+.carrossel .slider label {
     position: absolute;
     background: var(--standard-pink-white);
     width: 15px;
@@ -89,37 +99,37 @@ footer {
     z-index: 3;
 }
 
-.slider li {
+.carrossel .slider li {
     list-style: none;
     width: inherit;
     height: inherit;
 }
 
-.slider li:nth-child(1) label {
+.carrossel .slider li:nth-child(1) label {
     left: calc(50% - 40px);
 }
 
-.slider li:nth-child(2) label {
+.carrossel .slider li:nth-child(2) label {
     left: calc(50% - 20px);
 }
 
-.slider li:nth-child(3) label {
+.carrossel .slider li:nth-child(3) label {
     left: calc(50%);
 }
 
-.slider li:nth-child(4) label {
+.carrossel .slider li:nth-child(4) label {
     left: calc(50% + 20px);
 }
 
-.slider li:nth-child(5) label {
+.carrossel .slider li:nth-child(5) label {
     left: calc(50% + 40px);
 }
 
-.slider li input:checked~label {
+.carrossel .slider li input:checked~label {
     background: var(--standard-pink);
 }
 
-.slider li input:checked~img {
+.carrossel .slider li input:checked~img {
     display: unset;
     z-index: 3;
 }
@@ -418,6 +428,6 @@ footer {
 
     .slider img {
         width: 80%;
-        padding: 0 10%;
+        padding: 0;
     }
 }
