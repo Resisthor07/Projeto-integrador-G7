@@ -1,37 +1,3 @@
-/*Seção temporari*/
-
-.img__carrossel,
-.img__sustentabilidade,
-.img__ofertas,
-.img__moda-da-casa,
-.img__variedades,
-.img__rodape,
-footer {
-    width: 100vw;
-    height: auto;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    position: static;
-}
-
-.img__carrossel {}
-
-.img__sustentabilidade {
-    width: 100%;
-    height: 100%;
-}
-
-.img__ofertas {}
-
-.img__moda-da-casa {}
-
-.img__variedades {}
-
-.img__rodape {}
-
-/*Fim da seção temporária*/
-
 * {
     padding: 0;
     margin: 0;
@@ -287,13 +253,62 @@ footer {
     max-width: 700px;
 }
 
+.rodape .background {
+    background-color: var(--standard-pink);
+    height: 37vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rodape .background img {
+    width: 9vw;
+    max-width: 40px;
+}
+
+.rodape .background nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape .background p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5vw;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sustentabilidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sustentabilidade .caixa-principal {
     perspective: 150px;
-    width: 100vw;
-    height: 50vw;
+    width: 35vw;
+    height: 25vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.sustentabilidade .caixa-principal .bandeja {
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sustentabilidade .caixa-principal p {
+    z-index: 2;
 }
 
 .sustentabilidade .figura-retangulo {
@@ -319,8 +334,13 @@ footer {
     z-index: 2;
 }
 
-.sustentabilidade #planeta-terra {
-    height: 11vw;
+.sustentabilidade p {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: var(--standard-green);
 }
 
 .variedades {
@@ -335,10 +355,14 @@ footer {
 .variedades #expositor__logo-background {
     width: 22%;
     max-width: 69px;
-    position: absolute;
+    transform: translateY(50px);
     left: 5px;
     top: 5px;
     z-index: 5;
+}
+
+.menu-deslizante__quadro .pai {
+    position: absolute;
 }
 
 .variedades .expositor__produto {
@@ -363,6 +387,7 @@ footer {
     width: 70vw;
     max-width: 300px;
     background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .variedades .menu-deslizante__quadro {
@@ -396,14 +421,17 @@ footer {
 .variedades .variedades__background {
     background: #FFD0D0;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .variedades .variedades__menu-deslizante:first-child {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .variedades .variedades__menu-deslizante:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .variedades .variedades__menu-deslizante {
