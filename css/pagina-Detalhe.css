@@ -6,17 +6,31 @@ p {
     font-style: normal;
 }
 
+.area__retangulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(50deg, rgb(238, 119, 119),rgba(211, 125, 125, 0.329));
+    margin-top: 8vw;
+    width: 70vw;
+    border-radius: 30px;
+}
+
 .area__util {
     display: flex;
     justify-content: center;
 }
 
-.texto__preco-tamanho {
+.blusa__frente {
+    width: 50vw;
+}
+
+.organiza__cabecario {
     display: flex;
-    justify-content: space-around;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 5vw;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-family:'Poppins';
+    margin-right: 5vw;
     color: #FF1617;
 }
 
@@ -24,19 +38,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.texto__descricao {
-    display: flex;
-    flex-wrap: wrap;
-    text-align:center;
-    font-weight: 800;
-    font-size: 4vw;
-    color: #FF1617;
-}
-
-.blusa__frente {
-    width: 50vw;
 }
 
 .organizacao__img-pequena {
@@ -52,21 +53,92 @@ p {
     width: 10vw;
 
 }
-.organiza__cabecario {
+
+.texto__descricao {
     display: flex;
-    justify-content: flex-end;
-    font-weight: 600;
-    font-family:'Poppins';
-    margin-right: 5vw;
-    color: #FF1617;
+    flex-wrap: wrap;
+    text-align:center;
+    font-weight: 800;
+    font-size: 4vw;
+    color: white;
 }
 
-.area__retangulo {
+.texto__preco-tamanho {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient(50deg, rgb(238, 119, 119),rgba(211, 125, 125, 0.329));
-    margin-top: 8vw;
-    width: 70vw;
-    border-radius: 30px;
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    color: white;
+}
+
+
+
+@media (min-width:769px) and (max-width:1450px){
+
+.area__retangulo { 
+        width: 50vw;
+        height: 700px;
+}
+
+.blusa__frente {
+    width: 30vw;
+}
+
+.organiza__cabecario {
+    margin-right: 1vw;
+    color: #eb0808e1;
+}
+
+.tamanho__blusa {
+    padding: 2%;
+    width: 6vw;
+
+}
+
+.texto__descricao { 
+    text-align: center;
+    font-size: 2vw;
+}
+
+.texto__preco-tamanho {
+    font-size: 2vw;
+}
+
+}
+
+@media (min-width:1451px){
+
+.area__retangulo { 
+        max-width: 800px;
+        max-height: 1000px;
+    }
+    
+.blusa__frente {
+    max-width: 400px;
+}
+    
+.organiza__cabecario {
+    font-size: 25px;
+    margin-right: 25px;
+    color: #eb0808e1;
+}
+
+.tamanho__blusa {
+    padding: 10px;
+    width: 100px;
+
+}
+
+.texto__descricao { 
+    text-align: center;
+    font-size: 50px;
+}
+
+.texto__preco-tamanho {
+    font-size: 50px;
+}
+    
+
+
 }
