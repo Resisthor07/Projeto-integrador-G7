@@ -421,6 +421,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.variedades .menu-deslizante__expositor:first-child {
+    margin-left: 50px;
+}
+
+.variedades .menu-deslizante__expositor:last-child {
+    margin-right: 50px;
+}
+
 .variedades .menu-deslizante__quadro {
     background: white;
     width: 70vw;
@@ -468,7 +476,7 @@
 .variedades .variedades__menu-deslizante {
     display: flex;
     align-items: center;
-    gap: 10vw;
+    gap: 50px;
     list-style: none;
     overflow: scroll;
 }
@@ -488,6 +496,17 @@
     .slider img {
         width: 80%;
         padding: 0;
+    }
+}
+
+/* Ajuste da margem do menu Variedades  */
+@media (min-width: 1400px) {
+    .variedades .menu-deslizante__expositor:first-child {
+        margin-left: auto;
+    }
+
+    .variedades .menu-deslizante__expositor:last-child {
+        margin-right: auto;
     }
 }
 
