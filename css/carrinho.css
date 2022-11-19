@@ -1,16 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-@media (max-width: 768px)
+.pagina-imagem_lixeira
 {
-    #principal {
-        font-family: 'Dongle', Helvetica, sans-serif;
-        background-image: url(../img/pagina-detalhes/Layout.png);
-        margin: 0%;
-        padding: 0%;
-        position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.pagina-alinhamento
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4vh;
+}
+
+.pagina-divisao_produto
+{
+    margin: 15px;
+    background: rgba(205, 141, 141, 0.25);
+    border-radius: 25px;
+    padding-bottom: 1vh;
+    width: 35.5vw;
+    height: 21.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagina-imagem_alinhamento
+{
+    margin: 0px;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.pagina-imagem_produto
+{
+    margin-top: 0.5px;
+    width: 17vh;
+    border-radius: 20px;
+}
+
+.pagina-centraliza
+{
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2vh;
+}
+
+.pagina-alinhamento-info
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.pagina-botao
+{
+    width: 18vw;
+    height: 7vh;
+    background: #FF7272;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #faffff;
+}
+
+.pagina_confirma
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    align-items: center;
+}
+
+.pagina-estilo_texto-titulo
+{
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 6vh;
+    font-weight: bold;
+    color: #ff7272;
+}
+
+.pagina-estilo_texto-subtitulo
+{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+.pagina-estilo_texto-padrao
+{
+    margin-left: 6px;
+    white-space: nowrap;
+
+    font-family: 'Comfortaa';
+    font-size: 1vw;
+    font-weight: bolder;
+
+    background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#principal {
+    font-family: 'Dongle', Helvetica, sans-serif;
+    background-image: url(../img/pagina-detalhes/Layout.png);
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+
+
+@media (max-height: 500px)
+{
+    .pagina-imagem_produto
+    {
+        margin-top: 0.5px;
+        width: 8vw;
+        border-radius: 20px;
     }
 
+    .pagina-estilo_texto-padrao
+    {
+        margin-left: 6px;
+        white-space: nowrap;
+
+        font-family: 'Comfortaa';
+        font-size: 2vh;
+        font-weight: bolder;
+
+        background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+@media (max-width: 768px) and (min-height: 501px)
+{
+    
     .pagina-alinhamento
     {
         display: flex;
@@ -42,26 +179,20 @@
     .pagina-imagem_produto
     {
         margin-top: 0.5px;
-        height: 11vh;
+        width: 6em;
         border-radius: 20px;
-    }
-
-    .pagina-imagem_lixeira
-    {
-        width: 50px;
-        height: 50px;
     }
 
     .pagina-centraliza
     {
-        width: 100%;
+        width: 50%;
         gap: 30%;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
         flex-direction: row;
     }
-    
+
     .pagina-alinhamento-info
     {
         display: flex;
@@ -114,125 +245,10 @@
     .pagina-estilo_texto-padrao
     {
         margin-left: 6px;
-
-        font-family: 'Comfortaa';
-        font-size: 1vh;
-        font-weight: bolder;
-
-        background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-}
-
-@media (min-width: 769px)
-{
-    .pagina-alinhamento
-    {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 4vh;
-    }
-
-    .pagina-divisao_produto
-    {
-        margin: 15px;
-        background: rgba(205, 141, 141, 0.25);
-        border-radius: 25px;
-        padding-bottom: 1vh;
-        width: 35.5vw;
-        height: 21.5vh;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .pagina-imagem_alinhamento
-    {
-        margin: 0px;
-        align-self: flex-start;
-        flex-direction: column;
-    }
-
-    .pagina-imagem_produto
-    {
-        margin-top: 0.5px;
-        width: 65%;
-        border-radius: 20px;
-    }
-
-    .pagina-imagem_lixeira
-    {
-        width: 50px;
-        height: 50px;
-    }
-
-    .pagina-centraliza
-    {
-        margin: 2vh;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 2vh;
-    }
-
-    .pagina-alinhamento-info
-    {
-        margin-left: 1.5vw;
-        display: flex;
-        flex-direction: row;
-        gap: 2vw;
-    }
-
-    .pagina-botao
-    {
-        width: 18vw;
-        height: 7vh;
-        background: #FF7272;
-        border: none;
-        border-radius: 30px;
-        font-family: 'Comfortaa', cursive;
-        font-size: 2vh;
-        font-weight: bolder;
-        color: #faffff;
-    }
-
-    .pagina_confirma
-    {
-        display: flex;
-        flex-direction: row;
-        gap: 5vw;
-        align-items: center;
-    }
-
-    .pagina-estilo_texto-titulo
-    {
-        text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 6vh;
-        font-weight: bold;
-        color: #ff7272;
-    }
-
-    .pagina-estilo_texto-subtitulo
-    {
-        margin: 0px;
-        text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 2vw;
-        font-weight: bolder;
-        color: #ff1617;
-    }
-
-    .pagina-estilo_texto-padrao
-    {
-        margin-left: 6px;
         white-space: nowrap;
 
         font-family: 'Comfortaa';
-        font-size: 2vh;
+        font-size: 1vh;
         font-weight: bolder;
 
         background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
