@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
+    
     font-family: 'Poppins';
-    background-image:linear-gradient(45deg,  #75d3cd92, #f04c70);
+    background: linear-gradient(179.97deg, rgba(249, 0, 0, 0.138) -12.28%, rgba(239, 31, 31, 0.2) 89.1%);
     margin: 0%;
     width: 100vw;
 }
@@ -78,6 +79,7 @@ input {
     width: 100%;
     height: 30px;
     border-radius: 10vw;
+    border: 0.5vw solid #FF7272;
     filter: box-shadow: 5px 5px 5px 5px rgba(255, 114, 114, 0.2);
 }
 
@@ -112,8 +114,8 @@ input:focus {
 @media (min-width:481px) and (max-width:768px) {
 
 body {
-    background-color: rgb(253, 205, 251);
-    }
+    background: linear-gradient(179.97deg, rgba(249, 0, 0, 0.138) -12.28%, rgba(239, 31, 31, 0.2) 89.1%);
+}
 
 input {  
     background: rgba(69, 197, 176, 0.08);
@@ -165,11 +167,10 @@ a {
 
 }
 
-@media (min-width:769px) and (max-width:5000px) {
+@media (min-width:769px) and (max-width:1450px) {
 
 body {
-    display: flex;
-    background-image:linear-gradient(45deg,  #100101ec, #e40031);
+    display: flex;    
     flex-direction: column;
     align-items: center;
     margin: 0%;
@@ -184,10 +185,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*
     background-image:linear-gradient(45deg,  #90d37592, #f04c70);
+    */
+    background: linear-gradient(179.97deg, rgba(249, 0, 0, 0.138) -12.28%, rgba(239, 31, 31, 0.2) 89.1%);
     border-radius: 30px;
-    width: 35%; 
-    height: 550px;
+    width: 60vh; 
+    height: 900px;
  }
 
 .area__bot--entrar {

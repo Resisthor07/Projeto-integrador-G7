@@ -4,16 +4,19 @@
 p {
     font-family: 'Poppins';
     font-style: normal;
+    margin-bottom: 0%;
+    margin: 0%;
 }
 
 .area__retangulo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(50deg, rgb(238, 119, 119),rgba(211, 125, 125, 0.329));
-    margin-top: 8vw;
-    width: 70vw;
+    background: linear-gradient(179.97deg, rgba(249, 0, 0, 0.138) -12.28%, rgba(239, 31, 31, 0.2) 89.1%);
+    margin-top: 5vw;
+    width: 90vw;
     border-radius: 30px;
+    margin-bottom: 50%;
 }
 
 .area__util {
@@ -22,7 +25,19 @@ p {
 }
 
 .blusa__frente {
-    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.blusa__frente-img {
+    width: 55vw;
+}
+
+h2{
+    font-size: 2vw;
+    margin: 0%;
 }
 
 .organiza__cabecario {
@@ -30,22 +45,29 @@ p {
     justify-content: flex-end;
     font-weight: 600;
     font-family:'Poppins';
-    margin-right: 5vw;
+    margin-top: 2vw;
+    margin-right: 6vw;
     color: #FF1617;
+}
+
+.organiza__descricao{
+    display: flex;
+    flex-direction: column; 
+    width: 60vw;
 }
 
 .organizacao__img-grande {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .organizacao__img-pequena {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    margin-top: 0%;
 }
 
 .tamanho__blusa {
@@ -56,89 +78,164 @@ p {
 
 .texto__descricao {
     display: flex;
-    flex-wrap: wrap;
-    text-align:center;
-    font-weight: 800;
+    width: 80%;
+    margin-top:0%;
+    margin-bottom: 2%;
+    font-weight: 300;
+    font-size: 3vw;
+
+}
+
+.texto__detalhe {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.texto__tamanho {
+    display:flex;
+    justify-content: space-around;
+    font-style: normal;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: 600;
     font-size: 4vw;
-    color: white;
+    color: rgb(0, 0, 0);
+
+}
+
+.texto__preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .texto__preco-tamanho {
+    
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     font-style: normal;
-    font-weight: 700;
-    font-size: 5vw;
-    color: white;
+    font-family: 'Poppins';
+    width: 80%;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    
 }
+
+.texto__preco-tamanho--de {
+    
+    text-decoration: line-through;
+    font-family: 'Poppins';
+    margin-bottom: 1vw;
+    font-weight: 400;
+    font-size: 3vw;
+    color: red
+}
+
+.texto__preco-tamanho--por {
+    background-color: #0bfa6f;
+    font-family: 'Poppins';
+    margin-bottom: 1vw;
+    font-weight: 600;
+    font-size: 4vw;
+    color: rgb(12, 12, 12);
+}
+
 
 
 
 @media (min-width:769px) and (max-width:1450px){
 
 .area__retangulo { 
-        width: 50vw;
-        height: 700px;
+    width: 90vw;
+        
 }
 
-.blusa__frente {
-    width: 30vw;
-}
+
 
 .organiza__cabecario {
-    margin-right: 1vw;
+    margin-right: 2vw;
     color: #eb0808e1;
 }
 
 .tamanho__blusa {
     padding: 2%;
-    width: 6vw;
-
 }
 
 .texto__descricao { 
-    text-align: center;
-    font-size: 2vw;
+    font-size: 4vw;
 }
 
 .texto__preco-tamanho {
-    font-size: 2vw;
+    margin-top: 5%;
+}
+
+.texto__preco-tamanho--de {
+    font-size: 3vw;
+}
+
+.texto__preco-tamanho--por {
+    font-size: 6vw;
+}
+
+
+.texto__tamanho {
+    font-size: 5vw;
 }
 
 }
 
 @media (min-width:1451px){
 
-.area__retangulo { 
-        max-width: 800px;
-        max-height: 1000px;
+.area__retangulo {
+        max-width: 3000px;
+        max-height: 900;
+        border-radius: 50px;
     }
-    
-.blusa__frente {
-    max-width: 400px;
+
+.blusa__frente-img {
+    max-width: 900px;
 }
-    
+
+h2{
+    font-size: 40px;
+    margin: 0%;
+}
 .organiza__cabecario {
-    font-size: 25px;
-    margin-right: 25px;
-    color: #eb0808e1;
+    margin-right: 50px;
+    font-size: 40px;
 }
 
+.organiza__descricao{
+    width: 1200px;
+}
 .tamanho__blusa {
-    padding: 10px;
-    width: 100px;
-
+    padding: 50px;
+    max-width: 200px;
 }
 
 .texto__descricao { 
-    text-align: center;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .texto__preco-tamanho {
-    font-size: 50px;
+    margin-top: 50px;
 }
-    
+
+.texto__preco-tamanho--de {
+font-size: 50px;
+}
+
+.texto__preco-tamanho--por {
+font-size: 100px;
+}
+
+
+.texto__tamanho {
+font-size: 90px;
+}
+
 
 
 }
