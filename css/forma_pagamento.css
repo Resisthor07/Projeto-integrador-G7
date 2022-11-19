@@ -35,7 +35,7 @@
 }
 
 .pagina__opcao-2
-{
+{  
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -72,14 +72,21 @@
     width: 13vw;
 }
 
-.pagina__botao_opcao
+#opcao-2
 {
-    width: 20px;
-    height: 20px;
+    order: 3;
+}
 
-    background: #FFFFFF;
-    border: 2px solid #FF7272;
-    border-radius: 100px;
+#opcao-3
+{
+    order: 2;
+}
+
+input[type=radio]
+{
+    cursor: pointer;
+    border-color: 1px solid red;
+    border-radius: 50%;
 }
 
 .pagina__endereco
@@ -92,8 +99,8 @@
 
 .pagina__endereco_campo_info
 {
-    width: 71.5vw;
-    height: 21.5vh;
+    width: 72vw;
+    height: 22vh;
     background: rgba(205, 141, 141, 0.25);
     border-radius: 30px;
     gap: 1vw;
@@ -111,6 +118,11 @@
     background: #FFFFFF;
     border: 2px solid #FF7272;
     border-radius: 25px;
+
+    font-family: 'Comfortaa';
+    font-size: 1.5vw;
+    color: #FF7272;
+    
 }
 
 .pagina__endereco_botao
@@ -120,10 +132,19 @@
     background: #FF7272;
     border: none;
     border-radius: 30px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa';
     font-size: 2vh;
     font-weight: bolder;
     color: #faffff;
+}
+
+.pagina__endereco_botao:hover
+{
+    cursor: pointer;
+    transition: all .25s;
+    box-shadow: 4px 4px 4px 2px rgba(205, 141, 141, 0.25);
+    background: #faffff;
+    color: #FF7272;
 }
 
 .pagina-estilo_texto-titulo
@@ -146,8 +167,10 @@
 
 #pagina-estilo_texto-subtitulo
 {
+    
     text-align: start;
     margin: 0px;
+    margin-left: 2vw;
 }
 
 @media (max-height: 500px)
@@ -176,7 +199,7 @@
         border-radius: 25px;
         padding-bottom: 1vw;
         width: 54vh;
-        height: 11vw;
+        height: 12vw;
     }
 
     .pagina__opcao-1_imagem
@@ -195,7 +218,7 @@
         border-radius: 25px;
         padding-bottom: 1vw;
         width: 61vh;
-        height: 8vw;
+        height: 9vw;
     }
 
     .pagina__opcao-2_imagem
@@ -222,7 +245,17 @@
         width: 43vh;
     }
 
-    .pagina__botao_opcao
+    #opcao-2
+    {
+        order: 2;
+    }
+
+    #opcao-3
+    {
+        order: 3;
+    }
+
+    input[type=radio]
     {
         display: none;
         visibility: hidden;
@@ -275,7 +308,7 @@
         border-radius: 25px;
         padding-bottom: 1vh;
         width: 54vw;
-        height: 11vh;
+        height: 12vh;
     }
 
     .pagina__opcao-1_imagem
@@ -294,7 +327,7 @@
         border-radius: 25px;
         padding-bottom: 1vh;
         width: 61vw;
-        height: 8vh;
+        height: 9vh;
     }
 
     .pagina__opcao-2_imagem
@@ -321,7 +354,17 @@
         width: 43vw;
     }
 
-    .pagina__botao_opcao
+    #opcao-2
+    {
+        order: 2;
+    }
+
+    #opcao-3
+    {
+        order: 3;
+    }
+
+    input[type=radio]
     {
         display: none;
         visibility: hidden;
