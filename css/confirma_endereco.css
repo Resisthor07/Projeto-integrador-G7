@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-#principal {
-    font-family: 'Dongle', Helvetica, sans-serif;
-    background-image: url(../img/pagina-detalhes/Layout.png);
-    margin: 0%;
-    padding: 0%;
-    position: relative;
-}
-
 .pagina-estilo_texto-titulo
 {
     margin-bottom: 0px;
@@ -32,6 +24,7 @@
 
 .pagina
 {
+    height: 100%;
     margin: 4vw;
     background: rgba(205, 141, 141, 0.25);
     border-radius: 30px;
@@ -67,6 +60,10 @@
     background: #FFFFFF;
     border: 2px solid #FF7272;
     border-radius: 25px;
+
+    font-family: 'Comfortaa';
+    font-size: 2vh;
+    color: #FF7272;
 }
 
 .pagina_input_2
@@ -77,6 +74,10 @@
     background: #FFFFFF;
     border: 2px solid #FF7272;
     border-radius: 25px;
+
+    font-family: 'Comfortaa';
+    font-size: 2vh;
+    color: #FF7272;
 }
 
 .pagina_input_botao
@@ -86,7 +87,7 @@
     height: 6.5vh;    
 
     background: #FF7272;
-    border: 1px solid #FF7272;
+    border: none;
     border-radius: 30px;
 
     text-align: center;
@@ -94,4 +95,112 @@
     font-size: 2vh;
     font-weight: bolder;
     color: #ffffff;
+}
+
+.pagina_input_botao:hover
+{
+    cursor: pointer;
+    transition: all .25s;
+    box-shadow: 4px 4px 4px 2px rgba(205, 141, 141, 0.25);
+    background: #faffff;
+    color: #FF7272;
+}
+
+
+@media (max-height: 500px) {
+
+    .pagina-estilo_texto-titulo
+    {
+        margin-bottom: 0px;
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 3vw;
+        font-weight: bold;
+        color: #ff7272;
+    }
+
+    .pagina-estilo_texto-subtitulo
+    {
+        margin-left: 5vw;
+        margin-bottom: 0px;
+
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 1.5vw;
+        font-weight: bolder;
+        color: #ff1617;
+    }
+
+    .pagina
+    {
+        margin: 4vh;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 30px;
+        padding-bottom: 1vh;
+        width: 92.5vw;
+        height: 62vh;
+
+    }
+
+    #pagina_input-linha-1
+    {   
+        gap: 7vw;              
+        display: flex;     
+        flex-direction: row;
+    }
+    
+    .pagina_organiza_input
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        justify-content: space-evenly;
+    }
+
+
+    .pagina_input_1
+    {
+        width: 35vw;
+        height: 5vh;
+
+        background: #FFFFFF;
+        border: 2px solid #FF7272;
+        border-radius: 25px;
+
+        font-family: 'Comfortaa';
+        font-size: 1.5vw;
+        color: #FF7272;
+    }
+
+    .pagina_input_2
+    {
+        width: 35vw;
+        height: 5vh;
+
+        background: #FFFFFF;
+        border: 2px solid #FF7272;
+        border-radius: 25px;
+
+        font-family: 'Comfortaa';
+        font-size: 1.5vw;
+        color: #FF7272;
+    }
+
+    .pagina_input_botao
+    {
+        margin-top: 3vw;
+        width: 15vw;
+        height: 6.5vh;    
+
+        background: #FF7272;
+        border: none;
+        border-radius: 30px;
+
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 1.5vw;
+        font-weight: bolder;
+        color: #ffffff;
+    }
 }
