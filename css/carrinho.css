@@ -8,6 +8,7 @@
 
 .pagina-alinhamento
 {
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -69,6 +70,14 @@
     color: #faffff;
 }
 
+.pagina-botao:hover
+{
+    transition: all .25s;
+    box-shadow: 4px 4px 4px 2px rgba(205, 141, 141, 0.25);
+    background: #faffff;
+    color: #FF7272;
+}
+
 .pagina_confirma
 {
     display: flex;
@@ -111,15 +120,6 @@
     background-clip: text;
 }
 
-#principal {
-    font-family: 'Dongle', Helvetica, sans-serif;
-    background-image: url(../img/pagina-detalhes/Layout.png);
-    margin: 0%;
-    padding: 0%;
-    position: relative;
-}
-
-
 @media (max-height: 500px)
 {
     .pagina-imagem_produto
@@ -147,15 +147,7 @@
 
 @media (max-width: 768px) and (min-height: 501px)
 {
-    
-    .pagina-alinhamento
-    {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 4vh;
-    }
-
+  
     .pagina-divisao_produto
     {
         margin: 15px;
@@ -207,7 +199,7 @@
         background: #FF7272;
         border: none;
         border-radius: 30px;
-        font-family: 'Comfortaa', cursive;
+        font-family: 'Comfortaa';
         font-size: 2vh;
         font-weight: bolder;
         color: #faffff;
