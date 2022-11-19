@@ -11,9 +11,10 @@
 
 .carrossel .slider {
     width: 100vw;
-    height: 45vw;
     display: flex;
     animation: slider 10s infinite;
+    max-height: 350px;
+    max-width: 1027px;
 }
 
 @keyframes slider {
@@ -26,29 +27,47 @@
     }
 
     25% {
-        transform: translate(-100vw);
+        transform: translate(-100%);
+    }
+
+    30% {
+        transform: translate(-100%);
     }
 
     45% {
-        transform: translate(-200vw);
+        transform: translate(-200%);
+    }
+
+    50% {
+        transform: translate(-200%);
     }
 
     65% {
-        transform: translate(-300vw);
+        transform: translate(-300%);
+    }
+
+    70% {
+        transform: translate(-300%);
     }
 
     85% {
-        transform: translate(-400vw);
+        transform: translate(-400%);
+    }
+
+    90% {
+        transform: translate(-400%);
     }
 
     100% {
-        transform: translate(0vw);
+        transform: translate(0);
     }
 }
 
 .carrossel .slider img {
     width: 100vw;
     height: 100%;
+    max-width: 1027px;
+    max-height: 350px;
 }
 
 .carrossel .slider input {
@@ -167,16 +186,15 @@
 
 .ofertas .background-expositor {
     position: absolute;
+    max-width: 166px;
     right: 0px;
     bottom: 33px;
-    width: 140px;
+    width: 32vw;
     opacity: 0.2;
     z-index: 4;
 }
 
 .ofertas .expositor {
-    width: 264px;
-    height: 466px;
     border-radius: 20px;
     background: #FFFFFF;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
@@ -186,6 +204,7 @@
     justify-content: space-between;
     align-items: center;
     transition: filter 0.3s;
+    max-width: 264px;
 }
 
 .ofertas .expositor:hover {
@@ -193,15 +212,15 @@
 }
 
 .ofertas h3 {
-    font-size: 40px;
+    font-size: 10vw;
     line-height: 58px;
     display: inline;
     align-self: flex-start;
 }
 
 .ofertas .imagem-produto {
-    width: 236px;
-    height: 246px;
+    width: 56vw;
+    max-width: 236px;
 }
 
 .ofertas .informacoes {
@@ -212,7 +231,7 @@
 }
 
 .ofertas label {
-    font-size: 48px;
+    font-size: 11vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,34 +241,43 @@
 
 .ofertas .menu-deslizante {
     width: 100vw;
-    height: 510px;
-    background: white;
+    height: 124vw;
+    min-height: 260px;
     display: flex;
     gap: 10vw;
     overflow: scroll;
+    align-items: center;
+    max-height: 530px;
+    max-width: 1027px;
 }
 
-.ofertas .menu-deslizante #primeiro-expositor {
+.ofertas .menu-deslizante .expositor:first-child {
     margin-left: 10vw;
 }
 
+.ofertas .menu-deslizante .expositor:last-child {
+    margin-right: 10vw;
+}
+
 .ofertas .modelo-roupa {
-    width: 173px;
-    height: 60px;
+    width: 42vw;
+    max-width: 173px;
     background: #7BB593;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .ofertas .preco {
-    width: 149px;
-    height: 53.64px;
+    width: 35vw;
+    max-width: 149px;
     background: #FF7272;
-    border-radius: 20px;
+    border-radius: 10px;
     align-self: flex-end;
+    display: flex;
+    align-items: center;
 }
 
-.ofertas #titulo {
-    width: 80vw;
+.ofertas .titulo {
+    width: 40vw;
     max-width: 700px;
 }
 
@@ -288,12 +316,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1vw;
 }
 
 .sustentabilidade .caixa-principal {
     perspective: 150px;
-    width: 35vw;
-    height: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,10 +328,9 @@
 }
 
 .sustentabilidade .caixa-principal .bandeja {
-    width: 100%;
+    gap: 5vw;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
 }
 
 .sustentabilidade .caixa-principal p {
@@ -338,7 +364,7 @@
     font-family: 'Dongle';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 7vw;
     line-height: 43px;
     color: var(--standard-green);
 }
@@ -457,5 +483,41 @@
     .slider img {
         width: 80%;
         padding: 0;
+    }
+}
+
+/* Query para o carrossel de imagens quando estiver em telas desktop ou maiores */
+@media (min-width: 1027px) {
+    .carrossel {
+        margin-top: 49px;
+    }
+
+    .ofertas .menu-deslizante {
+        gap: 60px;
+    }
+
+    .ofertas .menu-deslizante .expositor:first-child {
+        margin-left: 60px;
+    }
+
+    .ofertas .menu-deslizante .expositor:last-child {
+        margin-right: 60px;
+    }
+
+    .sustentabilidade p {
+        font-size: 60px;
+    }
+
+
+}
+
+/* Tamanho da fonte do expositor do produto */
+@media (min-width: 480px) {
+    .ofertas h3 {
+        font-size: 40px;
+    }
+
+    .ofertas label {
+        font-size: 40px;
     }
 }
