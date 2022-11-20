@@ -492,7 +492,7 @@ input#header__input::placeholder {
     }
     .header__menu-sandwiche--texto {
         width: auto;
-        line-height: 1rem;
+
     }}
 @media (max-width: 380px) {
 
