@@ -1,220 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html {
+html{
     font-size: 5vw;
-    font-family: 'Dongle', Helvetica, sans-serif;
     max-width: 2300px;
     margin: auto;
     background-color: #faffff;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
     font-family: 'Dongle', Helvetica, sans-serif;
-    width: 100vw;
 }
-img {
+
+img{
     width: 100%;
-    border-radius: 5px
-}
-.grupo__pedido {
-    background-color: rgba(205, 141, 141, 0.3);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0.5rem;
-    margin-top: 1vw;
     border-radius: 5px;
-    max-width: 570px;
 }
-.txt__title-pedidos {
-    color: #ff1617;
-    font-size: 3rem;
-    text-align: center;
-    font-max-size: 40px;
+a{
+    text-decoration: none;
 }
-.img__pedidos {
-    width: 14vw;
-    max-width: 230px;
-}
-.title__imput {
-    display: flex;
-    width: 5rem;
-    max-width: 190px;
-    font-size: 3.5vw;
+button{
     margin: 0;
-    font-max-size: 30px;
+    border: 0;
+    background: none;
+
 }
-.imput__pedidos {
-    line-height: 1rem;
-    font-size: 6vw;
+.img__w-l{
     width: 6rem;
-    max-width: 204px;
-    text-align: center;
-    background-color: #faffff;
+    max-width: 250px;
+}
+.img__w-l:hover{
+    cursor: pointer;
+}
+.organize__wish-list{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 114, 114, 0.3);
     border-radius: 5px;
-    margin: 0;
-
-
+    padding: 5px;
+    margin: 5px;
 }
-.organiza__imput-l1 {
+.organize__wl-l1{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-items: flex-start;
-    align-items: flex-start;
-    max-width: 570px;
-    gap: 0.4rem;
-}
-.cliente {
-    width: 10rem;
-    max-width: 230px;
-}
-.endereco {
-    width: 18rem;
-    max-width: 600px;
-}
-.organize__l1 {
-    max-width: 700px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0.5rem;
-
-}
-.organize__l2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0.7rem;
-}
-.organize__l3 {
-    width: 10rem;
-    text-align: right;
-    align-items: normal;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-.organiza__grupo-1 {
-    flex-direction: row;
-}
-.btn__confirmar{
-    margin-top: 0.5rem;
-    text-align: center;
-    border-radius: 10px;
-    color: #faffff;
-    font-weight: 600;
-    line-height: 1rem;
-    border: 0;
-    background-color: #057C36;
-    width: 20%;
-    font-size: 0.5rem;
-}
-.btn__cancelar{
-    margin-top: 0.5rem;
-    text-align: center;
-    border-radius: 10px;
-    color: #faffff;
-    font-weight: 600;
-    line-height: 1rem;
-    border: 0;
-    background-color: red;
-    width: 20%;
-    font-size: 0.5rem;
-}
-.btn__cancelar:hover{
-    cursor: pointer;
-
-}
-.organiza__btn-confirma{
-    display: flex;
-    text-align: center;
     justify-content: space-around;
-    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-.btn__confirmar:hover{
+.organize__txt{
+    display: flex;
+    text-align: justify;
+
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: #ff1617;
+}
+.organize__btn{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn__add-carrinho{
+    border-radius: 5px;
+    padding: 5px;
+    width: 2.5rem;
+    background-color: #FF7272;
+
+}
+.btn__add-carrinho:hover{
     cursor: pointer;
 }
-@media screen and (min-width: 480px) {
+.btn__trash{
+    color: #f70707;
 
-    .imput__pedidos {
-        font-size: 5vw;
-        max-width: 204px;
-
-    }
-
-    .title__imput {
-        font-size: 3.5vw;
-    }
-
-    .cliente {
-        width: 12rem;
-        max-width: 50vw;
-        font-size: 5vw;
-    }
-
-    .endereco {
-        width: 100%;
-        max-width: 100vw;
-        font-size: 5vw;
-    }
-
-    .organize__l3 {
-        align-items: flex-start;
-        width: 100%;
-        text-align: justify;
-    }
+    width: 2.3rem;
 
 }
-@media screen and (min-width: 679px) {
-    .img__pedidos{
-        width: 100px;
-    }
+.btn__trash:hover{
+    cursor: pointer;
+}
 
-    main {
+@media screen and (min-width: 490px) and  (max-width: 768px){
+    .img__w-l{
+        width: 6rem;
+    }
+    .organize__txt{
+        font-size: 1.5rem;
+    }
+    .btn__add-carrinho{
+        width: 2rem;
+    }
+    .btn__trash{
+        width: 2rem;
+    }
+}
+@media screen and (min-width: 769px){
+
+    main{
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        justify-content: space-around;
     }
 
-    .txt__title-pedidos {
-        font-size: 80px;
+    .organize__wish-list{
+        width: 760px;
     }
 
-    .title__imput {
-        font-size: 20px;
+    .organize__wl-l1{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .img__w-l{
+        width: 230px;
+    }
+    .organize__txt{
+        font-size: 60px;
+    }
+    .btn__add-carrinho{
+        width: 98px;
+    }
+    .btn__trash{
+        width: 88px;
+    }
 
-    }
-    .imput__pedidos{
-        font-size: 34px;
-        line-height:34px ;
-    }
-
-    .cliente{
-        font-size: 34px;
-        width: 314px;
-    }
-
-    .organize__l2{
-        width: 542px;
-    }
-
-    .btn__confirmar{
-        font-size: 18px;
-        width: 120px;
-        line-height: 40px;
-    }
-    .btn__cancelar{
-        font-size: 18px;
-        width: 120px;
-        line-height: 40px;
-    }
 }
 :root {
     --standard-font: 'Dongle', Helvetica, sans-serif;
@@ -373,6 +281,7 @@ input#header__input::placeholder {
 .header__text-menu {
     display: flex;
     width: 100vw;
+    padding-bottom: 10px;
     flex-wrap: wrap;
     z-index: 5;
 }
@@ -470,6 +379,7 @@ input#header__input::placeholder {
     .header__text-menu {
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding-bottom: 20px;
         position: sticky;
         top: 0;
     }
@@ -482,6 +392,7 @@ input#header__input::placeholder {
         display: flex;
         flex-direction: row;
         width: 68vw;
+        line-height: 5px;
     }
     .header__text-menu--text {
         height: 45px;
@@ -492,7 +403,7 @@ input#header__input::placeholder {
     }
     .header__menu-sandwiche--texto {
         width: auto;
-
+        line-height: 5px;
     }}
 @media (max-width: 380px) {
 
@@ -518,7 +429,6 @@ input#header__input::placeholder {
     }
 }
 @media (min-width: 480px) and (max-width: 834px) and (orientation: landscape) {
-
     #header__search {
         width: 35vw;
     }
@@ -535,7 +445,7 @@ input#header__input::placeholder {
 @media (min-width: 835px) and (min-height: 420px) {
     #header__search {
         width: 25vw;
-        
+
     }
 
     footer {
@@ -543,16 +453,9 @@ input#header__input::placeholder {
     }
 }
 @media (min-width: 1100px) {
-    .header__text-menu--text{
+
+
+    .header__text-menu--text {
         font-size: 40px;
     }
-    
 }
-[class="main-pedido"]img {
-    width: 100%;
-    border-radius: 5px
-}
-
-
-
-
