@@ -3,7 +3,7 @@
 body {
     
     font-family: 'Poppins';
-    background: linear-gradient(179.97deg, rgba(249, 0, 0, 0.138) -12.28%, rgba(239, 31, 31, 0.2) 89.1%);
+    background: rgba(239, 31, 31, 0.2);
     margin: 0%;
     width: 100vw;
 }
@@ -83,14 +83,6 @@ input {
     filter: box-shadow: 5px 5px 5px 5px rgba(255, 114, 114, 0.2);
 }
 
-/*
-input:focus { 
-    transform: filter (0.3seg);
-    background-color: rgb(229, 222, 222);
-    border: 1vw solid rgba(222, 213, 213, 0.71);
-}
-*/
-
 .logo__web {
     margin: 0%;
     width: 40%;
@@ -114,7 +106,7 @@ input:focus {
 @media (min-width:481px) and (max-width:768px) {
 
 body {
-    background: linear-gradient(179.97deg, rgba(249, 0, 0, 0.138) -12.28%, rgba(239, 31, 31, 0.2) 89.1%);
+    background: rgba(239, 31, 31, 0.2);
 }
 
 input {  
@@ -173,6 +165,7 @@ body {
     display: flex;    
     flex-direction: column;
     align-items: center;
+    background: rgba(239, 31, 31, 0.2);;
     margin: 0%;
 }
 a {
@@ -226,5 +219,57 @@ input {
     font-size: 75%;
 }
 
+
+}
+
+@media (min-width:1451px) {
+
+body {
+        display: flex;    
+        flex-direction: column;
+        align-items: center;
+        background: #FFFFFF;
+        margin: 0%;
+        
+    }
+
+a {
+        font-size: 5px;
+        color: #017A36;
+    }
+    
+.area__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(239, 31, 31, 0.2);
+        border-radius: 30px;
+        max-width: 500px; 
+        height: 500px;
+        
+}
+     
+.botao__entrar-font { 
+    font-size:  10px;
+}
+
+input {  
+    max-width: 150px;
+    max-height: 25px;
+    border: 1px;
+    background-color: #fcf9f9;
+    color: #ff4444;
+}
+
+.logo__web {
+    margin: 0vw;
+    max-width: 100px;
+}
+
+.texto__input  {
+    color: #ff4444;
+    font-size: 75%;
+}
 
 }
