@@ -3,6 +3,34 @@
     margin: 0;
 }
 
+.carrossel button {
+    background: rgb(23, 23, 228);
+    width: 50vw;
+    height: 43.15vw;
+    max-width: 53px;
+    max-height: 350px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel button:first-child {
+    right: unset;
+    left: 0;
+}
+
+.carrossel button .triangulo {
+    width: 0;
+    height: 0;
+    border-top: 15vw solid transparent;
+    border-bottom: 15vw solid transparent;
+    border-left: 25px solid #4C4B63;
+    box-sizing: border-box;
+}
+
 .carrossel .moldura {
     width: 100vw;
     max-width: 1027px;
@@ -489,6 +517,9 @@
 
 @media (orientation: landscape) {
 
+        {}
+
+    .carrossel button,
     .slider {
         height: 30vw;
     }
