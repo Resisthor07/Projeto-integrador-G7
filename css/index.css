@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 .carrossel button,
 .ofertas section button,
 .moda section button {
@@ -271,8 +267,7 @@
 .ofertas .background-expositor {
     position: absolute;
     max-width: 166px;
-    right: 0px;
-    bottom: 33px;
+    bottom: 0;
     width: 32vw;
     opacity: 0.2;
     z-index: 4;
@@ -317,6 +312,7 @@
     flex-direction: column;
     width: 100%;
     gap: 5px;
+    margin-top: 3vw;
 }
 
 .ofertas label {
@@ -339,6 +335,11 @@
     max-height: 530px;
     max-width: 1027px;
     margin: auto 2vw;
+}
+
+.ofertas .menu-deslizante::-webkit-scrollbar,
+.moda .scroll-menu::-webkit-scrollbar {
+    display: none;
 }
 
 .ofertas .menu-deslizante .expositor:first-child {
@@ -425,6 +426,10 @@
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+}
+
+.rodape .icone-descricao p {
+    display: none;
 }
 
 .sustentabilidade {
@@ -528,11 +533,11 @@
 }
 
 .variedades .menu-deslizante__expositor:first-child {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .variedades .menu-deslizante__expositor:last-child {
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .variedades .menu-deslizante__quadro {
@@ -568,23 +573,37 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-
-.variedades .variedades__menu-deslizante:first-child {
-    margin-top: 30px;
-}
-
-.variedades .variedades__menu-deslizante:last-child {
-    margin-bottom: 60px;
+    gap: 20px;
 }
 
 .variedades .variedades__menu-deslizante {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     list-style: none;
     overflow: scroll;
+}
+
+.variedades .variedades__menu-deslizante::-webkit-scrollbar {
+    height: 10px;
+}
+
+.variedades .variedades__menu-deslizante::-webkit-scrollbar-track,
+.variedades .variedades__menu-deslizante::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.variedades .variedades__menu-deslizante::-webkit-scrollbar-thumb {
+    background: rgba(255, 114, 114, 0.188);
+    border-radius: 20px;
+}
+
+.variedades .variedades__menu-deslizante:first-child {
+    margin-top: 20px;
+}
+
+.variedades .variedades__menu-deslizante:last-child {
+    margin-bottom: 30px;
 }
 
 .variedades .variedades__titulo {
@@ -654,6 +673,8 @@
 }
 }
 
+
+/*Query para a responsividade dos botoes*/
 @media (orientation: portrait) and (max-width: 440px) {
 
     .ofertas section button,
@@ -683,4 +704,47 @@
     .ofertas label {
         font-size: 40px;
     }
+}
+
+@media (min-width: 720px) {
+
+    .rodape {
+        height: 10vw;
+    }
+
+    .rodape .endereco p {
+        font-size: 1.04vw;
+        line-height: 1.25vw;
+        width: 35vw;
+    }
+
+    .rodape .background {
+        height: unset;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+
+    }
+
+    .rodape .icone-descricao {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .rodape .icone-descricao p {
+        font-size: 1.39vw;
+        display: unset;
+    }
+
+    .rodape .background nav {
+        display: flex;
+        flex-direction: column;
+        width: unset;
+    }
+
+    .rodape #titulo {
+        display: none;
+    }
+
+    .variedades .variedades__menu-deslizante::-webkit-scrollbar {}
 }
