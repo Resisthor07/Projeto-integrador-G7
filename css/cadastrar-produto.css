@@ -4,13 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90vw;
-    height: 70vh;
-    border-radius: 10px;
     align-items: center;
-    padding: 2vh;
-    margin-top: 5%;
-
 }
 
 .texto-tipoproduto{
@@ -19,19 +13,16 @@
     font-family: 'Dongle';
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(2em, 2em + 3vw, 3em);
-    margin: 0vh;
+    font-size: 2.3rem;
+    margin: 0%;
     color: rgb(255, 114, 114);
-    width: 50vw;
-    height: 4vh;
-    padding: 1%;
+    width: 80vw;
 }
 
 .opc-tipoproduto{
     display: flex;
-    background-color: rgb(255, 114, 114);
+    background-color: rgba(255, 114, 114, 0.6);
     width: 80vw;
-    height: 5vh;
     border-radius: 15px;
     border: 0vh;
 
@@ -45,17 +36,16 @@
 }
 
 .opc-descricao{
-    display: flex;
-    background-color: rgb(255, 114, 114);
+    background-color: rgba(255, 114, 114, 0.6);
     width: 80vw;
-    height: 9vh;
+    height: 10vh;
     border-radius: 15px;
     border: 0vh;
 
     font-family: 'Dongle';
     font-style: normal;
     font-weight: 700;
-    font-size: 3vh;
+    font-size: 2rem;
     line-height: 46px;
     text-align: start;
     color: white;
@@ -67,17 +57,17 @@
     align-items: center;
     justify-content: space-around;
     width: 80vw;
-    height: 14vh;
-    background-color: rgb(255, 114, 114);
+    height: 20vh;
+    background-color: rgba(255, 114, 114, 0.6);
     border-radius: 15px;
 }
 
 .anexo-img{
     width: 16vw;
-    height: 9vh;
+    height: 15vh;
     background-color: white;
-    margin: 1.5vh;
-    border-radius: 1vh;
+    margin: 2%;
+    border-radius: 10px;
 }
 
 .botao-salvar{
@@ -85,9 +75,8 @@
     justify-content: center;
     align-items: center;
     width: 20vw;
-    height: 4vh;
-    background-color: rgb(255, 114, 114);
-    border-radius: 1vh;
+    background-color: rgba(255, 114, 114, 0.6);
+    border-radius: 20px;
     margin-top: 2vh;
 
     font-family: 'Dongle';
@@ -97,4 +86,64 @@
     text-align: center;
     color: white;
     border: 0vh;
+}
+
+.botao{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width:1024px){
+    .fundo-cadastro{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    .texto-tipoproduto{
+        width: 40vw;
+        font-size: 3.5rem;
+    }
+    .opc-tipoproduto{
+        width: 40vw;
+        height: 10vh;
+        font-size: 3rem;
+    }
+    .opc-descricao{
+        width: 40vw;
+        height: 20vh;
+    }
+    .anexar{
+        width: 40vw;
+    }
+
+    .anexo-img{
+        width: 10vw;
+    }
+
+    .media-desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 80vh;
+        margin-top: 3%;
+    }
+
+    .media-desktop2{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        height: 80vh;
+        margin-top: 3%;
+    }
+
+    .botao-salvar{
+        font-size: 3rem;
+    }
+
+    .botao{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
