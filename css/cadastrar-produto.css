@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.fundo-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-tipoproduto{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.3rem;
+    margin: 0%;
+    color: rgb(255, 114, 114);
+    width: 80vw;
+}
+
+.opc-tipoproduto{
+    display: flex;
+    background-color: rgba(255, 114, 114, 0.6);
+    width: 80vw;
+    border-radius: 15px;
+    border: 0vh;
+
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 46px;
+    text-align: center;
+    color: white;
+}
+
+.opc-descricao{
+    background-color: rgba(255, 114, 114, 0.6);
+    width: 80vw;
+    height: 10vh;
+    border-radius: 15px;
+    border: 0vh;
+
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 46px;
+    text-align: start;
+    color: white;
+}
+
+.anexar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    height: 20vh;
+    background-color: rgba(255, 114, 114, 0.6);
+    border-radius: 15px;
+}
+
+.anexo-img{
+    width: 16vw;
+    height: 15vh;
+    background-color: white;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.botao-salvar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    background-color: rgba(255, 114, 114, 0.6);
+    border-radius: 20px;
+    margin-top: 2vh;
+
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+    border: 0vh;
+}
+
+.botao{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width:1024px){
+    .fundo-cadastro{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    .texto-tipoproduto{
+        width: 40vw;
+        font-size: 3.5rem;
+    }
+    .opc-tipoproduto{
+        width: 40vw;
+        height: 10vh;
+        font-size: 3rem;
+    }
+    .opc-descricao{
+        width: 40vw;
+        height: 20vh;
+    }
+    .anexar{
+        width: 40vw;
+    }
+
+    .anexo-img{
+        width: 10vw;
+    }
+
+    .media-desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 80vh;
+        margin-top: 3%;
+    }
+
+    .media-desktop2{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        height: 80vh;
+        margin-top: 3%;
+    }
+
+    .botao-salvar{
+        font-size: 3rem;
+    }
+
+    .botao{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
