@@ -4,7 +4,7 @@
 }
 
 .carrossel button {
-    background: rgb(23, 23, 228);
+    background: rgba(255, 255, 255, 0);
     width: 50vw;
     height: 43.15vw;
     max-width: 53px;
@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 
 .carrossel button:first-child {
@@ -27,8 +28,22 @@
     height: 0;
     border-top: 15vw solid transparent;
     border-bottom: 15vw solid transparent;
-    border-left: 25px solid #4C4B63;
+    border-left: 25px solid rgba(85, 170, 173, 0.3);
     box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.carrossel button:hover>.triangulo {
+    border-left: 25px solid rgba(85, 170, 173, 1);
+}
+
+.carrossel button #esquerda {
+    border-right: 25px solid rgba(85, 170, 173, 0.3);
+    border-left: unset;
+}
+
+.carrossel button:hover>#esquerda {
+    border-right: 25px solid rgba(85, 170, 173, 1);
 }
 
 .carrossel .moldura {
