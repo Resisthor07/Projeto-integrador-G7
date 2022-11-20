@@ -294,6 +294,9 @@ header {
     width: 7vw;
 
 }
+.header__icon-menu--icon:hover{
+    cursor: pointer;
+}
 #header__input {
     font-size: 1.1rem;
     text-align: center;
@@ -434,6 +437,9 @@ input#header__input::placeholder {
         height: 7vw;
         max-height: 70px;
         max-width: 80px;
+    }
+    .header__icon-menu--icon:hover{
+        cursor: pointer;
     }
     .header__logo {
 
