@@ -562,12 +562,21 @@
         margin-top: 49px;
     }
 
+    .carrossel button {
+        display: none;
+    }
+
     .ofertas .menu-deslizante {
         gap: 60px;
     }
 
     .ofertas .menu-deslizante .expositor:first-child {
-        margin-left: 60px;
+        margin-left: 5px;
+    }
+
+
+    .ofertas .menu-deslizante .expositor:last-child {
+        margin-right: 5px;
     }
 
     .ofertas .titulo:first-child {
@@ -576,10 +585,6 @@
 
     .ofertas .titulo:nth-child(2) {
         display: none;
-    }
-
-    .ofertas .menu-deslizante .expositor:last-child {
-        margin-right: 60px;
     }
 
     .sustentabilidade p {
