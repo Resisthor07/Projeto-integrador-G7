@@ -8,15 +8,6 @@ body {
     width: 100vw;
 }
 
-a {
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 50%;
-    color: #017A36;
-}
 
 .area__bot--entrar { 
     display: flex;
@@ -168,10 +159,6 @@ body {
     background: rgba(239, 31, 31, 0.2);;
     margin: 0%;
 }
-a {
-    font-size: 50%;
-    color: #017A36;
-}
 
 .area__main {
     display: flex;
@@ -231,11 +218,6 @@ body {
         background: #FFFFFF;
         margin: 0%;
         
-    }
-
-a {
-        font-size: 5px;
-        color: #017A36;
     }
     
 .area__main {
