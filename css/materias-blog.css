@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.alinhamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-blog{
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0px;
+    color: #FF7272;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-rosa{
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 114, 114, 0.5);
+    border-radius: 20px;
+    width: 89vw;
+    padding: 3%;
+}
+
+.imagem-blusa{
+    padding-right: 0%;
+    width: 28vw;
+}
+
+.alinha-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.titulo{
+    margin: 0%;
+}
+
+.titulo-mat{
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0%;
+    color: #1FAF38;
+}
+
+.texto-mat{
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    margin: 2%;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.botao-saiba{
+    background: #FF7272;
+    border-radius: 20px;
+    border: 0px;
+    font-family: 'Dongle';
+    font-style: normal;
+    color: white;
+    font-size: 1.5rem;
+    width: 30vw;
+}
+
+.media-desktop1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.media-desktop2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (min-width:600px) and (max-width:834px){
+    .titulo-blog{
+        font-size: 3rem;
+    }
+    .titulo-mat{
+        font-size: 2.5rem;
+    }
+    .texto-mat{
+        font-size: 1.8rem;
+    }
+    .botao-saiba{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:835px) and (max-width:1350px){
+    .titulo-blog{
+        font-size: 4rem;
+    }
+    .titulo-mat{
+        font-size: 3rem;
+    }
+    .texto-mat{
+        font-size: 2.5rem;
+    }
+    .botao-saiba{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:1351px){
+    .alinhamento{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .imagem-blusa{
+        width: 30vw;
+        padding: 3%;
+    }
+    .media-desktop1{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .alinha-texto{
+        padding: 3%;
+    }
+    .fundo-rosa{
+        width: 45vw;
+        padding: 0%;
+    }
+    .botao-saiba{
+        width: 10vw;
+    }
+    .titulo-blog{
+        font-size: 4rem;
+    }
+    .titulo-mat{
+        font-size: 3rem;
+    }
+    .texto-mat{
+        font-size: 2.5rem;
+    }
+    .botao-saiba{
+        font-size: 2.5rem;
+    }
+    .media-desktop2{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;  
+    }
+
+}
+
