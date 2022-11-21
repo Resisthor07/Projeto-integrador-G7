@@ -273,11 +273,12 @@ header {
 #header__form {
     display: flex;
     justify-content: center;
-    align-self: flex-end;
+    align-self: center;
 }
 .header__icon-menu {
     display: flex;
     width: 100%;
+
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
@@ -389,15 +390,16 @@ input#header__input::placeholder {
     font-family: 'Dongle', sans-serif;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     text-align: center;
     background-color: var(--standard-pink);
     width: 25vw;
     transition: all 0.3s;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+
     min-width: 94px;
 }
 .header__text-menu--text:hover {
@@ -414,7 +416,7 @@ input#header__input::placeholder {
     }
     #header__form {
         padding-bottom: 1.3vh;
-        margin-top: 7vh
+
     }
     .header__icon-menu {
         width: 100%;
@@ -425,6 +427,7 @@ input#header__input::placeholder {
     }
     .header__icon-menu--conjunto {
         display: flex;
+        width: 1rem;
         gap: 4vw;
         align-self: flex-end;
         padding-bottom: 1.3vh;
