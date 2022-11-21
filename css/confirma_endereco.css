@@ -4,8 +4,8 @@
 {
     margin-bottom: 0px;
     text-align: center;
-    font-family: 'Comfortaa';
-    font-size: 4vh;
+    font-family: 'Dongle';
+    font-size: 6vh;
     font-weight: bold;
     color: #ff7272;
 }
@@ -14,10 +14,11 @@
 {
     margin-left: 5vw;
     margin-bottom: 0px;
-
+    margin-top: 2vh;
     text-align: center;
-    font-family: 'Comfortaa';
-    font-size: 2vh;
+    font-family: 'Dongle';
+    line-height: 2vh;
+    font-size: 3.5vh;
     font-weight: bolder;
     color: #ff1617;
 }
@@ -91,8 +92,8 @@
     border-radius: 30px;
 
     text-align: center;
-    font-family: 'Comfortaa';
-    font-size: 2vh;
+    font-family: 'Dongle';
+    font-size: 3vh;
     font-weight: bolder;
     color: #ffffff;
 }
@@ -113,8 +114,8 @@
     {
         margin-bottom: 0px;
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 3vw;
+        font-family: 'Dongle';
+        font-size: 6vw;
         font-weight: bold;
         color: #ff7272;
     }
@@ -123,10 +124,11 @@
     {
         margin-left: 5vw;
         margin-bottom: 0px;
-
+        margin-top: 2vw;
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 1.5vw;
+        font-family: 'Dongle';
+        line-height: 2vw;
+        font-size: 3.5vw;
         font-weight: bolder;
         color: #ff1617;
     }
@@ -198,8 +200,8 @@
         border-radius: 30px;
 
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 1.5vw;
+        font-family: 'Dongle';
+        font-size: 3vw;
         font-weight: bolder;
         color: #ffffff;
     }
