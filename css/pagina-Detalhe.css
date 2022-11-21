@@ -21,8 +21,34 @@ p {
 
 .area__util {
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
+   
+}
+
+button{
+    background: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.btn__add-carrinho{
+    border-radius: 5px;
+    padding: 5px;
+    width: 5rem;
+    background-color: #FF7272;
+    margin: 2rem;
+
+}
+.btn__add-carrinho:hover{
+    cursor: pointer;
+}
+.organize__btn{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .blusa__frente {
@@ -191,7 +217,7 @@ h2{
 
 .area__retangulo {
         max-width: 3000px;
-        max-height: 900px;
+        max-height: 2500px;
         border-radius: 50px;
     }
 
@@ -237,32 +263,4 @@ font-size: 100px;
 font-size: 90px;
 }
 
-
-
 }
-
-button{
-    background: none;
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-.btn__add-carrinho{
-    border-radius: 5px;
-    padding: 5px;
-    width: 5rem;
-    background-color: #FF7272;
-    margin: 2rem;
-
-}
-.btn__add-carrinho:hover{
-    cursor: pointer;
-}
-.organize__btn{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
