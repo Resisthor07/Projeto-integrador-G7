@@ -8,14 +8,14 @@
     <title>Flor da Fronteira</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/standard.css" />
-    <link rel="stylesheet" href="../css/cadastrar-produto.css"/>
+    <link rel="stylesheet" href="../css/materias-blog.css"/>
     <link rel="icon" href="../img/logo.png" />
 </head>
 
 <body>
     <header>
-        <a href="../html/pedidos_confirmados.html">
-            <img class="header__logo" src="../img/menus/logo.png" alt="Logo">
+        <a href="../html/index.html">
+            <img  class="header__logo" src="../img/menus/logo.png" alt="Logo">
         </a>
         <h1>Flor da Fronteira</h1>
     </header>
@@ -44,13 +44,16 @@
             </form>
 
             <!--Logo para telas maiores-->
-            <a href="../html/pedidos_confirmados.html">
-                <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
-            </a>
+            <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
+
             <!--Icone do carrinho de compras e favoritos para telas maiores-->
             <nav class="header__icon-menu--conjunto">
-                <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
-                <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+                <a href="../html/carrinho.html">
+                    <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
+                </a>
+                <a href="../html/wish-lista-refactored.html">
+                    <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+                </a>
             </nav>
 
             <!--Icone carrinho de compras e favoritos para telas menores-->
@@ -82,61 +85,51 @@
         </nav>
 
         <!--Insira seu código abaixo desta linha-->
-        <article class="fundo-cadastro">
-            <article class="media-desktop">
-                <article>
-                    <p class="texto-tipoproduto">Tipo de produto</p>
-                    <select class="opc-tipoproduto">
-                        <option>Cardigans</option>
-                        <option>Blazers</option>
-                        <option>Calças</option>
-                    </select>
+        <article class="titulo-blog">
+            <p class="titulo">Blog</p>
+        </article>
+
+        <article class="alinhamento"> 
+            
+            <article class="media-desktop1">    
+                <article class="fundo-rosa">
+                    <img class="imagem-blusa" src="../img/pagina-detalhes/blusa-frente.png">
+                    <article class="alinha-texto">
+                        <p class="titulo-mat">Titulo da Matéria</p>
+                        <p class="texto-mat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="botao-saiba">Saiba mais</button>
+                    </article>
                 </article>
 
-                <article>
-                    <p class="texto-tipoproduto">Tamanho</p>
-                    <select class="opc-tipoproduto">
-                        <option>P</option>
-                        <option>M</option>
-                        <option>G</option>
-                        <option>GG</option>
-                    </select>
-                </article>
-
-                <article>
-                    <p class="texto-tipoproduto">Descriçao</p>
-                    <textarea class="opc-descricao"></textarea>
+                <article class="fundo-rosa">
+                    <img class="imagem-blusa" src="../img/pagina-detalhes/blusa-frente.png">
+                    <article class="alinha-texto">
+                        <p class="titulo-mat">Titulo da Matéria</p>
+                        <p class="texto-mat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="botao-saiba">Saiba mais</button>
+                    </article>
                 </article>
             </article>
-
+            
             <article class="media-desktop2">
-                <article>
-                    <p class="texto-tipoproduto">Preço</p>
-                    <input class="opc-tipoproduto" type="text" value="R$" id="preço" autocomplete="off">
+                <article class="fundo-rosa">
+                    <img class="imagem-blusa" src="../img/pagina-detalhes/blusa-frente.png">
+                    <article class="alinha-texto">
+                        <p class="titulo-mat">Titulo da Matéria</p>
+                        <p class="texto-mat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="botao-saiba">Saiba mais</button>
+                    </article>
                 </article>
 
-                <article>
-                    <p class="texto-tipoproduto">Status</p>
-                    <select class="opc-tipoproduto">
-                        <option>Nova</option>
-                        <option>Seminova</option>
-                        <option>Usada</option>
-                    </select>
-                </article>
-                
-                <p class="texto-tipoproduto">Anexar imagens</p>
-                <article class="anexar">
-                    <div class="anexo-img"></div>
-                    <div class="anexo-img"></div>
-                    <div class="anexo-img"></div>
-                </article>
-
-                <article class="botao">
-                    <button class="botao-salvar">Salvar</button>
+                <article class="fundo-rosa">
+                    <img class="imagem-blusa" src="../img/pagina-detalhes/blusa-frente.png">
+                    <article class="alinha-texto">
+                        <p class="titulo-mat">Titulo da Matéria</p>
+                        <p class="texto-mat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="botao-saiba">Saiba mais</button>
+                    </article>
                 </article>
             </article>
-
-
         </article>
 
     </main>
