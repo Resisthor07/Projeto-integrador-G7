@@ -60,10 +60,36 @@ header {
     align-items: center;
 }
 
-#header__form {
-    display: flex;
-    justify-content: center;
+.header {
     align-self: flex-end;
+    padding-bottom: 1.3vh;
+}
+
+.header #procurar {
+    background-image: url(../img/menus/menu-lupa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    border: 2px solid var(--standard-pink);
+    height: 4.64vh;
+    background-position: 3px 0;
+    outline: 0;
+    font-size: 1rem;
+    color: var(--standard-pink);
+    text-indent: 45px;
+    width: 62px;
+    min-height: 45px;
+    transition: all ease 0.4s;
+    max-width: 375px;
+}
+
+.header #procurar:focus {
+    width: 40vw;
+}
+
+.header #procurar::placeholder {
+    color: var(--standard-pink);
+    text-indent: 45px;
 }
 
 .header__icon-menu {
@@ -76,6 +102,13 @@ header {
     padding: 1vh 3vw;
     align-items: center;
     z-index: 10;
+}
+
+.header__icon-menu .ajuste-logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .header__icon-menu--conjunto {
@@ -91,7 +124,7 @@ header {
     font-size: 1.1rem;
     text-align: center;
     color: var(--standard-pink);
-    height: 4.64vh;
+
     width: 100%;
     background: none;
     border: none;
