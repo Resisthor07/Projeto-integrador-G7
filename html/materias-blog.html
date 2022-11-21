@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/standard.css">
-    <link rel="stylesheet" href="../css/pagina-Detalhe.css">
-    <link rel="icon" href="../img/pedidos/logo.png">
-
+    <title>Flor da Fronteira</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/standard.css" />
+    <link rel="stylesheet" href="../css/materias-blog.css"/>
+    <link rel="icon" href="../img/logo.png" />
 </head>
 
 <body>
     <header>
-        <img class="header__logo" src="../img/menus/logo.png" alt="Logo">
-        <h1>Flôr da Fronteira</h1>
+        <a href="../html/index.html">
+            <img  class="header__logo" src="../img/menus/logo.png" alt="Logo">
+        </a>
+        <h1>Flor da Fronteira</h1>
     </header>
 
     <main>
+
         <!--Menu sandwiche-->
         <nav class="header__icon-menu">
             <div class="header__menu-sandwiche header__menu-sandwiche--hidden">
@@ -42,14 +44,16 @@
             </form>
 
             <!--Logo para telas maiores-->
-            <a href="index.html">
-                <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
-            </a>
+            <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
 
             <!--Icone do carrinho de compras e favoritos para telas maiores-->
             <nav class="header__icon-menu--conjunto">
-                <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
-                <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+                <a href="../html/carrinho.html">
+                    <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
+                </a>
+                <a href="../html/wish-lista-refactored.html">
+                    <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+                </a>
             </nav>
 
             <!--Icone carrinho de compras e favoritos para telas menores-->
@@ -59,6 +63,7 @@
                 alt="Favoritos">
 
         </nav>
+
         <nav class="header__text-menu">
             <nav class="header__menu-sandwiche--conjunto">
                 <div class="header__menu-sandwiche">
@@ -78,64 +83,58 @@
                 <a class="header__text-menu--text header__text-menu-hidden" href="">Saias</a>
             </nav>
         </nav>
-        <section class="area__util">
-            <div class="area__retangulo">
-            <div class="organiza__cabecario">
-                <article>
-                    <a href="index.html">
-                        <p>X</p>
-                    </a>
+
+        <!--Insira seu código abaixo desta linha-->
+        <article class="titulo-blog">
+            <p class="titulo">Blog</p>
+        </article>
+
+        <article class="alinhamento"> 
+            
+            <article class="media-desktop1">    
+                <article class="fundo-rosa">
+                    <img class="imagem-blusa" src="../img/pagina-detalhes/blusa-frente.png">
+                    <article class="alinha-texto">
+                        <p class="titulo-mat">Titulo da Matéria</p>
+                        <p class="texto-mat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="botao-saiba">Saiba mais</button>
+                    </article>
                 </article>
-            </div>
 
-
-            <div class="blusa__frente">
-                <img class="blusa__frente-img" src="../img/pagina-detalhes/blusa-frente.png" alt=" Blusa frente" title="Blusa na frente">
-            </div>
-
-            <div class="organizacao__img-pequena">
-
-                <img class="tamanho__blusa" src="../img/pagina-detalhes/gola.png" alt="Gola" title="Gola da blusa">
-                <img class="tamanho__blusa" src="../img/pagina-detalhes/mangaa.png" alt="Manga" title="Manga da blusa">
-                <img class="tamanho__blusa" src="../img/pagina-detalhes/blusa-inteira.png" alt="Costas" title="Costas da blusa">
-
-            </div>
-
-            <article class="texto__detalhe">
-                <div class="organiza__descricao">
-                    <h2>Descrição:</h2>
-                    <h3 class="texto__descricao">Cardigan em lã penteada <br>toque mácio <br>fechamento em botões<br>peça impecável e exclusiva. </h3>
-                </div>
-                <div class="texto__preco-tamanho">
-
-                    <div class="texto__preco">
-                        <p class="texto__preco-tamanho--de"> De:R$ 89,90</p>
-                        <p class="texto__preco-tamanho--por"> Por: R$ 69,90</p>
-                    </div>
-
-                    <div class="texto__tamanho">
-                        <p> Tam: G</p>
-                    </div>
-
-                </div>
+                <article class="fundo-rosa">
+                    <img class="imagem-blusa" src="../img/pagina-detalhes/blusa-frente.png">
+                    <article class="alinha-texto">
+                        <p class="titulo-mat">Titulo da Matéria</p>
+                        <p class="texto-mat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="botao-saiba">Saiba mais</button>
+                    </article>
+                </article>
             </article>
-                <article class="organize__btn">
-                    <button>
-                        <a href="carrinho.html">
-                            <img class="btn__add-carrinho" src="../img/pedidos/Group%2031.png" alt="add ao carrinho">
-                        </a>
-                    </button>
+            
+            <article class="media-desktop2">
+                <article class="fundo-rosa">
+                    <img class="imagem-blusa" src="../img/pagina-detalhes/blusa-frente.png">
+                    <article class="alinha-texto">
+                        <p class="titulo-mat">Titulo da Matéria</p>
+                        <p class="texto-mat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="botao-saiba">Saiba mais</button>
+                    </article>
                 </article>
-            </div>
 
-
-
-        </section>
-        
+                <article class="fundo-rosa">
+                    <img class="imagem-blusa" src="../img/pagina-detalhes/blusa-frente.png">
+                    <article class="alinha-texto">
+                        <p class="titulo-mat">Titulo da Matéria</p>
+                        <p class="texto-mat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="botao-saiba">Saiba mais</button>
+                    </article>
+                </article>
+            </article>
+        </article>
 
     </main>
 
-   <footer>
+    <footer>
         <nav class="footer__menu">
             <a class="footer__menu-icon"><img class="footer__menu-icon--img" src="../img/menus/nav-menu-seta.png"
                     alt="voltar"></a>
