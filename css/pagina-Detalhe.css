@@ -221,8 +221,11 @@ h2{
         border-radius: 50px;
     }
 
+.blusa__frente {
+    width: 20px;
+}
 .blusa__frente-img {
-    max-width: 400px;
+    width: 40px;
 }
 
 .btn__add-carrinho {
@@ -233,6 +236,7 @@ h2{
     font-size: 30px;
     margin: 0%;
 }
+
 .organiza__cabecario {
     margin-right: 50px;
     font-size: 40px;
