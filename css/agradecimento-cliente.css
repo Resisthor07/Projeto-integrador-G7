@@ -161,24 +161,25 @@ body {
 }
 
 .area__retangulo{
-    height: 900px;
-    width: 700px;
+    height: 600px;
+    width: 500px;
     margin: 10px;       
 }
 
 article {
-    font-size: 25px; 
+    font-size: 20px; 
 }
 
 .Cabecario__Retangulo--fechar {
     font-size: 30px;
 }
+
 .Cabecario__Retangulo--logo {
-    width: 300px;
+    width: 200px;
 }
 
 .compra-efetuada__icone {
-    width: 200px;
+    width: 100px;
 }
 
 .compra-efetuada__whats {
