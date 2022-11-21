@@ -272,8 +272,8 @@ input[type=radio]
     .pagina-estilo_texto-titulo
     {
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 4vw;
+        font-family: 'Dongle';
+        font-size: 6vw;
         font-weight: bold;
         color: #ff7272;
     }
@@ -281,8 +281,8 @@ input[type=radio]
     .pagina-estilo_texto-subtitulo
     {
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 2vw;
+        font-family: 'Dongle';
+        font-size: 2.5vw;
         font-weight: bolder;
         color: #ff1617;
     }
@@ -381,8 +381,8 @@ input[type=radio]
     .pagina-estilo_texto-titulo
     {
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 4vh;
+        font-family: 'Dongle';
+        font-size: 6vh;
         font-weight: bold;
         color: #ff7272;
     }
@@ -390,8 +390,8 @@ input[type=radio]
     .pagina-estilo_texto-subtitulo
     {
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 2vh;
+        font-family: 'Dongle';
+        font-size: 2.5vh;
         font-weight: bolder;
         color: #ff1617;
     }

@@ -101,6 +101,7 @@
 {
     margin: 0px;
     text-align: center;
+    line-height: 2vw;
     font-family: 'Dongle';
     font-size: 3.5vw;
     font-weight: bolder;
@@ -136,8 +137,8 @@
         margin-left: 6px;
         white-space: nowrap;
 
-        font-family: 'Comfortaa';
-        font-size: 2vh;
+        font-family: 'Dongle';
+        font-size: 3.5vh;
         font-weight: bolder;
 
         background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
@@ -201,8 +202,8 @@
         background: #FF7272;
         border: none;
         border-radius: 30px;
-        font-family: 'Comfortaa';
-        font-size: 2vh;
+        font-family: 'Dongle';
+        font-size: 4vh;
         font-weight: bolder;
         color: #faffff;
     }
@@ -219,8 +220,8 @@
     .pagina-estilo_texto-titulo
     {
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 4vh;
+        font-family: 'Dongle';
+        font-size: 6vh;
         font-weight: bold;
         color: #ff7272;
         line-height: 4vh;
@@ -230,8 +231,9 @@
     {
         margin-bottom: 0px;
         text-align: center;
-        font-family: 'Comfortaa';
-        font-size: 2vh;
+        font-family: 'Dongle';
+        line-height: 3.5vh;
+        font-size: 3vh;
         font-weight: bolder;
         color: #ff1617;
     }
@@ -241,8 +243,8 @@
         margin-left: 6px;
         white-space: nowrap;
 
-        font-family: 'Comfortaa';
-        font-size: 1vh;
+        font-family: 'Dongle';
+        font-size: 2vh;
         font-weight: bolder;
 
         background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
