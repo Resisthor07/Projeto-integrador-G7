@@ -22,6 +22,7 @@ p {
 .area__util {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .blusa__frente {
@@ -257,5 +258,11 @@ button{
 }
 .btn__add-carrinho:hover{
     cursor: pointer;
+}
+.organize__btn{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
