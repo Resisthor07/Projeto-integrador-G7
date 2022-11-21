@@ -12,19 +12,21 @@
 
     <body>
         <header>
-            <img class="header__logo" src="../img/menus/logo.png" alt="Logo">
+            <a href="../html/index.html">
+                <img class="header__logo" src="../img/menus/logo.png" alt="Logo">
+            </a>
             <h1>Flôr da Fronteira</h1>
         </header>
 
         <main>
-            <!--Menu sandwiche-->
+
             <nav class="header__icon-menu">
                 <div class="header__menu-sandwiche header__menu-sandwiche--hidden">
                     <div class="header__menu-sandwiche--linha"></div>
                     <div class="header__menu-sandwiche--linha"></div>
                     <div class="header__menu-sandwiche--linha"></div>
                 </div>
-
+    
                 <!--Campo de busca-->
                 <form id="header__form" method="post">
                     <div id="header__search">
@@ -37,10 +39,11 @@
                         <input id="header__input" name="header__input" type="search" placeholder="Pesquisar" />
                     </div>
                 </form>
-
+    
                 <!--Logo para telas maiores-->
-                <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
-
+                <a class="header__logo header__logo--hidden" href="index.html">
+                    <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
+                </a>
                 <!--Icone do carrinho de compras e favoritos para telas maiores-->
                 <nav class="header__icon-menu--conjunto">
                     <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
