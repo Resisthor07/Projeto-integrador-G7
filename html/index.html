@@ -29,35 +29,31 @@
             </div>
 
             <!--Campo de busca-->
-            <form id="header__form" method="post">
-                <div id="header__search">
-                    <!-- <button id="header__send" name="header__send" type="submit">
-                        <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
-                    </button> -->
-                    <div id="header__send-lupa--posicao">
-                        <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
-                    </div>
-                    <input id="header__input" name="header__input" type="search" placeholder="Pesquisar" />
-                </div>
+            <form id="header" class="header" method="post">
+                <input type="search" name="procurar" id="procurar" placeholder="Pesquisar">
             </form>
 
-            <!--Logo para telas maiores-->
-            <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
-
+            <div class="ajuste-logo">
+                <!--Logo para telas maiores-->
+                <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
+            </div>
             <!--Icone do carrinho de compras e favoritos para telas maiores-->
             <nav class="header__icon-menu--conjunto">
-                <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
-                <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+                <a href="carrinho.html"><img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png"
+                        alt="Carrinho de compras" /></a>
+                <a href="wish-lista-refactored.html"><img class="header__icon-menu--icon"
+                        src="../img/menus/menu-coracao.png" alt="Favoritos"></a>
             </nav>
 
             <!--Icone carrinho de compras e favoritos para telas menores-->
-            <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
-                alt="Carrinho de compras" />
-            <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
-                alt="Favoritos">
+            <a class="header__icon-menu--icon header__icon-menu--hidden" href="carrinho.html"><img
+                    class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
+                    alt="Carrinho de compras" /></a>
+            <a class="header__icon-menu--icon header__icon-menu--hidden" href="wish-lista-refactored.html"><img
+                    class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
+                    alt="Favoritos"></a>
 
         </nav>
-
         <nav class="header__text-menu">
             <nav class="header__menu-sandwiche--conjunto">
                 <div class="header__menu-sandwiche">
@@ -69,7 +65,7 @@
             </nav>
 
             <nav class="header__text-menu--nav">
-                <a class="header__text-menu--text" href="">Cardigans</a>
+                <a href="" class="header__text-menu--text" href="">Cardigans</a>
                 <a class="header__text-menu--text" href="">Blazers</a>
                 <a class="header__text-menu--text" href="">Camisas</a>
                 <a class="header__text-menu--text" href="">Calças</a>
@@ -84,85 +80,129 @@
 
             <!--Bloco do carrossel de imagens-->
             <section id="carrossel-de-imagens" class="carrossel">
-                <ul class="slider">
-                    <li>
-                        <input type="radio" id="slide1" name="slide" checked />
-                        <label for="slide1"></label>
-                        <img src="../img/carrossel/panoramica-1.jpg" alt="imagem do carrossel" />
-                    </li>
-                    <li>
-                        <input type="radio" id="slide2" name="slide" />
-                        <label for="slide2"></label>
-                        <img src="../img/carrossel/panoramica-2.jpg" alt="imagem do carrossel" />
-                    </li>
-                    <li>
-                        <input type="radio" id="slide3" name="slide" />
-                        <label for="slide3"></label>
-                        <img src="../img/carrossel/panoramica-3.png" alt="imagem do carrossel" />
-                    </li>
-                    <li>
-                        <input type="radio" id="slide4" name="slide" />
-                        <label for="slide4"></label>
-                        <img src="../img/carrossel/panoramica-4.jpg" alt="imagem do carrossel" />
-                    </li>
-                    <li>
-                        <input type="radio" id="slide5" name="slide" />
-                        <label for="slide5"></label>
-                        <img src="../img/carrossel/panoramica-5.jpeg" alt="imagem do carrossel" />
-                    </li>
-                </ul>
+                <div class="moldura">
+
+                    <button>
+                        <div class="triangulo" id="esquerda"></div>
+                    </button>
+
+                    <button>
+                        <div class="triangulo"></div>
+                    </button>
+
+                    <ul class="slider">
+                        <li>
+                            <input type="radio" id="slide1" name="slide" checked />
+                            <label for="slide1"></label>
+                            <img src="../img/carrossel/panoramica-1.jpg" alt="imagem do carrossel" />
+                        </li>
+                        <li>
+                            <input type="radio" id="slide2" name="slide" />
+                            <label for="slide2"></label>
+                            <img src="../img/carrossel/panoramica-2.jpg" alt="imagem do carrossel" />
+                        </li>
+                        <li>
+                            <input type="radio" id="slide3" name="slide" />
+                            <label for="slide3"></label>
+                            <img src="../img/carrossel/panoramica-3.png" alt="imagem do carrossel" />
+                        </li>
+                        <li>
+                            <input type="radio" id="slide4" name="slide" />
+                            <label for="slide4"></label>
+                            <img src="../img/carrossel/panoramica-4.jpg" alt="imagem do carrossel" />
+                        </li>
+                        <li>
+                            <input type="radio" id="slide5" name="slide" />
+                            <label for="slide5"></label>
+                            <img src="../img/carrossel/panoramica-5.jpeg" alt="imagem do carrossel" />
+                        </li>
+                    </ul>
+                </div>
             </section>
 
+            <!--Bloco de busca-->
+            <section class="busca">
+            </section>
 
             <!--Bloco da sustentabilidade-->
             <section id="sustentabilidade" class="sustentabilidade">
-                <figure class="caixa-principal">
-                    <img src="../img/index/temp/mobile/Sustentabilidade.png" alt="sustentabilidade" />
-                </figure>
+                <p>Por um mundo sustentavel</p>
+                <div class="caixa-principal">
+                    <div class="bandeja">
+                        <img id="logotipo" src="../img/index/sustentabilidade/logo.png" alt="logo">
+                        <img id="planeta-terra" src="../img/index/sustentabilidade/planeta-terra.png"
+                            alt="planeta-terra">
+                    </div>
+                    <div class="figura-retangulo"></div>
+                </div>
+                <!-- <img src="../img/index/temp/mobile/Sustentabilidade.png" alt="sustentabilidade" /> -->
             </section>
 
             <!--Bloco das ofertas-->
             <section id="ofertas" class="ofertas">
-                <img id="titulo" src="../img/index/temp/mobile/titulo-ofertas.png" alt="titulo-ofertas" />
+                <img class="titulo" id="titulo" src="../img/index/temp/mobile/ofertas-titulo.png"
+                    alt="titulo-ofertas" />
+                <img class="titulo" id="titulo" src="../img/index/temp/mobile/titulo-ofertas.png"
+                    alt="titulo-ofertas-mobile" />
 
-                <div class="menu-deslizante">
-                    <div id="primeiro-expositor" class="expositor">
-                        <h3>35% off</h3>
-                        <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
-                        <img class="imagem-produto" src="../img/index/ofertas/roupa.png" alt="roupa">
-                        <div class="informacoes">
-                            <label class="modelo-roupa">Suspensorio</label>
-                            <label class="preco">R$59,99</label>
-                        </div>
+                <section class="conjunto-botoes-expositor">
+                    <button>
+                        <div class="triangulo" id="esquerda"></div>
+                    </button>
+                    <div class="menu-deslizante">
+                        <a href="../html/pagina-de-detalhe.html" id="primeiro-expositor" class="expositor">
+                            <h3>10% off</h3>
+                            <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
+                            <img class="imagem-produto" src="../img/index/ofertas/roupa-1.png" alt="roupa">
+                            <div class="informacoes">
+                                <label class="modelo-roupa">Suspensorio</label>
+                                <label class="preco">
+                                    <p>R$79,90</p>
+                                </label>
+                            </div>
+                        </a>
+                        <a href="../html/pagina-de-detalhe.html" class="expositor">
+                            <h3>35% off</h3>
+                            <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
+                            <img class="imagem-produto" src="../img/index/ofertas/roupa-2.jpg" alt="roupa">
+                            <div class="informacoes">
+                                <label class="modelo-roupa">Macacao</label>
+                                <label class="preco">R$89,90</label>
+                            </div>
+                        </a>
+                        <a href="../html/pagina-de-detalhe.html" class="expositor">
+                            <h3>50% off</h3>
+                            <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
+                            <img class="imagem-produto" src="../img/index/ofertas/roupa-3.jpg" alt="roupa">
+                            <div class="informacoes">
+                                <label class="modelo-roupa">Conjunto</label>
+                                <label class="preco">R$49,90</label>
+                            </div>
+                        </a>
+                        <a href="../html/pagina-de-detalhe.html" class="expositor">
+                            <h3>40% off</h3>
+                            <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
+                            <img class="imagem-produto" src="../img/index/ofertas/roupa-4.jpg" alt="roupa">
+                            <div class="informacoes">
+                                <label class="modelo-roupa">Top e saia</label>
+                                <label class="preco">R$39,90</label>
+                            </div>
+                        </a>
+                        <a href="../html/pagina-de-detalhe.html" class="expositor">
+                            <h3>25% off</h3>
+                            <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
+                            <img class="imagem-produto" src="../img/index/ofertas/roupa-5.jpg" alt="roupa">
+                            <div class="informacoes">
+                                <label class="modelo-roupa">Blusa&shorts</label>
+                                <label class="preco">R$29,90</label>
+                            </div>
+                        </a>
                     </div>
-                    <div class="expositor">
-                        <h3>35% off</h3>
-                        <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
-                        <img class="imagem-produto" src="../img/index/ofertas/roupa.png" alt="roupa">
-                        <div class="informacoes">
-                            <label class="modelo-roupa">Suspensorio</label>
-                            <label class="preco">R$59,99</label>
-                        </div>
-                    </div>
-                    <div class="expositor">
-                        <h3>35% off</h3>
-                        <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
-                        <img class="imagem-produto" src="../img/index/ofertas/roupa.png" alt="roupa">
-                        <div class="informacoes">
-                            <label class="modelo-roupa">Suspensorio</label>
-                            <label class="preco">R$59,99</label>
-                        </div>
-                    </div>
-                    <div class="expositor">
-                        <h3>35% off</h3>
-                        <img class="background-expositor" src="../img/menus/logo.png" alt="logo" />
-                        <img class="imagem-produto" src="../img/index/ofertas/roupa.png" alt="roupa">
-                        <div class="informacoes">
-                            <label class="modelo-roupa">Suspensorio</label>
-                            <label class="preco">R$59,99</label>
-                        </div>
-                    </div>
-                </div>
+
+                    <button>
+                        <div class="triangulo"></div>
+                    </button>
+                </section>
             </section>
 
             <!--Bloco da moda da casa-->
@@ -171,40 +211,203 @@
                     <figure class="titulo">
                         <img src="../img/index/temp/mobile/titulo-moda-da-casa.png" alt="moda da casa" />
                     </figure>
-                    <nav class="scroll-menu">
-                        <div class="item">
-                            <img src="../img/index/temp/mobile/formal.png" alt="seção formal" />
-                        </div>
-                        <div class="item">
-                            <img src="../img/index/temp/mobile/formal.png" alt="seção formal" />
-                        </div>
-                        <div class="item">
-                            <img src="../img/index/temp/mobile/formal.png" alt="seção formal" />
-                        </div>
-                        <div class="item">
-                            <img src="../img/index/temp/mobile/formal.png" alt="seção formal" />
-                        </div>
-                        <div class="item">
-                            <img src="../img/index/temp/mobile/formal.png" alt="seção formal" />
-                        </div>
-                        <div class="item">
-                            <img src="../img/index/temp/mobile/formal.png" alt="seção formal" />
-                        </div>
-                        <div class="item">
-                            <img src="../img/index/temp/mobile/formal.png" alt="seção formal" />
-                        </div>
-                    </nav>
+
+                    <section class="conjunto-botoes-expositor">
+                        <button>
+                            <div class="triangulo" id="esquerda"></div>
+                        </button>
+                        <nav class="scroll-menu">
+                            <div class="item">
+                                <img src="../img/index/moda-da-casa/Bebes.png" alt="seção formal" />
+                            </div>
+                            <div class="item">
+                                <img src="../img/index/moda-da-casa/Casual.png" alt="seção formal" />
+                            </div>
+                            <div class="item">
+                                <img src="../img/index/moda-da-casa/Esporte.png" alt="seção formal" />
+                            </div>
+                            <div class="item">
+                                <img src="../img/index/moda-da-casa/Formal.png" alt="seção formal" />
+                            </div>
+                            <div class="item">
+                                <img src="../img/index/moda-da-casa/infantil.png" alt="seção formal" />
+                            </div>
+                            <div class="item">
+                                <img src="../img/index/moda-da-casa/Inverno.png" alt="seção formal" />
+                            </div>
+                            <div class="item">
+                                <img src="../img/index/moda-da-casa/Verao.png" alt="seção formal" />
+                            </div>
+                        </nav>
+                        <button>
+                            <div class="triangulo"></div>
+                        </button>
+                    </section>
                 </div>
             </section>
 
-            <!--Bloco de variedades -->
-            <section id="variedades" class="variedades">
-                <img class="img__variedades" src="../img/index/temp/mobile/Variedades.png" alt="variedades" />
-            </section>
+            <!-- Bloco de variedades e rodape -->
 
-            <!--Bloco de rodape -->
-            <section id="rodape" class="rodape">
-                <img class="img__rodape" src="../img/index/temp/mobile/rodape.png" alt="variedades" />
+            <section id="variedades-e-rodape">
+                <!--Bloco de variedades -->
+                <section id="variedades" class="variedades">
+
+                    <img class="variedades__titulo" src="../img/index/temp/mobile/variedade-titulo.png"
+                        alt="variedades" />
+
+                    <div class="variedades__background">
+
+                        <ul class="variedades__menu-deslizante">
+                            <li class="menu-deslizante__expositor">
+                                <a href="../html/pagina-de-detalhe.html" class="menu-deslizante__quadro">
+                                    <div class="quadro">
+                                        <img src="../img/index/variedades/roupa-1.png" alt="produto"
+                                            class="expositor__produto">
+                                    </div>
+                                    <p id="expositor__descricao">Conjunto, top e saia</p>
+                                    <p id="expositor__info-adicional">Frete grátis</p>
+                                    <div class="expositor__retangulo-bottom">
+                                        <p id="retangulo-bottom__tamanho">tam: P</p>
+                                        <p id="retangulo-bottom__preco">R$25,90</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu-deslizante__expositor">
+                                <a href="../html/pagina-de-detalhe.html" class="menu-deslizante__quadro">
+                                    <div class="quadro">
+                                        <img src="../img/index/ofertas/roupa-2.jpg" alt="produto"
+                                            class="expositor__produto">
+                                    </div>
+                                    <p id="expositor__descricao">Conjunto, top e saia</p>
+                                    <p id="expositor__info-adicional">Frete grátis</p>
+                                    <div class="expositor__retangulo-bottom">
+                                        <p id="retangulo-bottom__tamanho">tam: P</p>
+                                        <p id="retangulo-bottom__preco">R$25,90</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-deslizante__expositor">
+                                <a href="../html/pagina-de-detalhe.html" class="menu-deslizante__quadro">
+                                    <div class="quadro">
+                                        <img src="../img/index/ofertas/roupa-3.jpg" alt="produto"
+                                            class="expositor__produto">
+                                    </div>
+                                    <p id="expositor__descricao">Conjunto, top e saia</p>
+                                    <p id="expositor__info-adicional">Frete grátis</p>
+                                    <div class="expositor__retangulo-bottom">
+                                        <p id="retangulo-bottom__tamanho">tam: P</p>
+                                        <p id="retangulo-bottom__preco">R$25,90</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="menu-deslizante__expositor">
+                                <a href="../html/pagina-de-detalhe.html" class="menu-deslizante__quadro">
+                                    <div class="quadro">
+                                        <img src="../img/index/ofertas/roupa-4.jpg" alt="produto"
+                                            class="expositor__produto">
+                                    </div>
+                                    <p id="expositor__descricao">Conjunto, top e saia</p>
+                                    <p id="expositor__info-adicional">Frete grátis</p>
+                                    <div class="expositor__retangulo-bottom">
+                                        <p id="retangulo-bottom__tamanho">tam: P</p>
+                                        <p id="retangulo-bottom__preco">R$25,90</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="variedades__menu-deslizante">
+                            <li class="menu-deslizante__expositor">
+                                <a href="../html/pagina-de-detalhe.html" class="menu-deslizante__quadro">
+                                    <div class="quadro">
+                                        <img src="../img/index/ofertas/roupa-1.png" alt="produto"
+                                            class="expositor__produto">
+                                    </div>
+                                    <p id="expositor__descricao">Suspensorio e blusa</p>
+                                    <p id="expositor__info-adicional">Frete grátis</p>
+                                    <div class="expositor__retangulo-bottom">
+                                        <p id="retangulo-bottom__tamanho">tam: P</p>
+                                        <p id="retangulo-bottom__preco">R$25,90</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu-deslizante__expositor">
+                                <a href="../html/pagina-de-detalhe.html" class="menu-deslizante__quadro">
+                                    <div class="quadro">
+                                        <img src="../img/index/ofertas/roupa-5.jpg" alt="produto"
+                                            class="expositor__produto">
+                                    </div>
+                                    <p id="expositor__descricao">Shorts jeans e blusa</p>
+                                    <p id="expositor__info-adicional">Frete grátis</p>
+                                    <div class="expositor__retangulo-bottom">
+                                        <p id="retangulo-bottom__tamanho">tam: P</p>
+                                        <p id="retangulo-bottom__preco">R$25,90</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu-deslizante__expositor">
+                                <a href="../html/pagina-de-detalhe.html" class="menu-deslizante__quadro">
+                                    <div class="quadro">
+                                        <img src="../img/index/variedades/roupa-7.jpg" alt="produto"
+                                            class="expositor__produto">
+                                    </div>
+                                    <p id="expositor__descricao">Roupa preta casual</p>
+                                    <p id="expositor__info-adicional">Frete grátis</p>
+                                    <div class="expositor__retangulo-bottom">
+                                        <p id="retangulo-bottom__tamanho">tam: P</p>
+                                        <p id="retangulo-bottom__preco">R$25,90</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="menu-deslizante__expositor">
+                                <a href="../html/pagina-de-detalhe.html" class="menu-deslizante__quadro">
+                                    <div class="quadro">
+                                        <img src="../img/index/variedades/roupa-8.jpg" alt="produto"
+                                            class="expositor__produto">
+                                    </div>
+                                    <p id="expositor__descricao">Conjunto de rico</p>
+                                    <p id="expositor__info-adicional">Frete grátis</p>
+                                    <div class="expositor__retangulo-bottom">
+                                        <p id="retangulo-bottom__tamanho">tam: P</p>
+                                        <p id="retangulo-bottom__preco">R$25,90</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--Bloco de rodape -->
+                <section id="rodape" class="rodape">
+                    <div class="background">
+                        <p id="titulo">Siga nossas redes sociais</p>
+                        <nav>
+                            <a href="https://wa.me/+554588160024" target="_blank" class="icone-descricao">
+                                <img src="../img/menus/nav-menu-dialogo.png" alt="dialogo" class="dialogo">
+                                <p>Fale conosco</p>
+                            </a>
+                            <a href="../html/em-manutencao.html" class="icone-descricao">
+                                <img src="../img/menus/nav-menu-compartilhar.png" alt="compartilhar"
+                                    class="compartilhar">
+                                <p>Compartilhe</p>
+                            </a>
+                            <a href="../html/pagina-blog.html" class="icone-descricao">
+                                <img src="../img/menus/nav-menu-blogger.png" alt="Blog" class="blog">
+                                <p>Visite nosso Blog</p>
+                            </a>
+                        </nav>
+                        <address class="endereco">
+                            <p>Estamos localizados na rua dos recantos azuis, bairro Jardim Nos Moscada, Foz do Iguaçu
+                                PR</p>
+                        </address>
+                    </div>
+                </section>
             </section>
         </section>
 

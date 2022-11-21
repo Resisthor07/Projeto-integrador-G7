@@ -1,21 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
+    
     font-family: 'Poppins';
-    background-color: white;
+    background: rgba(239, 31, 31, 0.2);
     margin: 0%;
     width: 100vw;
 }
 
-a {
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 50%;
-    color: #017A36;
-}
 
 .area__bot--entrar { 
     display: flex;
@@ -77,10 +69,9 @@ input {
     display: flex;
     width: 100%;
     height: 30px;
-    background: rgba(255, 114, 114, 0.08);
-    border: 1vw solid #FF7272;
-    backdrop-filter: blur(2vw);
     border-radius: 10vw;
+    border: 0.5vw solid #FF7272;
+    filter: box-shadow: 5px 5px 5px 5px rgba(255, 114, 114, 0.2);
 }
 
 .logo__web {
@@ -106,8 +97,8 @@ input {
 @media (min-width:481px) and (max-width:768px) {
 
 body {
-    background-color: rgb(253, 205, 251);
-    }
+    background: rgba(239, 31, 31, 0.2);
+}
 
 input {  
     background: rgba(69, 197, 176, 0.08);
@@ -159,17 +150,14 @@ a {
 
 }
 
-@media (min-width:769px) and (max-width:5000px) {
+@media (min-width:769px) and (max-width:1450px) {
 
 body {
-    display: flex;
+    display: flex;    
     flex-direction: column;
     align-items: center;
+    background: rgba(239, 31, 31, 0.2);;
     margin: 0%;
-}
-a {
-    font-size: 50%;
-    color: #017A36;
 }
 
 .area__main {
@@ -177,10 +165,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #F09C9C;
+    /*
+    background-image:linear-gradient(45deg,  #90d37592, #f04c70);
+    */
+    background: linear-gradient(179.97deg, rgba(249, 0, 0, 0.138) -12.28%, rgba(239, 31, 31, 0.2) 89.1%);
     border-radius: 30px;
-    width: 35%; 
-    height: 550px;
+    width: 60vh; 
+    height: 900px;
  }
 
 .area__bot--entrar {
@@ -215,5 +206,52 @@ input {
     font-size: 75%;
 }
 
+
+}
+
+@media (min-width:1451px) {
+
+body {
+        display: flex;    
+        flex-direction: column;
+        align-items: center;
+        background: #FFFFFF;
+        margin: 0%;
+        
+    }
+    
+.area__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(239, 31, 31, 0.2);
+        border-radius: 30px;
+        max-width: 500px; 
+        height: 500px;
+        
+}
+     
+.botao__entrar-font { 
+    font-size:  10px;
+}
+
+input {  
+    max-width: 150px;
+    max-height: 25px;
+    border: 1px;
+    background-color: #fcf9f9;
+    color: #ff4444;
+}
+
+.logo__web {
+    margin: 0vw;
+    max-width: 100px;
+}
+
+.texto__input  {
+    color: #ff4444;
+    font-size: 75%;
+}
 
 }

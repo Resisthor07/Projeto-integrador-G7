@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Carrinho</title>
-        <link rel="stylesheet" href="../css/carrinho.css">
+        <title>Endereço</title>
+        <link rel="stylesheet" href="../css/confirma_endereco.css">
         <link rel="stylesheet" href="../css/standard.css" />
     </head>
 
@@ -17,14 +16,14 @@
         </header>
 
         <main>
-
+            <!--Menu sandwiche-->
             <nav class="header__icon-menu">
                 <div class="header__menu-sandwiche header__menu-sandwiche--hidden">
                     <div class="header__menu-sandwiche--linha"></div>
                     <div class="header__menu-sandwiche--linha"></div>
                     <div class="header__menu-sandwiche--linha"></div>
                 </div>
-    
+
                 <!--Campo de busca-->
                 <form id="header__form" method="post">
                     <div id="header__search">
@@ -37,24 +36,24 @@
                         <input id="header__input" name="header__input" type="search" placeholder="Pesquisar" />
                     </div>
                 </form>
-    
+
                 <!--Logo para telas maiores-->
                 <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
-    
+
                 <!--Icone do carrinho de compras e favoritos para telas maiores-->
                 <nav class="header__icon-menu--conjunto">
                     <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
                     <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
                 </nav>
-    
+
                 <!--Icone carrinho de compras e favoritos para telas menores-->
                 <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
                     alt="Carrinho de compras" />
                 <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
                     alt="Favoritos">
-    
+
             </nav>
-    
+
             <nav class="header__text-menu">
                 <nav class="header__menu-sandwiche--conjunto">
                     <div class="header__menu-sandwiche">
@@ -64,7 +63,7 @@
                     </div>
                     <a class="header__text-menu--text header__menu-sandwiche--texto" href="">Todas as categorias</a>
                 </nav>
-    
+
                 <nav class="header__text-menu--nav">
                     <a class="header__text-menu--text" href="">Cardigans</a>
                     <a class="header__text-menu--text" href="">Blazers</a>
@@ -75,64 +74,54 @@
                 </nav>
             </nav>
 
-            <section class="pagina-alinhamento">
-                <h1 class="pagina-estilo_texto-titulo">Meu carrinho</h1>
+           <section class="pagina">
 
-                <div class="pagina-divisao_produto">
-                    <a href="../html/pagina-de-detalhe.html">
-                        <figure class="pagina-imagem_alinhamento">
-                            <img class="pagina-imagem_produto" src="../img/peça-de-roupa.png" alt="peça-de-roupa"
-                            title="peça-de-roupa" />
-                            <figcaption class="pagina-estilo_texto-padrao">Lorem ipsum dolor...</figcaption>
-                        </figure>
-                    </a>
+                <h1 class="pagina-estilo_texto-titulo">Endereço</h1>
 
-                    <div class="pagina-centraliza">
-                        
-                        <div class="pagina-alinhamento-info">
-                            <h3 class="pagina-estilo_texto-subtitulo">Saia</h3>
-                            <h3 class="pagina-estilo_texto-subtitulo">G</h3>
-                            <h3 class="pagina-estilo_texto-subtitulo">R$ 99.90</h3>
+                <div class="pagina_organiza_input">   
+                    <div id="pagina_input-linha-1">
+                        <div class="pagina_input-secao">
+                            <p class="pagina-estilo_texto-subtitulo">Nome:</p>
+                            <input type="text" class="pagina_input_1">
                         </div>
-                                            
-                        <img class="pagina-imagem_lixeira" src="../img/lixeira.png" alt="lixeira"
-                        title="lixeira" />
-                    </div>
 
-                </div>
-
-                <div class="pagina-divisao_produto">
-                    <a href="../html/pagina-de-detalhe.html">
-                        <figure class="pagina-imagem_alinhamento">
-                            <img class="pagina-imagem_produto" src="../img/peça-de-roupa.png" alt="peça-de-roupa"
-                            title="peça-de-roupa" />
-                            <figcaption class="pagina-estilo_texto-padrao">Lorem ipsum dolor...</figcaption>
-                        </figure>
-                    </a>
-
-                    <div class="pagina-centraliza">
-                        
-                        <div class="pagina-alinhamento-info">
-                            <h3 class="pagina-estilo_texto-subtitulo">Saia</h3>
-                            <h3 class="pagina-estilo_texto-subtitulo">G</h3>
-                            <h3 class="pagina-estilo_texto-subtitulo">R$ 99.90</h3>
+                        <div class="pagina_input-secao">
+                            <p class="pagina-estilo_texto-subtitulo">Telefone:</p>
+                            <input type="text" class="pagina_input_1">
                         </div>
-                        
-                        <img class="pagina-imagem_lixeira" src="../img/lixeira.png" alt="lixeira"
-                        title="lixeira" />
+
                     </div>
-
+                    
+                    
+                    <div class="pagina_input-secao">
+                        <p class="pagina-estilo_texto-subtitulo">Bairro:</p>
+                        <input type="text" class="pagina_input_2">
+                    </div>
+                    
+                    
+                    <div class="pagina_input-secao">
+                        <p class="pagina-estilo_texto-subtitulo">Cep:</p>
+                        <input type="text" class="pagina_input_2">
+                    </div>
+                    
+                    
+                    <div class="pagina_input-secao">
+                        <p class="pagina-estilo_texto-subtitulo">Numero:</p>
+                        <input type="text" class="pagina_input_2">
+                    </div>
+                    
+                    
+                    <div class="pagina_input-secao">
+                        <p class="pagina-estilo_texto-subtitulo">Complemento:</p>
+                        <input type="text" class="pagina_input_2">
+                    </div>
                 </div>
-
-                <div class="pagina_confirma">
-                    <h1 class="pagina-estilo_texto-titulo">Valor Total R$ 199,80</h1>
-                <a href="../html/forma_pagamento.html">
-                   <button class="pagina-botao">Finalizar Compras</button>
+                
+                <a href="../html/agradecimento-cliente.html">
+                    <button class="pagina_input_botao">Confirmar</button>
                 </a>
-                </div>
 
-            </section>    
-
+           </section>
         </main>
 
         <footer>

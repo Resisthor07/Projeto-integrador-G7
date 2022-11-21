@@ -60,10 +60,37 @@ header {
     align-items: center;
 }
 
-#header__form {
-    display: flex;
-    justify-content: center;
+.header {
     align-self: flex-end;
+}
+
+.header #procurar {
+    background-image: url(../img/menus/menu-lupa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    border: 2px solid var(--standard-pink);
+    /* height: 4.64vh; */
+    background-position: 3px 0;
+    outline: 0;
+    font-size: 1rem;
+    color: var(--standard-pink);
+    text-indent: 45px;
+    width: 62px;
+    min-height: 45px;
+    transition: all ease 0.4s;
+    max-width: 375px;
+}
+
+.header #procurar:focus {
+    width: 41vw;
+    min-width: 120px;
+    max-width: 250px;
+}
+
+.header #procurar::placeholder {
+    color: var(--standard-pink);
+    text-indent: 45px;
 }
 
 .header__icon-menu {
@@ -76,6 +103,11 @@ header {
     padding: 1vh 3vw;
     align-items: center;
     z-index: 10;
+}
+
+.header__icon-menu .ajuste-logo {
+    display: flex;
+    justify-content: center;
 }
 
 .header__icon-menu--conjunto {
@@ -91,7 +123,7 @@ header {
     font-size: 1.1rem;
     text-align: center;
     color: var(--standard-pink);
-    height: 4.64vh;
+
     width: 100%;
     background: none;
     border: none;
@@ -226,6 +258,10 @@ main {
         display: none;
     }
 
+    .header {
+        padding-bottom: 1.3vh;
+    }
+
     #header__form {
         padding-bottom: 1.3vh;
         margin-top: 7vh
@@ -262,8 +298,6 @@ main {
 
     .header__logo--hidden {
         display: unset;
-        position: relative;
-        right: 8%;
     }
 
     .header__menu-sandwiche {
@@ -285,6 +319,12 @@ main {
 
     .header__menu-sandwiche--linha {
         background-color: white;
+    }
+
+    .header #procurar {
+        width: 41vw;
+        min-width: 120px;
+        max-width: 250px;
     }
 
     #header__search:hover {
@@ -346,7 +386,13 @@ main {
     }
 }
 
-@media (min-width: 480px) and (max-width: 834px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 834px) {
+
+    .header #procurar {
+        width: 41vw;
+        min-width: 120px;
+        max-width: 250px;
+    }
 
     #header__search {
         width: 35vw;

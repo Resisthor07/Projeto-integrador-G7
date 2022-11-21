@@ -1,228 +1,266 @@
 /*Seção de codigo Samir*/
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*Estilização do layout padrão*/
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/pagina-detalhes/Layout.png);
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    margin-bottom: 0%;
     margin: 0%;
-    padding: 0%;
-    height: 100vh;
-    width: 100vw;
 }
 
-.area-util {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.retangulo {
-    background-color: aquamarine;
-    height: 70px;
-    width: 80px;
-}
-
-.tamanho__header {
-    height: 24%;
-}
-
-.tamanho__main {
-    height: 70%;
-}
-
-.logo__posicao {
+.area__retangulo {
     display: flex;
     flex-direction: column;
-    margin: 0%;
+    justify-content: space-between;
+    background: linear-gradient(179.97deg, rgba(249, 0, 0, 0.138) -12.28%, rgba(239, 31, 31, 0.2) 89.1%);
+    margin-top: 5vw;
+    width: 90vw;
+    border-radius: 30px;
+    margin-bottom: 50%;
 }
 
-.logo__imagem {
-    align-self: center;
-    width: 10vh;
-}
-
-.logo__texto {
-    text-align: center;
-    color: white;
-    font-family: 'Dongle', sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 10vw;
-    line-height: 30px;
-    -webkit-text-stroke: 1px #FF7272;
-}
-
-.logo__texto--da {
-    font-size: 12px;
-}
-
-.menu-nav {
+.area__util {
     display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+button{
+    background: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.btn__add-carrinho{
+    border-radius: 5px;
+    padding: 5px;
+    width: 5rem;
+    background-color: #FF7272;
+    margin: 2rem;
+
+}
+.btn__add-carrinho:hover{
+    cursor: pointer;
+}
+.organize__btn{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
     justify-content: space-around;
-    position: fixed;
-    bottom: 0%;
-    height: 5%;
+}
+
+.blusa__frente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
-.menu-nav__botao {
+.blusa__frente-img {
+    width: 55vw;
+}
+
+h2{
+    font-size: 2vw;
+    margin: 0%;
+}
+
+.organiza__cabecario {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FF7272;
-    width: 33.33%;
-    transition: all 0.2s;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-family:'Poppins';
+    margin-top: 2vw;
+    margin-right: 6vw;
+    color: #FF1617;
 }
 
-.menu-nav__botao:active {
-    background-color: #FFD0D0;
-}
-
-.menu-nav__tamanho-img {
-    height: 80%;
-}
-
-.menu-principal {
+.organiza__descricao{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column; 
+    width: 60vw;
 }
 
-.menu-principal__tamanho-img {
-    width: 5vh;
-}
-
-.menu__rapido {
+.organizacao__img-grande {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu-rapido__opcao {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #FF7272;
-    color: white;
-    font-weight: 700;
-    width: 25%;
-    height: 5vh;
-    font-size: 2vh;
-    transition: all .2s;
-}
-
-.menu-rapido__opcao:active {
-    background-color: #FFD0D0;
-}
-
-/*Fim estilização do layout padrão
-
-/*Estilização do carrossel de imagens*/
-.carrossel-imagens {
-    width: 73vw;
-    height: 25vh;
-    overflow: hidden;
-}
-
-.carrossel-imagens .carrossel-imagens__grupo {
-    width: 300%;
-    background-color: aquamarine;
-}
-
-.carrossel-imagens__img {}
-
-/*Fim da estilização do carrossel de imagens*/
-
-/*Fim da seção Samir*/
-
-/*Seção de codigo Eduardo*/
-
-.area__retangulo{ 
-    display: flex;
-    justify-content: space-around;
     flex-direction: column;
-    align-items: center;
-    width: 95%;
-    height: 97%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: rgba(255, 112, 112, 0.20) ;
-    box-shadow: 0px 4px 4px rgba(189, 255, 114,);
-    backdrop-filter: blur(1.5px);
-    border-radius: 30px;
 }
 
-.descricao{
-    display: flex;
-    height: 20%;
-    padding: 8%;
-    font-family: 'Comfortaa';
-    text-align: justify;
-    font-size:150%;
-    color: #ff1617;
-    font-weight: bold;  
-}
-
-.favoritos{
+.organizacao__img-pequena {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
-    justify-items: center;
-    margin-top: 1%;
-    height: 10%;
-    width: 100%;
-}
-
-.imagem__destaque{
-    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: end;
-    height: 35%;
-    width: 100%;
+    align-items: center;
+    margin-top: 0%;
 }
 
-.preco-tamanho{
+.tamanho__blusa {
+    padding: 5%;
+    width: 10vw;
+
+}
+
+.texto__descricao {
     display: flex;
-    font-family: 'Comfortaa';
-    justify-content: space-evenly;
-    height: 40%;
+    width: 80%;
+    margin-top:0%;
+    margin-bottom: 2%;
+    font-weight: 300;
+    font-size: 3vw;
+
 }
 
-.tamanho__coracao{
-    height: 60%;
-    align-self: center; 
-}
-
-.tamanho__img{
+.texto__detalhe {
     display: flex;
-    justify-content: right;
-    height: initial; 
+    flex-direction: column; 
+    align-items: center;
 }
 
-.tamanho__img-principal{
-    width: 70%;
-    height: 80%;
+.texto__tamanho {
+    display:flex;
+    justify-content: space-around;
+    font-style: normal;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+
 }
 
-.tamanho__peca{
-    font-family: 'Comfortaa'; 
-    justify-items: left;
-    color: #ff1617;
-    font-size:150%;
-    font-weight: bold;
+.texto__preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tamanho__preco{
-    font-family: 'Comfortaa'; 
-    color: #ff1617;
-    font-size: 150%;
-    justify-items: right;
-    font-weight: bold;
+.texto__preco-tamanho {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-style: normal;
+    font-family: 'Poppins';
+    width: 80%;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    
 }
 
-/*Fim da seção Eduardo*/
+.texto__preco-tamanho--de {
+    
+    text-decoration: line-through;
+    font-family: 'Poppins';
+    margin-bottom: 1vw;
+    font-weight: 400;
+    font-size: 3vw;
+    color: red
+}
+
+.texto__preco-tamanho--por {
+    background-color: #0bfa6f;
+    font-family: 'Poppins';
+    margin-bottom: 1vw;
+    font-weight: 600;
+    font-size: 4vw;
+    color: rgb(12, 12, 12);
+}
 
 
 
+
+@media (min-width:769px) and (max-width:1450px){
+
+.area__retangulo { 
+    width: 90vw;
+        
+}
+
+
+
+.organiza__cabecario {
+    margin-right: 2vw;
+    color: #eb0808e1;
+}
+
+.tamanho__blusa {
+    padding: 2%;
+}
+
+.texto__descricao { 
+    font-size: 4vw;
+}
+
+.texto__preco-tamanho {
+    margin-top: 5%;
+}
+
+.texto__preco-tamanho--de {
+    font-size: 3vw;
+}
+
+.texto__preco-tamanho--por {
+    font-size: 6vw;
+}
+
+
+.texto__tamanho {
+    font-size: 5vw;
+}
+
+}
+
+@media (min-width:1451px){
+
+.area__retangulo {
+        max-width: 3000px;
+        max-height: 2500px;
+        border-radius: 50px;
+    }
+
+.blusa__frente-img {
+    max-width: 900px;
+}
+
+h2{
+    font-size: 40px;
+    margin: 0%;
+}
+.organiza__cabecario {
+    margin-right: 50px;
+    font-size: 40px;
+}
+
+.organiza__descricao{
+    width: 1200px;
+}
+.tamanho__blusa {
+    padding: 50px;
+    max-width: 200px;
+}
+
+.texto__descricao { 
+    font-size: 80px;
+}
+
+.texto__preco-tamanho {
+    margin-top: 50px;
+}
+
+.texto__preco-tamanho--de {
+font-size: 50px;
+}
+
+.texto__preco-tamanho--por {
+font-size: 100px;
+}
+
+
+.texto__tamanho {
+font-size: 90px;
+}
+
+}

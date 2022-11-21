@@ -3,19 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0,
+          maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/pedidos_confirmados.css">
-    <title>Brechó Flor da Fronteira</title>
-    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css" integrity="sha512-k2UAKyvfA7Xd/6FrOv5SG4Qr9h4p2oaeshXF99WO3zIpCsgTJ3YZELDK0gHdlJE5ls+Mbd5HL50b458z3meB/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Pedidos</title>
+    <link rel="icon" href="../img/pedidos/logo.png">
 </head>
 <body>
+
+
 <main>
 
-    <h1 class="txt__title-pedidos">Pedidos Confirmados</h1>
+    <nav class="header__icon-menu">
+
+
+        <!--Campo de busca-->
+        <form id="header__form" method="post">
+            <div id="header__search">
+                <!-- <button id="header__send" name="header__send" type="submit">
+                    <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
+                </button> -->
+                <div id="header__send-lupa--posicao">
+                    <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
+                </div>
+                <input id="header__input" name="header__input" type="search" placeholder="Pesquisar" />
+            </div>
+        </form>
+
+        <!--Logo para telas maiores-->
+        <a class="header__logo header__logo--hidden" href="index.html">
+            <img  src="../img/menus/logo.png" alt="Logo"></a>
+
+        <!--Icone do carrinho de compras e favoritos para telas maiores-->
+        <nav class="header__icon-menu--conjunto">
+
+            <a  href="cadastrar-produto.html">
+            <img  src="../img/pedidos/🦆%20icon%20_add%20circle%20plus_.png" alt="cadastrar produto"> </a>
+        </nav>
+
+        <!--Icone carrinho de compras e favoritos para telas menores-->
+        <a href="cadastrar-produto.html">
+        <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/pedidos/🦆%20icon%20_add%20circle%20plus_.png"
+             alt="Cadastrar produtos" />
+        </a>
+
+    </nav>
+
+
+
 
     <section class="grupo__pedido">
-
 
         <div class="organize__l1">
 
@@ -50,13 +91,287 @@
         <div class="organize__l3">
             <a class="title__imput">ENDEREÇO</a>
             <p class="imput__pedidos endereco">Rua Charmuta 321 - Bairro XYZ</p>
-        </div>
-        <div>
-
+        </div >
+        <div class="organiza__btn-confirma">
+            <button class="btn__confirmar">Confirmar</button>
+            <button class="btn__cancelar">Cancelar</button>
 
         </div>
 
     </section>
+    <section class="grupo__pedido">
+
+        <div class="organize__l1">
+
+            <div class="organiza__imput-l1">
+                <img class="img__pedidos" src="../img/pedidos/e2c0fd72a0dc2c7b7e4ac7fa90a3900b.jpeg"
+                     alt="peça de roupa escolhida">
+
+                <div class="organiza__grupo-1">
+                    <a class="title__imput">PRODUTO</a>
+                    <p class="imput__pedidos">Blusa Verde</p>
+
+                </div>
+                <div>
+                    <p class="title__imput"> STATUS</p>
+                    <p class="imput__pedidos">Reservado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="organize__l2">
+            <div>
+                <a class="title__imput">ClIENTE</a>
+                <p class="imput__pedidos cliente">Fulano de Tal</p>
+            </div>
+
+            <div>
+                <a class="title__imput">CONTATO</a>
+                <p class="imput__pedidos">(45) 9999-9999</p>
+            </div>
+        </div>
+
+        <div class="organize__l3">
+            <a class="title__imput">ENDEREÇO</a>
+            <p class="imput__pedidos endereco">Rua Charmuta 321 - Bairro XYZ</p>
+        </div >
+        <div class="organiza__btn-confirma">
+            <button class="btn__confirmar">Confirmar</button>
+            <button class="btn__cancelar">Cancelar</button>
+
+        </div>
+
+    </section>
+    <section class="grupo__pedido">
+
+        <div class="organize__l1">
+
+            <div class="organiza__imput-l1">
+                <img class="img__pedidos" src="../img/pedidos/e2c0fd72a0dc2c7b7e4ac7fa90a3900b.jpeg"
+                     alt="peça de roupa escolhida">
+
+                <div class="organiza__grupo-1">
+                    <a class="title__imput">PRODUTO</a>
+                    <p class="imput__pedidos">Blusa Verde</p>
+
+                </div>
+                <div>
+                    <p class="title__imput"> STATUS</p>
+                    <p class="imput__pedidos">Reservado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="organize__l2">
+            <div>
+                <a class="title__imput">ClIENTE</a>
+                <p class="imput__pedidos cliente">Fulano de Tal</p>
+            </div>
+
+            <div>
+                <a class="title__imput">CONTATO</a>
+                <p class="imput__pedidos">(45) 9999-9999</p>
+            </div>
+        </div>
+
+        <div class="organize__l3">
+            <a class="title__imput">ENDEREÇO</a>
+            <p class="imput__pedidos endereco">Rua Charmuta 321 - Bairro XYZ</p>
+        </div >
+        <div class="organiza__btn-confirma">
+            <button class="btn__confirmar">Confirmar</button>
+            <button class="btn__cancelar">Cancelar</button>
+
+        </div>
+
+    </section>
+    <section class="grupo__pedido">
+
+        <div class="organize__l1">
+
+            <div class="organiza__imput-l1">
+                <img class="img__pedidos" src="../img/pedidos/e2c0fd72a0dc2c7b7e4ac7fa90a3900b.jpeg"
+                     alt="peça de roupa escolhida">
+
+                <div class="organiza__grupo-1">
+                    <a class="title__imput">PRODUTO</a>
+                    <p class="imput__pedidos">Blusa Verde</p>
+
+                </div>
+                <div>
+                    <p class="title__imput"> STATUS</p>
+                    <p class="imput__pedidos">Reservado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="organize__l2">
+            <div>
+                <a class="title__imput">ClIENTE</a>
+                <p class="imput__pedidos cliente">Fulano de Tal</p>
+            </div>
+
+            <div>
+                <a class="title__imput">CONTATO</a>
+                <p class="imput__pedidos">(45) 9999-9999</p>
+            </div>
+        </div>
+
+        <div class="organize__l3">
+            <a class="title__imput">ENDEREÇO</a>
+            <p class="imput__pedidos endereco">Rua Charmuta 321 - Bairro XYZ</p>
+        </div >
+        <div class="organiza__btn-confirma">
+            <button class="btn__confirmar">Confirmar</button>
+            <button class="btn__cancelar">Cancelar</button>
+
+        </div>
+
+    </section>
+    <section class="grupo__pedido">
+
+        <div class="organize__l1">
+
+            <div class="organiza__imput-l1">
+                <img class="img__pedidos" src="../img/pedidos/e2c0fd72a0dc2c7b7e4ac7fa90a3900b.jpeg"
+                     alt="peça de roupa escolhida">
+
+                <div class="organiza__grupo-1">
+                    <a class="title__imput">PRODUTO</a>
+                    <p class="imput__pedidos">Blusa Verde</p>
+
+                </div>
+                <div>
+                    <p class="title__imput"> STATUS</p>
+                    <p class="imput__pedidos">Reservado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="organize__l2">
+            <div>
+                <a class="title__imput">ClIENTE</a>
+                <p class="imput__pedidos cliente">Fulano de Tal</p>
+            </div>
+
+            <div>
+                <a class="title__imput">CONTATO</a>
+                <p class="imput__pedidos">(45) 9999-9999</p>
+            </div>
+        </div>
+
+        <div class="organize__l3">
+            <a class="title__imput">ENDEREÇO</a>
+            <p class="imput__pedidos endereco">Rua Charmuta 321 - Bairro XYZ</p>
+        </div >
+        <div class="organiza__btn-confirma">
+            <button class="btn__confirmar">Confirmar</button>
+            <button class="btn__cancelar">Cancelar</button>
+
+        </div>
+
+    </section>
+    <section class="grupo__pedido">
+
+        <div class="organize__l1">
+
+            <div class="organiza__imput-l1">
+                <img class="img__pedidos" src="../img/pedidos/e2c0fd72a0dc2c7b7e4ac7fa90a3900b.jpeg"
+                     alt="peça de roupa escolhida">
+
+                <div class="organiza__grupo-1">
+                    <a class="title__imput">PRODUTO</a>
+                    <p class="imput__pedidos">Blusa Verde</p>
+
+                </div>
+                <div>
+                    <p class="title__imput"> STATUS</p>
+                    <p class="imput__pedidos">Reservado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="organize__l2">
+            <div>
+                <a class="title__imput">ClIENTE</a>
+                <p class="imput__pedidos cliente">Fulano de Tal</p>
+            </div>
+
+            <div>
+                <a class="title__imput">CONTATO</a>
+                <p class="imput__pedidos">(45) 9999-9999</p>
+            </div>
+        </div>
+
+        <div class="organize__l3">
+            <a class="title__imput">ENDEREÇO</a>
+            <p class="imput__pedidos endereco">Rua Charmuta 321 - Bairro XYZ</p>
+        </div >
+        <div class="organiza__btn-confirma">
+            <button class="btn__confirmar">Confirmar</button>
+            <button class="btn__cancelar">Cancelar</button>
+
+        </div>
+
+    </section>
+    <section class="grupo__pedido">
+
+        <div class="organize__l1">
+
+            <div class="organiza__imput-l1">
+                <img class="img__pedidos" src="../img/pedidos/e2c0fd72a0dc2c7b7e4ac7fa90a3900b.jpeg"
+                     alt="peça de roupa escolhida">
+
+                <div class="organiza__grupo-1">
+                    <a class="title__imput">PRODUTO</a>
+                    <p class="imput__pedidos">Blusa Verde</p>
+
+                </div>
+                <div>
+                    <p class="title__imput"> STATUS</p>
+                    <p class="imput__pedidos">Reservado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="organize__l2">
+            <div>
+                <a class="title__imput">ClIENTE</a>
+                <p class="imput__pedidos cliente">Fulano de Tal</p>
+            </div>
+
+            <div>
+                <a class="title__imput">CONTATO</a>
+                <p class="imput__pedidos">(45) 9999-9999</p>
+            </div>
+        </div>
+
+        <div class="organize__l3">
+            <a class="title__imput">ENDEREÇO</a>
+            <p class="imput__pedidos endereco">Rua Charmuta 321 - Bairro XYZ</p>
+        </div >
+        <div class="organiza__btn-confirma">
+            <button class="btn__confirmar">Confirmar</button>
+            <button class="btn__cancelar">Cancelar</button>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <nav class="footer__menu">
+            <a class="footer__menu-icon"><i class="fa-solid fa-circle-plus"></i></a>
+
+
+            <a class="footer__menu-icon"><i class="fa-solid fa-house"></i>
+
+            </a>
+            <a class="footer__menu-icon"><i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+        </nav>
+    </footer>
 
 </main>
 
