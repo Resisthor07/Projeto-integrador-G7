@@ -1,198 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-#principal {
-    font-family: 'Dongle', Helvetica, sans-serif;
-    background-image: url(../img/pagina-detalhes/Layout.png);
-    margin: 0%;
-    padding: 0%;
-    position: relative;
-}
-
-.logo__posicao {
-    display: flex;
-    flex-direction: column;
-    margin: 0%;
-}
-
-
-.logo__imagem {
-    align-self: center;
-    width: 10vh;
-}
-
-.logo__texto {
-    text-align: center;
-    color: white;
-    font-family: 'Dongle', sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 10vw;
-    line-height: 30px;
-    -webkit-text-stroke: 1px #FF7272;
-}
-
-.logo__texto--da {
-    font-size: 12px;
-}
-
-.menu-nav {
-    display: flex;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 5%;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.menu-nav__botao {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FF7272;
-    width: 33.33%;
-    transition: all 0.2s;
-}
-
-.menu-nav__botao:active {
-    background-color: #FFD0D0;
-}
-
-.menu-nav__tamanho-img {
-    height: 80%;
-}
-
-.menu-principal {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu-principal__tamanho-img {
-    width: 5vh;
-}
-
-.menu__rapido {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu-rapido__opcao {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #FF7272;
-    color: white;
-    font-weight: 700;
-    width: 25%;
-    height: 5vh;
-    font-size: 2vh;
-    transition: all .2s;
-}
-
-.menu-rapido__opcao:active {
-    background-color: #FFD0D0;
+.pagina-imagem_lixeira
+{
+    width: 50px;
+    height: 50px;
 }
 
 .pagina-alinhamento
 {
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 4vh;
+}
+
+.pagina-divisao_produto
+{
+    margin: 15px;
+    background: rgba(205, 141, 141, 0.25);
+    border-radius: 25px;
+    padding-bottom: 1vh;
+    width: 35.5vw;
+    height: 21.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagina-imagem_alinhamento
+{
+    margin: 0px;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.pagina-imagem_produto
+{
+    margin-top: 0.5px;
+    width: 17vh;
+    border-radius: 20px;
+}
+
+.pagina-centraliza
+{
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2vh;
+}
+
+.pagina-alinhamento-info
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.pagina-botao
+{
+    width: 18vw;
+    height: 7vh;
+    background: #FF7272;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Comfortaa';
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #faffff;
+}
+
+.pagina-botao:hover
+{
+    cursor: pointer;
+    transition: all .25s;
+    box-shadow: 4px 4px 4px 2px rgba(205, 141, 141, 0.25);
+    background: #faffff;
+    color: #FF7272;
+}
+
+.pagina_confirma
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    align-items: center;
 }
 
 .pagina-estilo_texto-titulo
 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 4vh;
-    font-weight: bolder;
-    color: #ff1617;
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 6vh;
+    font-weight: bold;
+    color: #ff7272;
 }
 
 .pagina-estilo_texto-subtitulo
 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 2vh;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 2vw;
     font-weight: bolder;
     color: #ff1617;
 }
 
 .pagina-estilo_texto-padrao
 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.5vh;
+    margin-left: 6px;
+    white-space: nowrap;
+
+    font-family: 'Comfortaa';
+    font-size: 1vw;
     font-weight: bolder;
-    color: #ff1617;
+
+    background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.pagina-imagem_produto
+@media (max-height: 500px)
 {
-    width: 130px;
-    height: 126px;
-    border: 20px;
-    align-self: flex-start;
-    justify-self: flex-start;
+    .pagina-imagem_produto
+    {
+        margin-top: 0.5px;
+        width: 8vw;
+        border-radius: 20px;
+    }
+
+    .pagina-estilo_texto-padrao
+    {
+        margin-left: 6px;
+        white-space: nowrap;
+
+        font-family: 'Comfortaa';
+        font-size: 2vh;
+        font-weight: bolder;
+
+        background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
 }
 
-.pagina-imagem_lixeira
+@media (max-width: 768px) and (min-height: 501px)
 {
-    height: 54px;
-    width: 54px;
-    align-self: flex-start;
-    justify-self: flex-end;
-}
+  
+    .pagina-divisao_produto
+    {
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 84vw;
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.pagina-divisao_produto
-{
-    border: #ff7272 2px;
-    box-shadow: 1px 1px 2px #ff7272;
-    border-radius: 25px;
-    padding-bottom: 1vh;
-    width: 92vw;
-    height: 18vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
+    .pagina-imagem_alinhamento
+    {
+        margin: 0px;
+        align-self: flex-start;
+        flex-direction: column;
+    }
 
-.pagina-divisao_desc
-{
-    align-self: flex-start;
-    width: 46vw;
-    height: 8vh;
-}
+    .pagina-imagem_produto
+    {
+        margin-top: 0.5px;
+        width: 11vh;
+        border-radius: 20px;
+    }
 
-.pagina-divisao_info
-{
-    align-self: flex-end;
-    display: flex;
-    justify-content: space-between;
-    width: 56vw;
-    height: 2.5vh;
-}
+    .pagina-centraliza
+    {
+        width: 50%;
+        gap: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
-.pagina-alinhamento-info
-{
-    display: flex;
-    justify-content: space-around;
-    width: 46vw;
-    height: 18vh;
-    flex-direction: column;
-}
+    .pagina-alinhamento-info
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
 
-.pagina-botao
-{
-    width: 56.5vw;
-    height: 7vh;
-    background: #FF7272;
-    border: none;
-    border-radius: 30px;
-    font-family: 'Comfortaa', cursive;
-    font-size: 2vh;
-    font-weight: bolder;
-    color: #faffff;
+    .pagina-botao
+    {
+        width: 56.5vw;
+        height: 7vh;
+        background: #FF7272;
+        border: none;
+        border-radius: 30px;
+        font-family: 'Comfortaa';
+        font-size: 2vh;
+        font-weight: bolder;
+        color: #faffff;
+    }
+
+    .pagina_confirma
+    {
+        margin-top: 2vh;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagina-estilo_texto-titulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 4vh;
+        font-weight: bold;
+        color: #ff7272;
+        line-height: 4vh;
+    }
+
+    .pagina-estilo_texto-subtitulo
+    {
+        margin-bottom: 0px;
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 2vh;
+        font-weight: bolder;
+        color: #ff1617;
+    }
+
+    .pagina-estilo_texto-padrao
+    {
+        margin-left: 6px;
+        white-space: nowrap;
+
+        font-family: 'Comfortaa';
+        font-size: 1vh;
+        font-weight: bolder;
+
+        background: linear-gradient(90deg, #FF1617 0%, rgba(255, 22, 23, 0.36) 94.09%, rgba(255, 22, 23, 0) 94.1%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+
 }
