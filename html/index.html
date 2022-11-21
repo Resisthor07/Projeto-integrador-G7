@@ -29,21 +29,14 @@
             </div>
 
             <!--Campo de busca-->
-            <form id="header__form" method="post">
-                <div id="header__search">
-                    <!-- <button id="header__send" name="header__send" type="submit">
-                        <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
-                    </button> -->
-                    <div id="header__send-lupa--posicao">
-                        <img id="header__send-lupa" src="../img/menus/menu-lupa.png" alt="pesquisar">
-                    </div>
-                    <input id="header__input" name="header__input" type="search" placeholder="Pesquisar" />
-                </div>
+            <form id="header" class="header" method="post">
+                <input type="search" name="procurar" id="procurar" placeholder="Pesquisar">
             </form>
 
-            <!--Logo para telas maiores-->
-            <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
-
+            <div class="ajuste-logo">
+                <!--Logo para telas maiores-->
+                <img class="header__logo header__logo--hidden" src="../img/menus/logo.png" alt="Logo">
+            </div>
             <!--Icone do carrinho de compras e favoritos para telas maiores-->
             <nav class="header__icon-menu--conjunto">
                 <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
@@ -57,7 +50,6 @@
                 alt="Favoritos">
 
         </nav>
-
         <nav class="header__text-menu">
             <nav class="header__menu-sandwiche--conjunto">
                 <div class="header__menu-sandwiche">
@@ -124,6 +116,9 @@
                 </div>
             </section>
 
+            <!--Bloco de busca-->
+            <section class="busca">
+            </section>
 
             <!--Bloco da sustentabilidade-->
             <section id="sustentabilidade" class="sustentabilidade">
@@ -280,7 +275,7 @@
                                         <img src="../img/index/ofertas/roupa-2.jpg" alt="produto"
                                             class="expositor__produto">
                                     </div>
-                                    <p id="expositor__descricao">Macacao</p>
+                                    <p id="expositor__descricao">Conjunto, top e saia</p>
                                     <p id="expositor__info-adicional">Frete grátis</p>
                                     <div class="expositor__retangulo-bottom">
                                         <p id="retangulo-bottom__tamanho">tam: P</p>

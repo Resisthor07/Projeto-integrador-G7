@@ -555,7 +555,6 @@ a {
     background: white;
     width: 70vw;
     max-width: 250px;
-    display: block;
 }
 
 .variedades p {
@@ -577,6 +576,7 @@ a {
     max-height: 290px;
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 .variedades #retangulo-bottom__preco {
