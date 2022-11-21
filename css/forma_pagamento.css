@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.pagina__pagamento
+{
+    margin: 2vh;
+    height: 100%;
+}
+
+.pagina__alinhamento_opcoes
+{
+    margin: 1vh;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagina__opcao-1
+{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    margin: 15px;
+    background: rgba(205, 141, 141, 0.25);
+    border-radius: 25px;
+    padding-bottom: 1vh;
+    width: 16vw;
+    height: 17vh;
+}
+
+.pagina__opcao-1_imagem
+{
+    width: 15vw;
+}
+
+.pagina__opcao-2
+{  
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    margin: 15px;
+    background: rgba(205, 141, 141, 0.25);
+    border-radius: 25px;
+    padding-bottom: 1vh;
+    width: 20vw;
+    height: 15vh;
+}
+
+.pagina__opcao-2_imagem
+{
+    width: 19vw;
+}
+
+.pagina__opcao-3
+{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
+    margin: 15px;
+    background: rgba(205, 141, 141, 0.25);
+    border-radius: 25px;
+    padding-bottom: 1vh;
+    width: 14vw;
+    height: 29vh;
+}
+
+.pagina__opcao-3_imagem
+{
+    width: 13vw;
+}
+
+#opcao-2
+{
+    order: 3;
+}
+
+#opcao-3
+{
+    order: 2;
+}
+
+input[type=radio]
+{
+    cursor: pointer;
+    border-color: 1px solid red;
+    border-radius: 50%;
+}
+
+.pagina__endereco
+{
+    gap: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagina__endereco_campo_info
+{
+    width: 72vw;
+    height: 22vh;
+    background: rgba(205, 141, 141, 0.25);
+    border-radius: 30px;
+    gap: 1vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.pagina__endereco_campo_info_input
+{
+    width: 21vw;
+    height: 5vh;
+    background: #FFFFFF;
+    border: 2px solid #FF7272;
+    border-radius: 25px;
+
+    font-family: 'Comfortaa';
+    font-size: 1.5vw;
+    color: #FF7272;
+    
+}
+
+.pagina__endereco_botao
+{
+    width: 12vw;
+    height: 7vh;
+    background: #FF7272;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Comfortaa';
+    font-size: 2vh;
+    font-weight: bolder;
+    color: #faffff;
+}
+
+.pagina__endereco_botao:hover
+{
+    cursor: pointer;
+    transition: all .25s;
+    box-shadow: 4px 4px 4px 2px rgba(205, 141, 141, 0.25);
+    background: #faffff;
+    color: #FF7272;
+}
+
+.pagina-estilo_texto-titulo
+{
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 5vh;
+    font-weight: bold;
+    color: #ff7272;
+}
+
+.pagina-estilo_texto-subtitulo
+{
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 3vh;
+    font-weight: bolder;
+    color: #ff1617;
+}
+
+#pagina-estilo_texto-subtitulo
+{
+    
+    text-align: start;
+    margin: 0px;
+    margin-left: 2vw;
+}
+
+@media (max-height: 500px)
+{
+    .pagina__pagamento
+    {
+        margin: 2vw;
+    }
+
+    .pagina__alinhamento_opcoes
+    {
+        margin: 1vh;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pagina__opcao-1
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vw;
+        width: 54vh;
+        height: 12vw;
+    }
+
+    .pagina__opcao-1_imagem
+    {
+        width: 51vh;
+    }
+
+    .pagina__opcao-2
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vw;
+        width: 61vh;
+        height: 9vw;
+    }
+
+    .pagina__opcao-2_imagem
+    {
+        width: 58vh;
+    }
+
+    .pagina__opcao-3
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vw;
+        width: 46vh;
+        height: 22vw;
+    }
+
+    .pagina__opcao-3_imagem
+    {
+        width: 43vh;
+    }
+
+    #opcao-2
+    {
+        order: 2;
+    }
+
+    #opcao-3
+    {
+        order: 3;
+    }
+
+    input[type=radio]
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    .pagina__endereco
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    .pagina-estilo_texto-titulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 4vw;
+        font-weight: bold;
+        color: #ff7272;
+    }
+
+    .pagina-estilo_texto-subtitulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 2vw;
+        font-weight: bolder;
+        color: #ff1617;
+    }
+}
+
+@media (max-width: 786px) and (min-height: 501px)
+{
+
+    .pagina__alinhamento_opcoes
+    {
+        margin: 1vh;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagina__opcao-1
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 54vw;
+        height: 12vh;
+    }
+
+    .pagina__opcao-1_imagem
+    {
+        width: 51vw;
+    }
+
+    .pagina__opcao-2
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 61vw;
+        height: 9vh;
+    }
+
+    .pagina__opcao-2_imagem
+    {
+        width: 58vw;
+    }
+
+    .pagina__opcao-3
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        
+        margin: 15px;
+        background: rgba(205, 141, 141, 0.25);
+        border-radius: 25px;
+        padding-bottom: 1vh;
+        width: 46vw;
+        height: 22vh;
+    }
+
+    .pagina__opcao-3_imagem
+    {
+        width: 43vw;
+    }
+
+    #opcao-2
+    {
+        order: 2;
+    }
+
+    #opcao-3
+    {
+        order: 3;
+    }
+
+    input[type=radio]
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    .pagina__endereco
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    .pagina-estilo_texto-titulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 4vh;
+        font-weight: bold;
+        color: #ff7272;
+    }
+
+    .pagina-estilo_texto-subtitulo
+    {
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 2vh;
+        font-weight: bolder;
+        color: #ff1617;
+    }
+
+}
