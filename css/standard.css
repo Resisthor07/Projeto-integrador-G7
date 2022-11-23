@@ -161,19 +161,6 @@ input#header__input::placeholder {
     gap: 7px;
 }
 
-.menu-lateral {
-    background: #7BB593;
-    position: fixed;
-    left: 0;
-}
-
-.item-menu {
-    width: 50px;
-    height: 20px;
-    background: var(--standard-green);
-    left: 0;
-}
-
 .header__menu-sanwiche:hover~.menu-lateral {
     display: flex;
 }
