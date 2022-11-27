@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.pagina-imagem_lixeira
+.carrinho__lixeira
 {
     width: 50px;
     height: 50px;
 }
 
-.pagina-alinhamento
+.carrinho
 {
     height: 100%;
     display: flex;
@@ -15,7 +15,16 @@
     margin: 4vh;
 }
 
-.pagina-divisao_produto
+.carrinho__itens
+{   
+    height: 50vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrinho__item
 {
     margin: 15px;
     background: rgba(205, 141, 141, 0.25);
@@ -27,21 +36,22 @@
     justify-content: space-between;
 }
 
-.pagina-imagem_alinhamento
+.carrinho__imagem_alinhamento
 {
+    height: 100%;
     margin: 0px;
     align-self: flex-start;
     flex-direction: column;
 }
 
-.pagina-imagem_produto
+.carrinho__imagem
 {
     margin-top: 0.5px;
     width: 17vh;
     border-radius: 20px;
 }
 
-.pagina-centraliza
+.carrinho__info
 {
     margin: 2vh;
     display: flex;
@@ -50,14 +60,14 @@
     gap: 2vh;
 }
 
-.pagina-alinhamento-info
+.carrinho__info_alinhamento
 {
     display: flex;
     flex-direction: row;
     gap: 2vw;
 }
 
-.pagina-botao
+.carrinho__botao
 {
     width: 18vw;
     height: 7vh;
@@ -71,7 +81,7 @@
     color: #faffff;
 }
 
-.pagina-botao:hover
+.carrinho__botao:hover
 {
     cursor: pointer;
     transition: all .25s;
@@ -80,7 +90,7 @@
     color: #FF7272;
 }
 
-.pagina_confirma
+.carrinho__confirma
 {
     display: flex;
     flex-direction: row;
@@ -88,7 +98,7 @@
     align-items: center;
 }
 
-.pagina-estilo_texto-titulo
+.carrinho__texto_titulo
 {
     text-align: center;
     font-family: 'Dongle';
@@ -97,7 +107,7 @@
     color: #ff7272;
 }
 
-.pagina-estilo_texto-subtitulo
+.carrinho__texto_subtitulo
 {
     margin: 0px;
     text-align: center;
@@ -108,7 +118,7 @@
     color: #ff1617;
 }
 
-.pagina-estilo_texto-padrao
+.carrinho__texto_padrao
 {
     margin-left: 6px;
     white-space: nowrap;
@@ -123,16 +133,64 @@
     background-clip: text;
 }
 
+.carrinho__adicionar
+{  
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #ff7272;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrinho__novo
+{
+    --b: 5px; /* the thickness */
+    width: 55px; /* the size */
+    aspect-ratio: 1;
+    border: 10px solid #000; /* the outer space */
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b),#000 90deg,#fff 0) 
+        calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+        calc(50%  + var(--b))   calc(50%  + var(--b));
+    display: inline-block;
+}
+
+.alt 
+{
+    border: none;
+    margin: 10px;
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#fff 90deg,#ff7272 0) 
+      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+      calc(50%  + var(--b))   calc(50%  + var(--b));
+}
+
+
 @media (max-height: 500px)
 {
-    .pagina-imagem_produto
+    .carrinho__itens
+    {   
+        height: 50vh;
+        overflow-y: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carrinho__imagem
     {
         margin-top: 0.5px;
         width: 8vw;
         border-radius: 20px;
     }
 
-    .pagina-estilo_texto-padrao
+    .carrinho__texto_padrao
     {
         margin-left: 6px;
         white-space: nowrap;
@@ -150,8 +208,16 @@
 
 @media (max-width: 768px) and (min-height: 501px)
 {
-  
-    .pagina-divisao_produto
+    .carrinho__itens
+    {   
+        height: 50vh;
+        overflow-y: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carrinho__item
     {
         margin: 15px;
         background: rgba(205, 141, 141, 0.25);
@@ -164,38 +230,34 @@
         justify-content: space-between;
     }
 
-    .pagina-imagem_alinhamento
+    figure a
     {
-        margin: 0px;
-        align-self: flex-start;
-        flex-direction: column;
+        width: 100%;
     }
-
-    .pagina-imagem_produto
+    .carrinho__imagem
     {
         margin-top: 0.5px;
-        width: 11vh;
+        width: 63%;
         border-radius: 20px;
     }
 
-    .pagina-centraliza
+    .carrinho__info
     {
         width: 50%;
-        gap: 30%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
     }
 
-    .pagina-alinhamento-info
+    .carrinho__info_alinhamento
     {
         display: flex;
         flex-direction: column;
         
     }
 
-    .pagina-botao
+    .carrinho__botao
     {
         width: 56.5vw;
         height: 7vh;
@@ -208,8 +270,9 @@
         color: #faffff;
     }
 
-    .pagina_confirma
+    .carrinho__confirma
     {
+        
         margin-top: 2vh;
         gap: 15px;
         display: flex;
@@ -217,7 +280,7 @@
         align-items: center;
     }
 
-    .pagina-estilo_texto-titulo
+    .carrinho__texto_titulo
     {
         text-align: center;
         font-family: 'Dongle';
@@ -227,7 +290,7 @@
         line-height: 4vh;
     }
 
-    .pagina-estilo_texto-subtitulo
+    .carrinho__texto_subtitulo
     {
         margin-bottom: 0px;
         text-align: center;
@@ -238,7 +301,7 @@
         color: #ff1617;
     }
 
-    .pagina-estilo_texto-padrao
+    .carrinho__texto_padrao
     {
         margin-left: 6px;
         white-space: nowrap;
