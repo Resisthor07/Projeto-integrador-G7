@@ -78,61 +78,50 @@
                 </nav>
             </nav>
 
-            <section class="pagina-alinhamento">
-                <h1 class="pagina-estilo_texto-titulo">Meu carrinho</h1>
+            <section class="carrinho">
+                <h1 class="carrinho__texto_titulo">Meu carrinho</h1>
 
-                <div class="pagina-divisao_produto">
-                    <a href="../html/pagina-de-detalhe.html">
-                        <figure class="pagina-imagem_alinhamento">
-                            <img class="pagina-imagem_produto" src="../img/peça-de-roupa.png" alt="peça-de-roupa"
-                            title="peça-de-roupa" />
-                            <figcaption class="pagina-estilo_texto-padrao">Lorem ipsum dolor...</figcaption>
-                        </figure>
-                    </a>
+                <section class="carrinho__itens">
 
-                    <div class="pagina-centraliza">
-                        
-                        <div class="pagina-alinhamento-info">
-                            <h3 class="pagina-estilo_texto-subtitulo">Saia</h3>
-                            <h3 class="pagina-estilo_texto-subtitulo">G</h3>
-                            <h3 class="pagina-estilo_texto-subtitulo">R$ 99.90</h3>
+                    <article class="carrinho__item">
+                         
+                            <figure class="carrinho__imagem_alinhamento">
+                                <a href="../html/pagina-de-detalhe.html">
+                                    <img class="carrinho__imagem" src="../img/peça-de-roupa.png" alt="peça-de-roupa"
+                                    title="peça-de-roupa" />
+                                    <figcaption class="carrinho__texto_padrao">Lorem ipsum dolor...</figcaption>
+                                </a>
+                            </figure>
+
+                        <div class="carrinho__info">
+                            
+                            <div class="carrinho__info_alinhamento">
+                                <h3 class="carrinho__texto_subtitulo">Saia</h3>
+                                <h3 class="carrinho__texto_subtitulo">G</h3>
+                                <h3 class="carrinho__texto_subtitulo">R$ 99.90</h3>
+                            </div>
+                             
+                            <input type="image" class="carrinho__lixeira" src="../img/🦆 icon _trash 2 outline_.png" alt="lixeira"
+                            title="lixeira" > 
+                            <!-- <img class="carrinho__lixeira" src="../img/🦆 icon _trash 2 outline_.png" alt="lixeira"
+                            title="lixeira" /> -->
+
                         </div>
-                                            
-                        <img class="pagina-imagem_lixeira" src="../img/🦆 icon _trash 2 outline_.png" alt="lixeira"
-                        title="lixeira" />
-                    </div>
 
-                </div>
+                    </article>
 
-                <div class="pagina-divisao_produto">
-                    <a href="../html/pagina-de-detalhe.html">
-                        <figure class="pagina-imagem_alinhamento">
-                            <img class="pagina-imagem_produto" src="../img/peça-de-roupa.png" alt="peça-de-roupa"
-                            title="peça-de-roupa" />
-                            <figcaption class="pagina-estilo_texto-padrao">Lorem ipsum dolor...</figcaption>
-                        </figure>
+                    <article class="carrinho__adicionar">
+                        <input type="button" class="carrinho__novo alt">
+                    </article>
+                   
+                </section>
+
+                <article class="carrinho__confirma">
+                    <h1 class="carrinho__texto_titulo">Valor Total R$ 199,80</h1>
+                    <a href="../html/forma_pagamento.html">
+                        <button class="carrinho__botao">Finalizar Compras</button>
                     </a>
-
-                    <div class="pagina-centraliza">
-                        
-                        <div class="pagina-alinhamento-info">
-                            <h3 class="pagina-estilo_texto-subtitulo">Saia</h3>
-                            <h3 class="pagina-estilo_texto-subtitulo">G</h3>
-                            <h3 class="pagina-estilo_texto-subtitulo">R$ 99.90</h3>
-                        </div>
-                        
-                        <img class="pagina-imagem_lixeira" src="../img/🦆 icon _trash 2 outline_.png" alt="lixeira"
-                        title="lixeira" />
-                    </div>
-
-                </div>
-
-                <div class="pagina_confirma">
-                    <h1 class="pagina-estilo_texto-titulo">Valor Total R$ 199,80</h1>
-                <a href="../html/forma_pagamento.html">
-                   <button class="pagina-botao">Finalizar Compras</button>
-                </a>
-                </div>
+                </article>
 
             </section>    
 
