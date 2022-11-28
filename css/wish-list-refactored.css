@@ -103,7 +103,7 @@ button{
     }
 
     .organize__wish-list{
-        width: 760px;
+        width: 650px;
     }
 
     .organize__wl-l1{
@@ -112,6 +112,8 @@ button{
     }
     .img__w-l{
         width: 230px;
+        padding: 15px;
+        border-radius: 20px;
     }
     .organize__txt{
         font-size: 60px;
