@@ -24,12 +24,12 @@
     background: rgba(255, 114, 114, 0.5);
     border-radius: 20px;
     width: 89vw;
-    padding: 3%;
+    padding: 4%;
 }
 
 .imagem-blusa{
     padding-right: 0%;
-    width: 28vw;
+    width: 35vw;
 }
 
 .alinha-texto{
@@ -57,7 +57,7 @@
 .texto-mat{
     font-family: 'Dongle';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     margin: 2%;
     color: white;
     font-size: 1.3rem;
@@ -124,7 +124,7 @@
         justify-content: center;
     }
     .imagem-blusa{
-        width: 30vw;
+        width: 18vw;
         padding: 3%;
     }
     .media-desktop1{
@@ -133,26 +133,26 @@
         gap: 15px;
     }
     .alinha-texto{
-        padding: 3%;
+        padding: 2%;
     }
     .fundo-rosa{
         width: 45vw;
         padding: 0%;
     }
     .botao-saiba{
-        width: 10vw;
+        width: 12vw;
     }
     .titulo-blog{
-        font-size: 4rem;
-    }
-    .titulo-mat{
         font-size: 3rem;
     }
-    .texto-mat{
+    .titulo-mat{
         font-size: 2.5rem;
     }
+    .texto-mat{
+        font-size: 2rem;
+    }
     .botao-saiba{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .media-desktop2{
         display: flex;
