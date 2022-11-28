@@ -128,31 +128,36 @@ article {
     }
 }
 
-@media (min-width:769px) and (max-width:1350px) {
+@media (min-width:769px) and (max-width:1450px) {
        
 .area__retangulo{
-    width: 60%;
-    height: 800px;
+    width: 40vw;
+    height: 420px;
 }
 article {
-    font-size: 2vw; 
+    font-size: 1.5vw; 
 }
 
 .Cabecario__Retangulo--logo {
-    width: 25vw;
+    width: 10vw;
 }
+
 .compra-efetuada__whats {
-    width: 3vw;
+    width: 2vw;
+}
+
+.compra-efetuada__icone {
+    width: 9vw;
 }
 
 .texto__informacao {
-    width: 90vw;
+    width: 50vw;
     align-items: center;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 }
 
-@media (min-width:1351px) { 
+@media (min-width:1451px) { 
     
 body {
     background-image: url(../img/Backgroud-Web.png); 
