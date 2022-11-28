@@ -44,6 +44,7 @@ button{
 .btn__add-carrinho:hover{
     cursor: pointer;
 }
+
 .organize__btn{
     display: flex;
     width: 100%;
@@ -172,13 +173,15 @@ h2{
 
 
 
-@media (min-width:769px) and (max-width:1550px){
+@media (min-width:769px) and (max-width:1950px){
 
 .area__retangulo { 
-    width: 90vw;
-        
+    width: 40vw;   
 }
 
+.blusa__frente-img {
+    width: 25vw;
+}
 
 
 .organiza__cabecario {
@@ -186,12 +189,18 @@ h2{
     color: #eb0808e1;
 }
 
+.organiza__descricao{
+    margin-top: 2vw;
+    width: 30vw;
+}
+
 .tamanho__blusa {
-    padding: 2%;
+    width: 5vw;
+    padding: 1%;
 }
 
 .texto__descricao { 
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 .texto__preco-tamanho {
@@ -199,21 +208,21 @@ h2{
 }
 
 .texto__preco-tamanho--de {
-    font-size: 3vw;
+    font-size: 1vw;
 }
 
 .texto__preco-tamanho--por {
-    font-size: 6vw;
+    font-size: 2vw;
 }
 
 
 .texto__tamanho {
-    font-size: 5vw;
+    font-size: 2vw;
 }
 
 }
 
-@media (min-width:1551px){
+@media (min-width:1951px){
 
 .area__retangulo {
         max-width: 1000px;
