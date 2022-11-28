@@ -172,7 +172,7 @@ h2{
 
 
 
-@media (min-width:769px) and (max-width:1550px){
+@media (min-width:769px) and (max-width:1950px){
 
 .area__retangulo { 
     width: 90vw;
@@ -213,7 +213,7 @@ h2{
 
 }
 
-@media (min-width:1551px){
+@media (min-width:1951px){
 
 .area__retangulo {
         max-width: 1000px;
