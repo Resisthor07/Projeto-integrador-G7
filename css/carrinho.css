@@ -133,6 +133,22 @@
     background-clip: text;
 }
 
+.cor__texto
+{
+    color: #ff1617;
+}
+
+.cor__fundo
+{
+    background: #FF1617;
+}
+
+.cor__fundo:hover
+{
+    background: #faffff;
+    color: #FF1617;
+}
+
 .carrinho__adicionar
 {  
     margin: 15px;
@@ -169,7 +185,7 @@
       conic-gradient(from 90deg at var(--b) var(--b),#fff 90deg,#ff7272 0) 
       calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
       calc(50%  + var(--b))   calc(50%  + var(--b));
-}
+} 
 
 
 @media (max-height: 500px)
@@ -208,6 +224,11 @@
 
 @media (max-width: 768px) and (min-height: 501px)
 {
+
+    
+
+
+
     .carrinho__itens
     {   
         height: 50vh;
@@ -265,7 +286,7 @@
         border: none;
         border-radius: 30px;
         font-family: 'Dongle';
-        font-size: 4vh;
+        font-size: 3.5vh;
         font-weight: bolder;
         color: #faffff;
     }
@@ -316,5 +337,20 @@
         background-clip: text;
     }
 
+    .cor__texto
+    {
+        color: #ff1617;
+    }
+
+    .cor__fundo
+    {
+        background: #FF1617;
+    }
+
+    .cor__fundo:hover
+    {
+        background: #faffff;
+        color: #FF1617;
+    }
 
 }
