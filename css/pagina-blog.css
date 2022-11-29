@@ -82,11 +82,6 @@
 }
 
 @media (min-width:1351px) {
-    .fundo-blog{
-        display: flex;
-        height: 78vh;
-    }
-
     .posiciona-desktop{
         display: flex;
         flex-direction: row-reverse;
