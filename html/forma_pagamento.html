@@ -46,15 +46,19 @@
                 </a>
                 <!--Icone do carrinho de compras e favoritos para telas maiores-->
                 <nav class="header__icon-menu--conjunto">
-                    <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
-                    <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+                    <a href="carrinho.html"><img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png"
+                            alt="Carrinho de compras" /></a>
+                    <a href="wish-lista-refactored.html"><img class="header__icon-menu--icon"
+                            src="../img/menus/menu-coracao.png" alt="Favoritos"></a>
                 </nav>
 
                 <!--Icone carrinho de compras e favoritos para telas menores-->
-                <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
-                    alt="Carrinho de compras" />
-                <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
-                    alt="Favoritos">
+                <a class="header__icon-menu--icon header__icon-menu--hidden" href="carrinho.html"><img
+                        class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
+                        alt="Carrinho de compras" /></a>
+                <a class="header__icon-menu--icon header__icon-menu--hidden" href="wish-lista-refactored.html"><img
+                        class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
+                        alt="Favoritos"></a>
 
             </nav>
 
@@ -80,83 +84,117 @@
 
 
             <section class="pagina__pagamento">
-                <h1 class="pagina-estilo_texto-titulo">
-                    Formas de Pagamento
-                </h1>
+                <form id="mobile">
+                    <h1 class="pagina-estilo_texto-titulo">
+                        Formas de Pagamento
+                    </h1>
 
-                <div class="pagina__alinhamento_opcoes">
-                    <a id="opcao-1" href="../html/confirma_endereco.html">
+                    <div class="pagina__alinhamento_opcoes">
+                        <a id="opcao-1" href="../html/confirma_endereco.html">
+                            <figure class="pagina__opcao-1">
+                                <figcaption class="pagina-estilo_texto-subtitulo">Pagar com PIX</figcaption>
+                                <img class="pagina__opcao-1_imagem" src="../img/formas de pagamento/pagamento_pix.png" alt="Pagamento PIX">
+                            </figure>
+                            
+                        </a>
+
+                        <a id="opcao-2" href="../html/confirma_endereco.html">
+                            <figure class="pagina__opcao-2">
+                                <figcaption class="pagina-estilo_texto-subtitulo">Pagar com Mercado Pago</figcaption>
+                                <img class="pagina__opcao-2_imagem" src="../img/formas de pagamento/pagamendo_mercadopago.png" alt="Pagamento Mercado Pago">
+                            </figure>
+                            
+                        </a>
+
+                        <a id="opcao-3" href="../html/confirma_endereco.html">
+                            <figure class="pagina__opcao-3">
+                                <figcaption class="pagina-estilo_texto-subtitulo">Pagar na entrega</figcaption>
+                                <img class="pagina__opcao-3_imagem" src="../img/formas de pagamento/pagamento_entrega.png" alt="Pagamento Entrega">
+                            </figure>
+                        </a>
+                    </div>
+                </section>
+
+                </form>
+                <form id="desktop">
+                    <h1 class="pagina-estilo_texto-titulo">
+                        Formas de Pagamento
+                    </h1>
+
+                    <div class="pagina__alinhamento_opcoes">
+                      
                         <figure class="pagina__opcao-1">
                             <figcaption class="pagina-estilo_texto-subtitulo">Pagar com PIX</figcaption>
                             <img class="pagina__opcao-1_imagem" src="../img/formas de pagamento/pagamento_pix.png" alt="Pagamento PIX">
-                            <input type="radio" value="pix">
+                            <input name="pagamento" type="radio" value="pix">
                         </figure>
                         
-                    </a>
+            
 
-                    <a id="opcao-2" href="../html/confirma_endereco.html">
+                    
                         <figure class="pagina__opcao-2">
                             <figcaption class="pagina-estilo_texto-subtitulo">Pagar com Mercado Pago</figcaption>
                             <img class="pagina__opcao-2_imagem" src="../img/formas de pagamento/pagamendo_mercadopago.png" alt="Pagamento Mercado Pago">
-                            <input type="radio" value="mercadopago">
+                            <input name="pagamento" type="radio" value="mercadopago">
                         </figure>
                         
-                    </a>
+                    
 
-                    <a id="opcao-3" href="../html/confirma_endereco.html">
+                    
                         <figure class="pagina__opcao-3">
                             <figcaption class="pagina-estilo_texto-subtitulo">Pagar na entrega</figcaption>
                             <img class="pagina__opcao-3_imagem" src="../img/formas de pagamento/pagamento_entrega.png" alt="Pagamento Entrega">
-                            <input type="radio" value="entrege">
+                            <input name="pagamento" type="radio" value="entrege">
                         </figure>
+                    
+                    </div>
+                </section>
+
+                <section class="pagina__endereco">
+
+                    <h1 class="pagina-estilo_texto-titulo">
+                        Endereço
+                    </h1>
+
+                    <div class="pagina__endereco_campo_info">
+
+                        <div class="pagina__endereco_campo_info_secao">
+                            <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Nome:</p>
+                            <input type="text" class="pagina__endereco_campo_info_input">
+                        </div>
+
+                        <div class="pagina__endereco_campo_info_secao">
+                            <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Bairro:</p>
+                            <input type="text" class="pagina__endereco_campo_info_input">
+                        </div>
+
+                        <div class="pagina__endereco_campo_info_secao">
+                            <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Cep:</p>
+                            <input type="text" class="pagina__endereco_campo_info_input">
+                        </div>
+
+                        <div class="pagina__endereco_campo_info_secao">
+                            <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Telefone:</p>
+                            <input type="text" class="pagina__endereco_campo_info_input">
+                        </div>
+
+                        <div class="pagina__endereco_campo_info_secao">
+                            <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Numero:</p>
+                            <input type="text" class="pagina__endereco_campo_info_input">
+                        </div>
+
+                        <div class="pagina__endereco_campo_info_secao">
+                            <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Complemento:</p>
+                            <input type="text" class="pagina__endereco_campo_info_input">
+                        </div>
+
+                    </div>
+                    <a href="../html/agradecimento-cliente.html">
+                        <button class="pagina__endereco_botao">Confirmar</button>
                     </a>
-                </div>
-            </section>
-
-            <section class="pagina__endereco">
-
-                <h1 class="pagina-estilo_texto-titulo">
-                    Endereço
-                </h1>
-
-                <div class="pagina__endereco_campo_info">
-
-                    <div class="pagina__endereco_campo_info_secao">
-                        <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Nome:</p>
-                        <input type="text" class="pagina__endereco_campo_info_input">
-                    </div>
-
-                    <div class="pagina__endereco_campo_info_secao">
-                        <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Bairro:</p>
-                        <input type="text" class="pagina__endereco_campo_info_input">
-                    </div>
-
-                    <div class="pagina__endereco_campo_info_secao">
-                        <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Cep:</p>
-                        <input type="text" class="pagina__endereco_campo_info_input">
-                    </div>
-
-                    <div class="pagina__endereco_campo_info_secao">
-                        <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Telefone:</p>
-                        <input type="text" class="pagina__endereco_campo_info_input">
-                    </div>
-
-                    <div class="pagina__endereco_campo_info_secao">
-                        <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Numero:</p>
-                        <input type="text" class="pagina__endereco_campo_info_input">
-                    </div>
-
-                    <div class="pagina__endereco_campo_info_secao">
-                        <p class="pagina-estilo_texto-subtitulo" id="pagina-estilo_texto-subtitulo">Complemento:</p>
-                        <input type="text" class="pagina__endereco_campo_info_input">
-                    </div>
-
-                </div>
-                <a href="../html/agradecimento-cliente.html">
-                    <button class="pagina__endereco_botao">Confirmar</button>
-                </a>
-                
-            </section>
+                    
+                </section>
+            </form>
 
         </main>
 
