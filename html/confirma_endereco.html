@@ -45,15 +45,19 @@
                 </a>
                 <!--Icone do carrinho de compras e favoritos para telas maiores-->
                 <nav class="header__icon-menu--conjunto">
-                    <img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png" alt="Carrinho de compras" />
-                    <img class="header__icon-menu--icon" src="../img/menus/menu-coracao.png" alt="Favoritos">
+                    <a href="carrinho.html"><img class="header__icon-menu--icon" src="../img/menus/menu-carrinho.png"
+                            alt="Carrinho de compras" /></a>
+                    <a href="wish-lista-refactored.html"><img class="header__icon-menu--icon"
+                            src="../img/menus/menu-coracao.png" alt="Favoritos"></a>
                 </nav>
 
                 <!--Icone carrinho de compras e favoritos para telas menores-->
-                <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
-                    alt="Carrinho de compras" />
-                <img class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
-                    alt="Favoritos">
+                <a class="header__icon-menu--icon header__icon-menu--hidden" href="carrinho.html"><img
+                        class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-carrinho.png"
+                        alt="Carrinho de compras" /></a>
+                <a class="header__icon-menu--icon header__icon-menu--hidden" href="wish-lista-refactored.html"><img
+                        class="header__icon-menu--icon header__icon-menu--hidden" src="../img/menus/menu-coracao.png"
+                        alt="Favoritos"></a>
 
             </nav>
 
@@ -78,52 +82,52 @@
             </nav>
 
            <section class="pagina">
+                <form id="formulario_cliente">
+                    <h1 class="pagina-estilo_texto-titulo">Endereço</h1>
 
-                <h1 class="pagina-estilo_texto-titulo">Endereço</h1>
+                    <div class="pagina_organiza_input">   
+                        <div id="pagina_input-linha-1">
+                            <div class="pagina_input-secao">
+                                <p class="pagina-estilo_texto-subtitulo">Nome:</p>
+                                <input type="text" class="pagina_input_1">
+                            </div>
 
-                <div class="pagina_organiza_input">   
-                    <div id="pagina_input-linha-1">
-                        <div class="pagina_input-secao">
-                            <p class="pagina-estilo_texto-subtitulo">Nome:</p>
-                            <input type="text" class="pagina_input_1">
+                            <div class="pagina_input-secao">
+                                <p class="pagina-estilo_texto-subtitulo">Telefone:</p>
+                                <input type="text" class="pagina_input_1">
+                            </div>
+
                         </div>
-
+                        
+                        
                         <div class="pagina_input-secao">
-                            <p class="pagina-estilo_texto-subtitulo">Telefone:</p>
-                            <input type="text" class="pagina_input_1">
+                            <p class="pagina-estilo_texto-subtitulo">Bairro:</p>
+                            <input type="text" class="pagina_input_2">
                         </div>
-
+                        
+                        
+                        <div class="pagina_input-secao">
+                            <p class="pagina-estilo_texto-subtitulo">Cep:</p>
+                            <input type="text" class="pagina_input_2">
+                        </div>
+                        
+                        
+                        <div class="pagina_input-secao">
+                            <p class="pagina-estilo_texto-subtitulo">Numero:</p>
+                            <input type="text" class="pagina_input_2">
+                        </div>
+                        
+                        
+                        <div class="pagina_input-secao">
+                            <p class="pagina-estilo_texto-subtitulo">Complemento:</p>
+                            <input type="text" class="pagina_input_2">
+                        </div>
                     </div>
                     
-                    
-                    <div class="pagina_input-secao">
-                        <p class="pagina-estilo_texto-subtitulo">Bairro:</p>
-                        <input type="text" class="pagina_input_2">
-                    </div>
-                    
-                    
-                    <div class="pagina_input-secao">
-                        <p class="pagina-estilo_texto-subtitulo">Cep:</p>
-                        <input type="text" class="pagina_input_2">
-                    </div>
-                    
-                    
-                    <div class="pagina_input-secao">
-                        <p class="pagina-estilo_texto-subtitulo">Numero:</p>
-                        <input type="text" class="pagina_input_2">
-                    </div>
-                    
-                    
-                    <div class="pagina_input-secao">
-                        <p class="pagina-estilo_texto-subtitulo">Complemento:</p>
-                        <input type="text" class="pagina_input_2">
-                    </div>
-                </div>
-                
-                <a href="../html/agradecimento-cliente.html">
-                    <button class="pagina_input_botao">Confirmar</button>
-                </a>
-
+                    <a href="../html/agradecimento-cliente.html">
+                        <button class="pagina_input_botao">Confirmar</button>
+                    </a>
+                </form>
            </section>
         </main>
 
